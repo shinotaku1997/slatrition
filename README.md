@@ -84,4 +84,4 @@ MVP
 一般的なCRUD以外の実装予定の機能についてそれぞれどのようなイメージ(使用するAPIや)で実装する予定なのか現状考えているもので良いので教えて下さい。
 ・auth google
 ・LINE Developers
-・共有機能
+・共有機能# slatrition
