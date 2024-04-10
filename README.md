@@ -72,4 +72,23 @@ MVP
 一般的なCRUD以外の実装予定の機能についてそれぞれどのようなイメージ(使用するAPIや)で実装する予定なのか現状考えているもので良いので教えて下さい。
 ・auth google
 ・LINE Developers
-・共有機能# slatrition
+・共有機能
+・OpenAI API(ver3.5)
+
+マクロ計算機能の実装イメージ
+各レシピの材料と分量は"gem mechanize"を使用し、他サイトから情報を取得。
+クックパッドの場合、以下のようにHTMLが書かれている。材料をname配列、分量をamount配列に代入。
+ーーーーーーーーーーーーーーーーーーー
+<div id="ingredients_list">
+<div class="ingredient_row">
+<div class="ingredient_name"><span class="name"><a class="cookdict_ingredient_link" href="/search/%E6%89%8B%E7%BE%BD%E5%85%83">手羽元</a></span></div>
+<div class="ingredient_quantity amount">9本</div>
+</div>
+<div class="ingredient_row">
+<div class="ingredient_name"><span class="name"><a class="cookdict_ingredient_link" href="/search/%E3%82%86%E3%81%A7%E3%81%9F%E3%81%BE%E3%81%94">ゆでたまご</a></span></div>
+<div class="ingredient_quantity amount">3個</div>
+</div>
+ーーーーーーーーーーーーーーーーーーー
+
+カロリーやPCFバランスは、chatGTP　apiを使用し生成AIに、各材料のカロリーや栄養素を出してもらい、それを元にカロリーやPFCの含有量の情報を得る。
+MVPリリース段階ではchat gptのみでの運用する予定ですが、コストが高くなるので、もっとコストを抑える方法を考える。
