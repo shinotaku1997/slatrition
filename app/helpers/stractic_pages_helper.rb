@@ -1,0 +1,2 @@
+module StracticPagesHelper
+end
