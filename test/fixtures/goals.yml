@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  body: one
+  goal_weight: 1
+  volume_of_activity: 1
+
+two:
+  user: two
+  body: two
+  goal_weight: 1
+  volume_of_activity: 1
