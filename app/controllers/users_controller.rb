@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: %i[ show edit update destroy ]
+  skip_before_action :require_login, only: %i[new create]
 
   # GET /users or /users.json
   def index
@@ -26,6 +27,7 @@ class UsersController < ApplicationController
       redirect_to root_path
       flash[:success]= "アカウント登録に成功しました。"
     else
+      Rails.logger.info @user.errors.full_messages
       render :new, status: :unprocessable_entity
       flash[:danger]= "アカウント登録に失敗しました。"
     end
