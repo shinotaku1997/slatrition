@@ -1,0 +1,15 @@
+<h1>身体情報登録</h1>
+<%= form_with model: [@user,@body] do |f| %>
+    <%= render 'shared/error_messages', model: f.object %>
+    <div class = "mb-3">
+        <%= f.label :sex, style: "display: block" %>
+        <%= f.select :sex, [["男性", 1],["女性", 2]],include_blank: "選択してください" %>
+        <%= f.label :age, style: "display: block" %>
+        <%= f.text_field :age %>
+        <%= f.label :height, style: "display: block" %>
+        <%= f.text_field :height %>
+        <%= f.label :weight, style: "display: block" %>
+        <%= f.text_field :weight %>
+    </div>
+    <%= f.submit "保存" %>
+<% end %>

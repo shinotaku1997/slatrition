@@ -1621,3 +1621,5 @@ Processing by StracticPagesController#top as TURBO_STREAM
 Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.4ms | Allocations: 1787)
 
 
+  [1m[36mBody Load (2.2ms)[0m  [1m[34mSELECT "bodies".* FROM "bodies" /* loading for pp */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Exists? (10.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
