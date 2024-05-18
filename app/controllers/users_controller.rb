@@ -24,7 +24,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      redirect_to root_path
+      redirect_to new_user_body_path(@user)
       flash[:success]= "アカウント登録に成功しました。"
     else
       Rails.logger.info @user.errors.full_messages
