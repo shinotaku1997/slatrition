@@ -28,6 +28,6 @@ class GoalsController < ApplicationController
   end
 
   def goal_params
-    params[:goal].permit(:target_weight, :volume_of_activity )
+    params[:goal].permit(:goal_weight, :volume_of_activity )
   end
 end
