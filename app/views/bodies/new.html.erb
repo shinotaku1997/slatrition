@@ -3,7 +3,7 @@
     <%= render 'shared/error_messages', model: f.object %>
     <div class = "mb-3">
         <%= f.label :sex, style: "display: block" %>
-        <%= f.select :sex, [["男性", 1],["女性", 2]],include_blank: "選択してください" %>
+        <%= f.select :sex, [["男性", "male"],["女性", "female"]],include_blank: "選択してください" %>
         <%= f.label :age, style: "display: block" %>
         <%= f.text_field :age %>
         <%= f.label :height, style: "display: block" %>

@@ -8,7 +8,7 @@ class BodiesController < ApplicationController
   def create
     @body = @user.build_body(body_params)
     if @body.save
-      redirect_to root_path
+      redirect_to new_user_goal_path(@user)
       flash[:success] ="身体情報を登録しました。"
     else
       render :new
