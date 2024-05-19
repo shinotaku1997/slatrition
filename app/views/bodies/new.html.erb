@@ -1,16 +1,31 @@
 <h1>身体情報登録</h1>
 <%= form_with model: [@user,@body] do |f| %>
-    <%= render 'shared/error_messages', model: f.object %>
+    <%= render 'shared/error_message', model: f.object %>
     <div class = "mb-3">
         <%= f.label :sex, style: "display: block" %>
-        <%= f.select :sex, [["男性", "male"],["女性", "female"]],include_blank: "選択してください" %>
+        <%= f.select :sex, [["男性", Body.sexes[:male]],["女性", Body.sexes[:female]]],include_blank: "選択してください" %>
+    </div>
+    <div class = "mb-3">
         <%= f.label :age, style: "display: block" %>
         <%= f.text_field :age %>
+    </div>
+    <div class = "mb-3">
         <%= f.label :height, style: "display: block" %>
         <%= f.text_field :height %>
+    </div>
+    <div class = "mb-3">
         <%= f.label :weight, style: "display: block" %>
         <%= f.text_field :weight %>
     </div>
-    
+    <%= f.fields_for :goal_attributes do |g| %>
+    <div class = "mb-3">
+    <%= g.label :goal_weight, style: "display: block" %>
+    <%= g.text_field :goal_weight %>
+    </div>
+    <div class = "mb-3">
+    <%= g.label :volume_of_acticity, style: "display: block" %>
+    <%= g.select :volume_of_activity, [["ほぼ運動しない", 0],["軽い運動", 1]],include_blank: "選択してください" %>
+    </div>
+    <% end %>
     <%= f.submit "保存" %>
 <% end %>
