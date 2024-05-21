@@ -14193,3 +14193,59 @@ Processing by RecipesController#new as HTML
 Completed 200 OK in 378ms (Views: 25.6ms | ActiveRecord: 16.2ms | Allocations: 13278)
 
 
+Started GET "/recipes/new" for 192.168.65.1 at 2024-05-21 23:39:34 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 455)
+  Rendered shared/_header.erb (Duration: 1.5ms | Allocations: 315)
+  Rendered shared/_flash_message.html.erb (Duration: 1.1ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 2.0ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 2135)
+Completed 200 OK in 625ms (Views: 25.7ms | ActiveRecord: 13.1ms | Allocations: 13251)
+
+
+Started GET "/recipes/new" for 192.168.65.1 at 2024-05-21 23:39:52 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 279)
+  Rendered shared/_header.erb (Duration: 1.3ms | Allocations: 315)
+  Rendered shared/_flash_message.html.erb (Duration: 0.9ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 0.8ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 1957)
+Completed 200 OK in 324ms (Views: 15.1ms | ActiveRecord: 9.8ms | Allocations: 13124)
+
+
+Started GET "/recipes/new" for 192.168.65.1 at 2024-05-21 23:40:09 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 493)
+  Rendered shared/_header.erb (Duration: 1.1ms | Allocations: 315)
+  Rendered shared/_flash_message.html.erb (Duration: 0.7ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 0.8ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 2175)
+Completed 200 OK in 281ms (Views: 15.9ms | ActiveRecord: 9.6ms | Allocations: 13300)
+
+
+Started GET "/recipes/new" for 192.168.65.1 at 2024-05-21 23:40:38 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 455)
+  Rendered shared/_header.erb (Duration: 1.6ms | Allocations: 315)
+  Rendered shared/_flash_message.html.erb (Duration: 0.6ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 0.6ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 2135)
+Completed 200 OK in 339ms (Views: 15.7ms | ActiveRecord: 10.4ms | Allocations: 13278)
+
+
