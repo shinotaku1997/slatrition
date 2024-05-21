@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'recipes/new'
   get 'goals/new'
   get 'goals/create'
   get 'goals/show'
@@ -13,6 +14,7 @@ root "stractic_pages#top"
       resources :goals 
     end
   end
+  resources :recipes
   get 'login', to: 'user_sessions#new'
   post 'login', to: 'user_sessions#create'
   delete 'logout', to: 'user_sessions#destroy'
