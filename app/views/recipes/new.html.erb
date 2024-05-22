@@ -1,6 +1,8 @@
 <h1>レシピ</h1>
-<%= @recipe.each do |rec| %>
-    <p><%= rec %></p>
+<%= form_with url: recipes_result_path, method: :get,local: :true do |f| %>
+    <div class = "mb-3">
+    <%= f.label :individual_id, style: "display: block"%>
+    <%= f.text_field :individual_id %>
+    </div>
+    <%= f.submit "カロリーを調べる" %>
 <% end %>
-
-<h1>レシピ</h1>

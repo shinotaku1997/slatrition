@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'goals/show'
   get 'goals/update'
   get 'goals/edit'
-root "stractic_pages#top"
+  root "stractic_pages#top"
   get "up" => "rails/health#show", as: :rails_health_check
 
   get 'terms_of_service', to: 'stractic_pages#terms_of_service'
@@ -15,10 +15,8 @@ root "stractic_pages#top"
     end
   end
   resources :recipes
+  get '/recipes/result', to: 'recipes#result'
   get 'login', to: 'user_sessions#new'
   post 'login', to: 'user_sessions#create'
   delete 'logout', to: 'user_sessions#destroy'
-
-  # Defines the root path route ("/")
-  # root "posts#index"
 end
