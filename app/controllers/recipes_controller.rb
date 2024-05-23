@@ -24,6 +24,8 @@ class RecipesController < ApplicationController
     end
   end
 
+  def show; end
+
   private
   def recipe_params
     params.require(:recipe).permit(:individual_id)

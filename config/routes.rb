@@ -14,8 +14,8 @@ Rails.application.routes.draw do
       resources :goals 
     end
   end
-  resources :recipes
-  get '/recipes/result', to: 'recipes#result'
+  resources :recipes, only: %i[new create]
+   get '/recipes/result', to: 'recipes#result', as: 'recipes_result'
   get 'login', to: 'user_sessions#new'
   post 'login', to: 'user_sessions#create'
   delete 'logout', to: 'user_sessions#destroy'
