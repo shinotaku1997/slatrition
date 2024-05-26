@@ -1,6 +1,6 @@
 class ChatApi
-    def initialize(prompt)
-      @api_key = Settings.open_ai.api_key
+  def initialize(prompt)
+      @api_key = settings['open_ai']['api_key']
       @base_url = "https://api.openai.com/v1/chat/completions"
       @histories = []
   
@@ -41,5 +41,6 @@ class ChatApi
       @histories.push(message)
       message["content"]
     end
-  end
+end
+
   
