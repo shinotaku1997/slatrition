@@ -1,6 +1,8 @@
-class ChatApi
-  def initialize(prompt)
-      @api_key = settings['open_ai']['api_key']
+module OpenAi
+  class ChatApi
+    attr_reader :api_key, :base_url, :histories
+    def initialize(prompt)
+      @api_key = ENV["OPEN_AI_API_KEY"]
       @base_url = "https://api.openai.com/v1/chat/completions"
       @histories = []
   
@@ -36,11 +38,17 @@ class ChatApi
         req.headers = get_api_headers
         req.body = payload.to_json
       end
-  
-      message = response.body["choices"][0]["message"]
-      @histories.push(message)
-      message["content"]
-    end
-end
+      
+      puts response.body
 
-  
+      if response.success?
+        message = response.body["choices"][0]["message"]
+        @histories.push(message)
+        message["content"]
+      else
+        puts "Error: #{response.status} - #{response.body}"
+        nil
+      end
+    end
+  end
+end  

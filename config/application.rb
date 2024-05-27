@@ -1,6 +1,7 @@
 require_relative "boot"
 
 require "rails/all"
+require 'dotenv/load'
 
 Bundler.require(*Rails.groups)
 
@@ -11,5 +12,8 @@ module Myapp
     config.autoload_lib(ignore: %w(assets tasks))
     config.autoload_paths += %W(#{config.root}/lib)
     config.eager_load_paths += %W(#{config.root}/lib)
+    config.before_configuration do
+      config.x.settings = config_for(:settings)
+    end
   end
 end

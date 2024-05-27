@@ -1,2 +1,2 @@
-open_ai:
+default: 
   api_key: <%= ENV["OPEN_AI_API_KEY"] %>
