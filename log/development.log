@@ -16642,3 +16642,266 @@ Completed 200 OK in 1001ms (Views: 287.8ms | ActiveRecord: 138.7ms | Allocations
 [dotenv] Set [36mOPEN_AI_API_KEY[0m
 [dotenv] Loaded [33m.env[0m
 [dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mOPEN_AI_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-05-28 22:40:57 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+Redirected to http://localhost:3000/recipes/chat
+Completed 302 Found in 425ms (ActiveRecord: 0.0ms | Allocations: 7083)
+
+
+Started GET "/recipes/chat" for 192.168.65.1 at 2024-05-28 22:40:58 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 994)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+lib/open_ai/chat_api.rb:21:in `chat'
+app/controllers/recipes_controller.rb:21:in `chat'
+Started GET "/recipes/new" for 192.168.65.1 at 2024-05-28 22:42:01 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 13.9ms | Allocations: 1881)
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 45.8ms | Allocations: 12513)
+  Rendered shared/_flash_message.html.erb (Duration: 0.7ms | Allocations: 178)
+  Rendered shared/_footer.erb (Duration: 1.7ms | Allocations: 223)
+  Rendered layout layouts/application.html.erb (Duration: 72.8ms | Allocations: 16396)
+Completed 200 OK in 328ms (Views: 69.0ms | ActiveRecord: 115.7ms | Allocations: 32992)
+
+
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-05-28 22:42:06 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+Redirected to http://localhost:3000/recipes/chat
+Completed 302 Found in 338ms (ActiveRecord: 0.0ms | Allocations: 4055)
+
+
+Started GET "/recipes/chat" for 192.168.65.1 at 2024-05-28 22:42:06 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+Completed 400 Bad Request in 11ms (ActiveRecord: 0.0ms | Allocations: 976)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: chat):
+  
+app/controllers/recipes_controller.rb:42:in `chat_params'
+app/controllers/recipes_controller.rb:20:in `chat'
+Started GET "/recipes/new" for 192.168.65.1 at 2024-05-28 22:42:07 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1145)
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 6.8ms | Allocations: 514)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered shared/_footer.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 2693)
+Completed 200 OK in 16ms (Views: 10.6ms | ActiveRecord: 2.3ms | Allocations: 3301)
+
+
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-05-28 22:42:56 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+Redirected to http://localhost:3000/recipes/chat
+Completed 302 Found in 349ms (ActiveRecord: 0.0ms | Allocations: 4145)
+
+
+Started GET "/recipes/chat" for 192.168.65.1 at 2024-05-28 22:42:56 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 953)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+lib/open_ai/chat_api.rb:21:in `chat'
+app/controllers/recipes_controller.rb:21:in `chat'
+Started GET "/recipes/new" for 192.168.65.1 at 2024-05-28 22:48:44 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 15.6ms | Allocations: 1319)
+  [1m[36mUser Load (6.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 53.7ms | Allocations: 5900)
+  Rendered shared/_flash_message.html.erb (Duration: 1.9ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 1.5ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 98.2ms | Allocations: 9051)
+Completed 200 OK in 442ms (Views: 90.9ms | ActiveRecord: 203.0ms | Allocations: 15890)
+
+
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-05-28 22:48:48 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+Redirected to http://localhost:3000/recipes/chat?amounts%5B%5D=250%EF%BD%87&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%982&amounts%5B%5D=%E4%B8%AD1%E5%80%8B&amounts%5B%5D=1%2F2%E5%80%8B&amounts%5B%5D=%E9%81%A9%E9%87%8F&amounts%5B%5D=%E9%81%A9%E9%87%8F&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%982&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981&ingredients%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89&ingredients%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88&ingredients%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89&ingredients%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E&ingredients%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89&ingredients%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89&ingredients%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB&ingredients%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89&ingredients%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9&ingredients%5B%5D=%E2%97%86%E9%85%92
+Completed 302 Found in 450ms (ActiveRecord: 0.0ms | Allocations: 4221)
+
+
+Started GET "/recipes/chat?amounts%5B%5D=250%EF%BD%87&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%982&amounts%5B%5D=%E4%B8%AD1%E5%80%8B&amounts%5B%5D=1%2F2%E5%80%8B&amounts%5B%5D=%E9%81%A9%E9%87%8F&amounts%5B%5D=%E9%81%A9%E9%87%8F&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%982&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981&ingredients%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89&ingredients%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88&ingredients%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89&ingredients%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E&ingredients%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89&ingredients%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89&ingredients%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB&ingredients%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89&ingredients%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9&ingredients%5B%5D=%E2%97%86%E9%85%92" for 192.168.65.1 at 2024-05-28 22:48:48 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"amounts"=>["250ｇ", "小さじ1/3～1/2", "小さじ2", "中1個", "1/2個", "適量", "適量", "小さじ2", "小さじ1", "小さじ1"], "ingredients"=>["鶏もも肉", "＊クレイジーソルト", "＊カレー粉", "玉ねぎ", "パプリカ（黄・赤どちらでも）", "片栗粉", "サラダオイル", "◆醤油（濃口）", "◆ウスターソース", "◆酒"]}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 955)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+lib/open_ai/chat_api.rb:21:in `chat'
+app/controllers/recipes_controller.rb:21:in `chat'
+Started GET "/recipes/new" for 192.168.65.1 at 2024-05-28 22:51:10 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1319)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 23.6ms | Allocations: 5817)
+  Rendered shared/_flash_message.html.erb (Duration: 16.0ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 2.6ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 66.6ms | Allocations: 8965)
+Completed 200 OK in 128ms (Views: 65.9ms | ActiveRecord: 23.9ms | Allocations: 12977)
+
+
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-05-28 22:51:16 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/result.erb within layouts/application
+  Rendered recipes/result.erb within layouts/application (Duration: 9.0ms | Allocations: 144)
+  [1m[36mUser Load (13.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 74.2ms | Allocations: 530)
+  Rendered shared/_flash_message.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered shared/_footer.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 145.0ms | Allocations: 1687)
+Completed 200 OK in 1631ms (Views: 134.8ms | ActiveRecord: 13.2ms | Allocations: 5897)
+
+
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-05-28 22:52:23 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+Redirected to http://localhost:3000/recipes/chat?amounts%5B%5D=250%EF%BD%87&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%982&amounts%5B%5D=%E4%B8%AD1%E5%80%8B&amounts%5B%5D=1%2F2%E5%80%8B&amounts%5B%5D=%E9%81%A9%E9%87%8F&amounts%5B%5D=%E9%81%A9%E9%87%8F&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%982&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981&ingredients%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89&ingredients%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88&ingredients%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89&ingredients%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E&ingredients%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89&ingredients%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89&ingredients%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB&ingredients%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89&ingredients%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9&ingredients%5B%5D=%E2%97%86%E9%85%92
+Completed 302 Found in 456ms (ActiveRecord: 0.0ms | Allocations: 4248)
+
+
+Started GET "/recipes/chat?amounts%5B%5D=250%EF%BD%87&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%982&amounts%5B%5D=%E4%B8%AD1%E5%80%8B&amounts%5B%5D=1%2F2%E5%80%8B&amounts%5B%5D=%E9%81%A9%E9%87%8F&amounts%5B%5D=%E9%81%A9%E9%87%8F&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%982&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981&ingredients%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89&ingredients%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88&ingredients%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89&ingredients%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E&ingredients%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89&ingredients%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89&ingredients%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB&ingredients%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89&ingredients%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9&ingredients%5B%5D=%E2%97%86%E9%85%92" for 192.168.65.1 at 2024-05-28 22:52:25 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"amounts"=>["250ｇ", "小さじ1/3～1/2", "小さじ2", "中1個", "1/2個", "適量", "適量", "小さじ2", "小さじ1", "小さじ1"], "ingredients"=>["鶏もも肉", "＊クレイジーソルト", "＊カレー粉", "玉ねぎ", "パプリカ（黄・赤どちらでも）", "片栗粉", "サラダオイル", "◆醤油（濃口）", "◆ウスターソース", "◆酒"]}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 956)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+lib/open_ai/chat_api.rb:21:in `chat'
+app/controllers/recipes_controller.rb:21:in `chat'
+Started GET "/recipes/chat?amounts%5B%5D=250%EF%BD%87&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%982&amounts%5B%5D=%E4%B8%AD1%E5%80%8B&amounts%5B%5D=1%2F2%E5%80%8B&amounts%5B%5D=%E9%81%A9%E9%87%8F&amounts%5B%5D=%E9%81%A9%E9%87%8F&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%982&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981&ingredients%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89&ingredients%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88&ingredients%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89&ingredients%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E&ingredients%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89&ingredients%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89&ingredients%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB&ingredients%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89&ingredients%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9&ingredients%5B%5D=%E2%97%86%E9%85%92" for 192.168.65.1 at 2024-05-28 23:13:19 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"amounts"=>["250ｇ", "小さじ1/3～1/2", "小さじ2", "中1個", "1/2個", "適量", "適量", "小さじ2", "小さじ1", "小さじ1"], "ingredients"=>["鶏もも肉", "＊クレイジーソルト", "＊カレー粉", "玉ねぎ", "パプリカ（黄・赤どちらでも）", "片栗粉", "サラダオイル", "◆醤油（濃口）", "◆ウスターソース", "◆酒"]}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 974)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+lib/open_ai/chat_api.rb:21:in `chat'
+app/controllers/recipes_controller.rb:21:in `chat'
+Started GET "/recipes/chat?amounts%5B%5D=250%EF%BD%87&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%982&amounts%5B%5D=%E4%B8%AD1%E5%80%8B&amounts%5B%5D=1%2F2%E5%80%8B&amounts%5B%5D=%E9%81%A9%E9%87%8F&amounts%5B%5D=%E9%81%A9%E9%87%8F&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%982&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981&amounts%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981&ingredients%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89&ingredients%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88&ingredients%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89&ingredients%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E&ingredients%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89&ingredients%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89&ingredients%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB&ingredients%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89&ingredients%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9&ingredients%5B%5D=%E2%97%86%E9%85%92" for 192.168.65.1 at 2024-05-28 23:13:39 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"amounts"=>["250ｇ", "小さじ1/3～1/2", "小さじ2", "中1個", "1/2個", "適量", "適量", "小さじ2", "小さじ1", "小さじ1"], "ingredients"=>["鶏もも肉", "＊クレイジーソルト", "＊カレー粉", "玉ねぎ", "パプリカ（黄・赤どちらでも）", "片栗粉", "サラダオイル", "◆醤油（濃口）", "◆ウスターソース", "◆酒"]}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 1029)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+lib/open_ai/chat_api.rb:21:in `chat'
+app/controllers/recipes_controller.rb:21:in `chat'
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-05-28 23:13:42 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/result.erb within layouts/application
+  Rendered recipes/result.erb within layouts/application (Duration: 2.0ms | Allocations: 165)
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 207.5ms | Allocations: 9211)
+  Rendered shared/_flash_message.html.erb (Duration: 1.3ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 0.9ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 225.0ms | Allocations: 11217)
+Completed 200 OK in 639ms (Views: 115.7ms | ActiveRecord: 118.7ms | Allocations: 15954)
+
+
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-05-28 23:13:55 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/result.erb within layouts/application
+  Rendered recipes/result.erb within layouts/application (Duration: 1.2ms | Allocations: 145)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 53.6ms | Allocations: 6208)
+  Rendered shared/_flash_message.html.erb (Duration: 1.3ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 1.4ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 68.3ms | Allocations: 8187)
+Completed 200 OK in 402ms (Views: 45.7ms | ActiveRecord: 26.5ms | Allocations: 13061)
+
+
+Started GET "/recipes/new" for 192.168.65.1 at 2024-05-28 23:14:51 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1317)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 18.9ms | Allocations: 5814)
+  Rendered shared/_flash_message.html.erb (Duration: 0.8ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 0.7ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 45.4ms | Allocations: 8960)
+Completed 200 OK in 146ms (Views: 68.8ms | ActiveRecord: 47.4ms | Allocations: 12923)
+
+
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-05-28 23:14:54 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+Redirected to http://localhost:3000/recipes/chat?combined%5B%5D%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89&combined%5B%5D%5B%5D=250%EF%BD%87&combined%5B%5D%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88&combined%5B%5D%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89&combined%5B%5D%5B%5D=%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E&combined%5B%5D%5B%5D=%E4%B8%AD1%E5%80%8B&combined%5B%5D%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89&combined%5B%5D%5B%5D=1%2F2%E5%80%8B&combined%5B%5D%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89&combined%5B%5D%5B%5D=%E9%81%A9%E9%87%8F&combined%5B%5D%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB&combined%5B%5D%5B%5D=%E9%81%A9%E9%87%8F&combined%5B%5D%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89&combined%5B%5D%5B%5D=%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9&combined%5B%5D%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D%5B%5D=%E2%97%86%E9%85%92&combined%5B%5D%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981
+Completed 302 Found in 440ms (ActiveRecord: 0.0ms | Allocations: 4215)
+
+
+Started GET "/recipes/chat?combined%5B%5D%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89&combined%5B%5D%5B%5D=250%EF%BD%87&combined%5B%5D%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88&combined%5B%5D%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89&combined%5B%5D%5B%5D=%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E&combined%5B%5D%5B%5D=%E4%B8%AD1%E5%80%8B&combined%5B%5D%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89&combined%5B%5D%5B%5D=1%2F2%E5%80%8B&combined%5B%5D%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89&combined%5B%5D%5B%5D=%E9%81%A9%E9%87%8F&combined%5B%5D%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB&combined%5B%5D%5B%5D=%E9%81%A9%E9%87%8F&combined%5B%5D%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89&combined%5B%5D%5B%5D=%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9&combined%5B%5D%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D%5B%5D=%E2%97%86%E9%85%92&combined%5B%5D%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981" for 192.168.65.1 at 2024-05-28 23:14:54 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>[["鶏もも肉"], ["250ｇ"], ["＊クレイジーソルト"], ["小さじ1/3～1/2"], ["＊カレー粉"], ["小さじ2"], ["玉ねぎ"], ["中1個"], ["パプリカ（黄・赤どちらでも）"], ["1/2個"], ["片栗粉"], ["適量"], ["サラダオイル"], ["適量"], ["◆醤油（濃口）"], ["小さじ2"], ["◆ウスターソース"], ["小さじ1"], ["◆酒"], ["小さじ1"]]}
+Completed 200 OK in 401ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 2154)
+
+
