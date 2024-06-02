@@ -16905,3 +16905,157 @@ Processing by RecipesController#chat as HTML
 Completed 200 OK in 401ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 2154)
 
 
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-05-28 23:39:06 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+Redirected to http://localhost:3000/recipes/chat?combined%5B%5D%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89&combined%5B%5D%5B%5D=250%EF%BD%87&combined%5B%5D%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88&combined%5B%5D%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89&combined%5B%5D%5B%5D=%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E&combined%5B%5D%5B%5D=%E4%B8%AD1%E5%80%8B&combined%5B%5D%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89&combined%5B%5D%5B%5D=1%2F2%E5%80%8B&combined%5B%5D%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89&combined%5B%5D%5B%5D=%E9%81%A9%E9%87%8F&combined%5B%5D%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB&combined%5B%5D%5B%5D=%E9%81%A9%E9%87%8F&combined%5B%5D%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89&combined%5B%5D%5B%5D=%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9&combined%5B%5D%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D%5B%5D=%E2%97%86%E9%85%92&combined%5B%5D%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981
+Completed 302 Found in 527ms (ActiveRecord: 0.0ms | Allocations: 4210)
+
+
+Started GET "/recipes/chat?combined%5B%5D%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89&combined%5B%5D%5B%5D=250%EF%BD%87&combined%5B%5D%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88&combined%5B%5D%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89&combined%5B%5D%5B%5D=%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E&combined%5B%5D%5B%5D=%E4%B8%AD1%E5%80%8B&combined%5B%5D%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89&combined%5B%5D%5B%5D=1%2F2%E5%80%8B&combined%5B%5D%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89&combined%5B%5D%5B%5D=%E9%81%A9%E9%87%8F&combined%5B%5D%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB&combined%5B%5D%5B%5D=%E9%81%A9%E9%87%8F&combined%5B%5D%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89&combined%5B%5D%5B%5D=%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9&combined%5B%5D%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D%5B%5D=%E2%97%86%E9%85%92&combined%5B%5D%5B%5D=%E5%B0%8F%E3%81%95%E3%81%981" for 192.168.65.1 at 2024-05-28 23:39:07 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>[["鶏もも肉"], ["250ｇ"], ["＊クレイジーソルト"], ["小さじ1/3～1/2"], ["＊カレー粉"], ["小さじ2"], ["玉ねぎ"], ["中1個"], ["パプリカ（黄・赤どちらでも）"], ["1/2個"], ["片栗粉"], ["適量"], ["サラダオイル"], ["適量"], ["◆醤油（濃口）"], ["小さじ2"], ["◆ウスターソース"], ["小さじ1"], ["◆酒"], ["小さじ1"]]}
+Completed 200 OK in 451ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 1513)
+
+
+[dotenv] Set [36mOPEN_AI_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-05-30 23:02:35 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/result.erb within layouts/application
+  Rendered recipes/result.erb within layouts/application (Duration: 1.6ms | Allocations: 124)
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 209.9ms | Allocations: 8792)
+  Rendered shared/_flash_message.html.erb (Duration: 2.4ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 1.2ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 225.5ms | Allocations: 10768)
+Completed 200 OK in 641ms (Views: 145.5ms | ActiveRecord: 85.7ms | Allocations: 15656)
+
+
+Started GET "/" for 192.168.65.1 at 2024-05-30 23:19:31 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StracticPagesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stractic_pages/top.html.erb within layouts/application
+  Rendered stractic_pages/top.html.erb within layouts/application (Duration: 2.6ms | Allocations: 103)
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 206.8ms | Allocations: 8731)
+  Rendered shared/_flash_message.html.erb (Duration: 0.9ms | Allocations: 159)
+  Rendered shared/_footer.erb (Duration: 0.8ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 293.9ms | Allocations: 10672)
+Completed 200 OK in 312ms (Views: 231.4ms | ActiveRecord: 69.4ms | Allocations: 11972)
+
+
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-05-30 23:19:36 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/result.erb within layouts/application
+  Rendered recipes/result.erb within layouts/application (Duration: 2.0ms | Allocations: 120)
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 10.2ms | Allocations: 533)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 1695)
+Completed 200 OK in 379ms (Views: 19.3ms | ActiveRecord: 2.1ms | Allocations: 6119)
+
+
+Started GET "/recipes/new" for 192.168.65.1 at 2024-05-30 23:30:48 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1317)
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 43.6ms | Allocations: 5604)
+  Rendered shared/_flash_message.html.erb (Duration: 5.1ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 5.4ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 113.5ms | Allocations: 8753)
+Completed 200 OK in 349ms (Views: 112.3ms | ActiveRecord: 107.8ms | Allocations: 15231)
+
+
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-05-30 23:30:55 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+Redirected to http://localhost:3000/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981
+Completed 302 Found in 371ms (ActiveRecord: 0.0ms | Allocations: 4132)
+
+
+Started GET "/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981" for 192.168.65.1 at 2024-05-30 23:30:55 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>["鶏もも肉: 250ｇ", "＊クレイジーソルト: 小さじ1/3～1/2", "＊カレー粉: 小さじ2", "玉ねぎ: 中1個", "パプリカ（黄・赤どちらでも）: 1/2個", "片栗粉: 適量", "サラダオイル: 適量", "◆醤油（濃口）: 小さじ2", "◆ウスターソース: 小さじ1", "◆酒: 小さじ1"]}
+Completed 200 OK in 589ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1638)
+
+
+Started GET "/recipes/new" for 192.168.65.1 at 2024-05-31 22:48:47 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 15.6ms | Allocations: 1321)
+  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 107.0ms | Allocations: 5627)
+  Rendered shared/_flash_message.html.erb (Duration: 1.8ms | Allocations: 159)
+  Rendered shared/_footer.erb (Duration: 1.0ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 157.1ms | Allocations: 8782)
+Completed 200 OK in 422ms (Views: 157.0ms | ActiveRecord: 100.4ms | Allocations: 15359)
+
+
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-05-31 22:48:53 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+Redirected to http://localhost:3000/recipes/chat
+Completed 302 Found in 474ms (ActiveRecord: 0.0ms | Allocations: 4094)
+
+
+Started GET "/recipes/chat" for 192.168.65.1 at 2024-05-31 22:48:54 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+Completed 200 OK in 467ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 1636)
+
+
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-05-31 22:49:10 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+Redirected to http://localhost:3000/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981
+Completed 302 Found in 295ms (ActiveRecord: 0.0ms | Allocations: 4241)
+
+
+Started GET "/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981" for 192.168.65.1 at 2024-05-31 22:49:10 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>["鶏もも肉: 250ｇ", "＊クレイジーソルト: 小さじ1/3～1/2", "＊カレー粉: 小さじ2", "玉ねぎ: 中1個", "パプリカ（黄・赤どちらでも）: 1/2個", "片栗粉: 適量", "サラダオイル: 適量", "◆醤油（濃口）: 小さじ2", "◆ウスターソース: 小さじ1", "◆酒: 小さじ1"]}
+Completed 200 OK in 464ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 1652)
+
+
+Started GET "/recipes/new" for 192.168.65.1 at 2024-05-31 22:49:13 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1370)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 59.3ms | Allocations: 5816)
+  Rendered shared/_flash_message.html.erb (Duration: 11.9ms | Allocations: 159)
+  Rendered shared/_footer.erb (Duration: 7.4ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 145.4ms | Allocations: 9032)
+Completed 200 OK in 292ms (Views: 149.1ms | ActiveRecord: 76.8ms | Allocations: 12910)
+
+
