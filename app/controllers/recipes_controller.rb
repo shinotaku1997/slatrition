@@ -18,9 +18,10 @@ class RecipesController < ApplicationController
   end
 
   def chat
-    chat_api = OpenAi::ChatApi.new("合計カロリーのみ教えてください")
-    @response = chat_api.chat(@combined)
-    render json: { response: @response }
+    combined_text = params[:combined].join(", ")
+    chat_api = OpenAi::ChatApi.new("「あ」とだけ返してください")
+    @response = chat_api.chat(combined_text)
+    redirect_to recipes_chat_path
   end
 
   def create
@@ -38,6 +39,6 @@ class RecipesController < ApplicationController
   end
 
   def chat_params
-    params.require(:chat).permit("合計のカロリーのみ教えてください")
+    params.permit(:combined)
   end
 end

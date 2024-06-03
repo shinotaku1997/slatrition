@@ -17059,3 +17059,634 @@ Processing by RecipesController#new as HTML
 Completed 200 OK in 292ms (Views: 149.1ms | ActiveRecord: 76.8ms | Allocations: 12910)
 
 
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-06-02 22:48:18 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+Redirected to http://localhost:3000/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981
+Completed 302 Found in 542ms (ActiveRecord: 0.0ms | Allocations: 4221)
+
+
+Started GET "/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981" for 192.168.65.1 at 2024-06-02 22:48:19 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>["鶏もも肉: 250ｇ", "＊クレイジーソルト: 小さじ1/3～1/2", "＊カレー粉: 小さじ2", "玉ねぎ: 中1個", "パプリカ（黄・赤どちらでも）: 1/2個", "片栗粉: 適量", "サラダオイル: 適量", "◆醤油（濃口）: 小さじ2", "◆ウスターソース: 小さじ1", "◆酒: 小さじ1"]}
+Completed 200 OK in 586ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 1657)
+
+
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-06-02 22:58:39 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+Redirected to http://localhost:3000/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981
+Completed 302 Found in 739ms (ActiveRecord: 0.0ms | Allocations: 4236)
+
+
+Started GET "/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981" for 192.168.65.1 at 2024-06-02 22:58:41 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>["鶏もも肉: 250ｇ", "＊クレイジーソルト: 小さじ1/3～1/2", "＊カレー粉: 小さじ2", "玉ねぎ: 中1個", "パプリカ（黄・赤どちらでも）: 1/2個", "片栗粉: 適量", "サラダオイル: 適量", "◆醤油（濃口）: 小さじ2", "◆ウスターソース: 小さじ1", "◆酒: 小さじ1"]}
+Completed 200 OK in 1523ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1668)
+
+
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-06-03 12:23:42 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/result.erb within layouts/application
+  Rendered recipes/result.erb within layouts/application (Duration: 7.9ms | Allocations: 124)
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 322.3ms | Allocations: 8793)
+  Rendered shared/_flash_message.html.erb (Duration: 1.5ms | Allocations: 159)
+  Rendered shared/_footer.erb (Duration: 0.9ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 357.4ms | Allocations: 10759)
+Completed 200 OK in 750ms (Views: 279.9ms | ActiveRecord: 87.9ms | Allocations: 15638)
+
+
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-06-03 12:39:14 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/result.erb within layouts/application
+  Rendered recipes/result.erb within layouts/application (Duration: 1.7ms | Allocations: 124)
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 166.9ms | Allocations: 8735)
+  Rendered shared/_flash_message.html.erb (Duration: 0.8ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 1.2ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 180.6ms | Allocations: 10691)
+Completed 200 OK in 574ms (Views: 121.0ms | ActiveRecord: 63.4ms | Allocations: 15579)
+
+
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-06-03 12:39:40 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+Redirected to http://localhost:3000/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981
+Completed 302 Found in 263ms (ActiveRecord: 0.0ms | Allocations: 4226)
+
+
+Started GET "/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981" for 192.168.65.1 at 2024-06-03 12:39:40 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>["鶏もも肉: 250ｇ", "＊クレイジーソルト: 小さじ1/3～1/2", "＊カレー粉: 小さじ2", "玉ねぎ: 中1個", "パプリカ（黄・赤どちらでも）: 1/2個", "片栗粉: 適量", "サラダオイル: 適量", "◆醤油（濃口）: 小さじ2", "◆ウスターソース: 小さじ1", "◆酒: 小さじ1"]}
+Completed 200 OK in 319ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 1819)
+
+
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-06-03 12:42:45 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+Redirected to http://localhost:3000/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981
+Completed 302 Found in 293ms (ActiveRecord: 0.0ms | Allocations: 4202)
+
+
+Started GET "/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981" for 192.168.65.1 at 2024-06-03 12:42:45 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>["鶏もも肉: 250ｇ", "＊クレイジーソルト: 小さじ1/3～1/2", "＊カレー粉: 小さじ2", "玉ねぎ: 中1個", "パプリカ（黄・赤どちらでも）: 1/2個", "片栗粉: 適量", "サラダオイル: 適量", "◆醤油（濃口）: 小さじ2", "◆ウスターソース: 小さじ1", "◆酒: 小さじ1"]}
+Completed 200 OK in 869ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 1908)
+
+
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-06-03 12:48:35 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+Redirected to http://localhost:3000/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981
+Completed 302 Found in 382ms (ActiveRecord: 0.0ms | Allocations: 4249)
+
+
+Started GET "/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981" for 192.168.65.1 at 2024-06-03 12:48:35 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>["鶏もも肉: 250ｇ", "＊クレイジーソルト: 小さじ1/3～1/2", "＊カレー粉: 小さじ2", "玉ねぎ: 中1個", "パプリカ（黄・赤どちらでも）: 1/2個", "片栗粉: 適量", "サラダオイル: 適量", "◆醤油（濃口）: 小さじ2", "◆ウスターソース: 小さじ1", "◆酒: 小さじ1"]}
+Redirected to http://localhost:3000/recipes/chat?response=%E4%B8%8A%E8%A8%98%E3%81%AE%E6%9D%90%E6%96%99%E3%81%8B%E3%82%89%E8%A8%88%E7%AE%97%E3%81%99%E3%82%8B%E3%81%A8%E3%80%81%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E7%B4%84675%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%99%E3%80%82
+Completed 302 Found in 1264ms (ActiveRecord: 0.0ms | Allocations: 1741)
+
+
+Started GET "/recipes/chat?response=%E4%B8%8A%E8%A8%98%E3%81%AE%E6%9D%90%E6%96%99%E3%81%8B%E3%82%89%E8%A8%88%E7%AE%97%E3%81%99%E3%82%8B%E3%81%A8%E3%80%81%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E7%B4%84675%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%99%E3%80%82" for 192.168.65.1 at 2024-06-03 12:48:37 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"response"=>"上記の材料から計算すると、合計カロリーは約675カロリーになります。"}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 847)
+
+
+  
+NoMethodError (undefined method `join' for nil:NilClass):
+  
+app/controllers/recipes_controller.rb:21:in `chat'
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-03 12:52:15 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1319)
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 18.5ms | Allocations: 5900)
+  Rendered shared/_flash_message.html.erb (Duration: 0.7ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 0.7ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 31.9ms | Allocations: 9052)
+Completed 200 OK in 262ms (Views: 30.5ms | ActiveRecord: 127.0ms | Allocations: 15903)
+
+
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-06-03 12:52:19 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+Redirected to http://localhost:3000/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981
+Completed 302 Found in 302ms (ActiveRecord: 0.0ms | Allocations: 4162)
+
+
+Started GET "/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981" for 192.168.65.1 at 2024-06-03 12:52:19 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>["鶏もも肉: 250ｇ", "＊クレイジーソルト: 小さじ1/3～1/2", "＊カレー粉: 小さじ2", "玉ねぎ: 中1個", "パプリカ（黄・赤どちらでも）: 1/2個", "片栗粉: 適量", "サラダオイル: 適量", "◆醤油（濃口）: 小さじ2", "◆ウスターソース: 小さじ1", "◆酒: 小さじ1"]}
+Redirected to http://localhost:3000/recipes/chat?combined=%E3%81%93%E3%81%AE%E3%83%AC%E3%82%B7%E3%83%94%E5%85%A8%E4%BD%93%E3%81%AE%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E7%B4%84770kcal%E3%81%A7%E3%81%99%E3%80%82
+Completed 302 Found in 1318ms (ActiveRecord: 0.0ms | Allocations: 1752)
+
+
+Started GET "/recipes/chat?combined=%E3%81%93%E3%81%AE%E3%83%AC%E3%82%B7%E3%83%94%E5%85%A8%E4%BD%93%E3%81%AE%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E7%B4%84770kcal%E3%81%A7%E3%81%99%E3%80%82" for 192.168.65.1 at 2024-06-03 12:52:20 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"このレシピ全体の合計カロリーは約770kcalです。"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 843)
+
+
+  
+NoMethodError (undefined method `join' for "このレシピ全体の合計カロリーは約770kcalです。":String):
+  
+app/controllers/recipes_controller.rb:21:in `chat'
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-03 22:50:20 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1319)
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 39.6ms | Allocations: 5606)
+  Rendered shared/_flash_message.html.erb (Duration: 1.0ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 0.7ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 87.9ms | Allocations: 8757)
+Completed 200 OK in 325ms (Views: 85.5ms | ActiveRecord: 85.1ms | Allocations: 15333)
+
+
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-06-03 22:50:26 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+Redirected to http://localhost:3000/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981
+Completed 302 Found in 413ms (ActiveRecord: 0.0ms | Allocations: 4135)
+
+
+Started GET "/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981" for 192.168.65.1 at 2024-06-03 22:50:26 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>["鶏もも肉: 250ｇ", "＊クレイジーソルト: 小さじ1/3～1/2", "＊カレー粉: 小さじ2", "玉ねぎ: 中1個", "パプリカ（黄・赤どちらでも）: 1/2個", "片栗粉: 適量", "サラダオイル: 適量", "◆醤油（濃口）: 小さじ2", "◆ウスターソース: 小さじ1", "◆酒: 小さじ1"]}
+Redirected to http://localhost:3000/recipes/chat?combined=%E3%81%93%E3%81%A1%E3%82%89%E3%81%AE%E3%83%AC%E3%82%B7%E3%83%94%E3%81%AE%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E3%81%8A%E3%82%88%E3%81%9D750kcal%E3%81%A7%E3%81%99%E3%80%82
+Completed 302 Found in 1367ms (ActiveRecord: 0.0ms | Allocations: 1754)
+
+
+Started GET "/recipes/chat?combined=%E3%81%93%E3%81%A1%E3%82%89%E3%81%AE%E3%83%AC%E3%82%B7%E3%83%94%E3%81%AE%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E3%81%8A%E3%82%88%E3%81%9D750kcal%E3%81%A7%E3%81%99%E3%80%82" for 192.168.65.1 at 2024-06-03 22:50:28 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"こちらのレシピの合計カロリーはおよそ750kcalです。"}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 843)
+
+
+  
+NoMethodError (undefined method `join' for "こちらのレシピの合計カロリーはおよそ750kcalです。":String):
+  
+app/controllers/recipes_controller.rb:26:in `chat'
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-03 22:51:13 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1319)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 25.5ms | Allocations: 5816)
+  Rendered shared/_flash_message.html.erb (Duration: 1.0ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 1.0ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 57.4ms | Allocations: 8952)
+Completed 200 OK in 182ms (Views: 57.5ms | ActiveRecord: 98.3ms | Allocations: 12988)
+
+
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-06-03 22:51:17 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+Redirected to http://localhost:3000/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981
+Completed 302 Found in 446ms (ActiveRecord: 0.0ms | Allocations: 4134)
+
+
+Started GET "/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981" for 192.168.65.1 at 2024-06-03 22:51:18 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>["鶏もも肉: 250ｇ", "＊クレイジーソルト: 小さじ1/3～1/2", "＊カレー粉: 小さじ2", "玉ねぎ: 中1個", "パプリカ（黄・赤どちらでも）: 1/2個", "片栗粉: 適量", "サラダオイル: 適量", "◆醤油（濃口）: 小さじ2", "◆ウスターソース: 小さじ1", "◆酒: 小さじ1"]}
+Redirected to http://localhost:3000/recipes/chat?combined=%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E3%81%8A%E3%81%8A%E3%82%88%E3%81%9D600kcal%E7%A8%8B%E5%BA%A6%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%99%E3%80%82
+Completed 302 Found in 1176ms (ActiveRecord: 0.0ms | Allocations: 1753)
+
+
+Started GET "/recipes/chat?combined=%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E3%81%8A%E3%81%8A%E3%82%88%E3%81%9D600kcal%E7%A8%8B%E5%BA%A6%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%99%E3%80%82" for 192.168.65.1 at 2024-06-03 22:51:19 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"合計カロリーはおおよそ600kcal程度になります。"}
+Redirected to http://localhost:3000/recipes/chat?combined=%E7%90%86%E8%A7%A3%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82600kcal%E3%81%BB%E3%81%A9%E3%81%A7%E3%81%99%E3%80%82%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86%E3%81%94%E3%81%96%E3%81%84%E3%81%BE%E3%81%99%E3%80%82
+Completed 302 Found in 1419ms (ActiveRecord: 0.0ms | Allocations: 1631)
+
+
+Started GET "/recipes/chat?combined=%E7%90%86%E8%A7%A3%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82600kcal%E3%81%BB%E3%81%A9%E3%81%A7%E3%81%99%E3%80%82%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86%E3%81%94%E3%81%96%E3%81%84%E3%81%BE%E3%81%99%E3%80%82" for 192.168.65.1 at 2024-06-03 22:51:21 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"理解しました。600kcalほどです。ありがとうございます。"}
+Redirected to http://localhost:3000/recipes/chat?combined=%E3%81%A9%E3%81%86%E3%81%84%E3%81%9F%E3%81%97%E3%81%BE%E3%81%97%E3%81%A6%E3%80%82%E4%BB%96%E3%81%AB%E8%B3%AA%E5%95%8F%E3%81%8C%E3%81%82%E3%82%8C%E3%81%B0%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82
+Completed 302 Found in 1267ms (ActiveRecord: 0.0ms | Allocations: 1613)
+
+
+Started GET "/recipes/chat?combined=%E3%81%A9%E3%81%86%E3%81%84%E3%81%9F%E3%81%97%E3%81%BE%E3%81%97%E3%81%A6%E3%80%82%E4%BB%96%E3%81%AB%E8%B3%AA%E5%95%8F%E3%81%8C%E3%81%82%E3%82%8C%E3%81%B0%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82" for 192.168.65.1 at 2024-06-03 22:51:22 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"どういたしまして。他に質問があればお知らせください。"}
+Redirected to http://localhost:3000/recipes/chat?combined=%E6%89%BF%E7%9F%A5%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AE%E3%81%BF%E6%95%99%E3%81%88%E3%81%A6%E3%81%84%E3%81%9F%E3%81%A0%E3%81%91%E3%81%BE%E3%81%99%E3%81%8B%EF%BC%9F
+Completed 302 Found in 1079ms (ActiveRecord: 0.0ms | Allocations: 1613)
+
+
+Started GET "/recipes/chat?combined=%E6%89%BF%E7%9F%A5%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AE%E3%81%BF%E6%95%99%E3%81%88%E3%81%A6%E3%81%84%E3%81%9F%E3%81%A0%E3%81%91%E3%81%BE%E3%81%99%E3%81%8B%EF%BC%9F" for 192.168.65.1 at 2024-06-03 22:51:23 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"承知しました。合計カロリーのみ教えていただけますか？"}
+Redirected to http://localhost:3000/recipes/chat?combined=%E7%94%B3%E3%81%97%E8%A8%B3%E3%81%94%E3%81%96%E3%81%84%E3%81%BE%E3%81%9B%E3%82%93%E3%81%8C%E3%80%81%E5%85%B7%E4%BD%93%E7%9A%84%E3%81%AA%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E6%8F%90%E4%BE%9B%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AB%E3%81%AF%E3%80%81%E6%91%82%E5%8F%96%E3%81%97%E3%81%9F%E9%A3%9F%E5%93%81%E3%82%84%E9%A3%B2%E3%81%BF%E7%89%A9%E3%81%AE%E3%83%AA%E3%82%B9%E3%83%88%E3%81%8C%E5%BF%85%E8%A6%81%E3%81%A7%E3%81%99%E3%80%82%E3%81%8A%E6%89%8B%E6%95%B0%E3%81%A7%E3%81%99%E3%81%8C%E3%80%81%E5%85%B7%E4%BD%93%E7%9A%84%E3%81%AA%E6%83%85%E5%A0%B1%E3%82%92%E6%8F%90%E4%BE%9B%E3%81%84%E3%81%9F%E3%81%A0%E3%81%91%E3%82%8B%E3%81%A8%E3%80%81%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%A8%88%E7%AE%97%E3%81%97%E3%81%A6%E3%81%8A%E4%BC%9D%E3%81%88%E3%81%84%E3%81%9F%E3%81%97%E3%81%BE%E3%81%99%E3%80%82
+Completed 302 Found in 2571ms (ActiveRecord: 0.0ms | Allocations: 1616)
+
+
+Started GET "/recipes/chat?combined=%E7%94%B3%E3%81%97%E8%A8%B3%E3%81%94%E3%81%96%E3%81%84%E3%81%BE%E3%81%9B%E3%82%93%E3%81%8C%E3%80%81%E5%85%B7%E4%BD%93%E7%9A%84%E3%81%AA%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E6%8F%90%E4%BE%9B%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AB%E3%81%AF%E3%80%81%E6%91%82%E5%8F%96%E3%81%97%E3%81%9F%E9%A3%9F%E5%93%81%E3%82%84%E9%A3%B2%E3%81%BF%E7%89%A9%E3%81%AE%E3%83%AA%E3%82%B9%E3%83%88%E3%81%8C%E5%BF%85%E8%A6%81%E3%81%A7%E3%81%99%E3%80%82%E3%81%8A%E6%89%8B%E6%95%B0%E3%81%A7%E3%81%99%E3%81%8C%E3%80%81%E5%85%B7%E4%BD%93%E7%9A%84%E3%81%AA%E6%83%85%E5%A0%B1%E3%82%92%E6%8F%90%E4%BE%9B%E3%81%84%E3%81%9F%E3%81%A0%E3%81%91%E3%82%8B%E3%81%A8%E3%80%81%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%A8%88%E7%AE%97%E3%81%97%E3%81%A6%E3%81%8A%E4%BC%9D%E3%81%88%E3%81%84%E3%81%9F%E3%81%97%E3%81%BE%E3%81%99%E3%80%82" for 192.168.65.1 at 2024-06-03 22:51:26 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"申し訳ございませんが、具体的な合計カロリーを提供するためには、摂取した食品や飲み物のリストが必要です。お手数ですが、具体的な情報を提供いただけると、合計カロリーを計算してお伝えいたします。"}
+Redirected to http://localhost:3000/recipes/chat?combined=%E5%A4%A7%E5%A4%89%E5%A4%B1%E7%A4%BC%E3%81%84%E3%81%9F%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%E3%83%AA%E3%82%B9%E3%83%88%E3%82%92%E6%8F%90%E4%BE%9B%E3%81%97%E3%81%A6%E3%81%84%E3%81%9F%E3%81%A0%E3%81%8B%E3%81%AA%E3%81%8F%E3%81%A6%E3%82%82%E6%A7%8B%E3%81%84%E3%81%BE%E3%81%9B%E3%82%93%E3%80%82%E4%B8%80%E8%88%AC%E7%9A%84%E3%81%AA1%E6%97%A5%E3%81%AE%E7%9B%AE%E5%AE%89%E3%81%A8%E3%81%97%E3%81%A6%E3%80%81%E6%88%90%E4%BA%BA%E7%94%B7%E6%80%A7%E3%81%AE%E5%A0%B4%E5%90%88%E7%B4%842%2C000%E3%80%9C2%2C500kcal%E3%80%81%E6%88%90%E4%BA%BA%E5%A5%B3%E6%80%A7%E3%81%AE%E5%A0%B4%E5%90%88%E7%B4%841%2C800%E3%80%9C2%2C200kcal%E3%81%8C%E6%8E%A8%E5%A5%A8%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82%E3%81%94%E5%8F%82%E8%80%83%E3%81%AB%E3%81%97%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82
+Completed 302 Found in 2920ms (ActiveRecord: 0.0ms | Allocations: 1616)
+
+
+Started GET "/recipes/chat?combined=%E5%A4%A7%E5%A4%89%E5%A4%B1%E7%A4%BC%E3%81%84%E3%81%9F%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%E3%83%AA%E3%82%B9%E3%83%88%E3%82%92%E6%8F%90%E4%BE%9B%E3%81%97%E3%81%A6%E3%81%84%E3%81%9F%E3%81%A0%E3%81%8B%E3%81%AA%E3%81%8F%E3%81%A6%E3%82%82%E6%A7%8B%E3%81%84%E3%81%BE%E3%81%9B%E3%82%93%E3%80%82%E4%B8%80%E8%88%AC%E7%9A%84%E3%81%AA1%E6%97%A5%E3%81%AE%E7%9B%AE%E5%AE%89%E3%81%A8%E3%81%97%E3%81%A6%E3%80%81%E6%88%90%E4%BA%BA%E7%94%B7%E6%80%A7%E3%81%AE%E5%A0%B4%E5%90%88%E7%B4%842%2C000%E3%80%9C2%2C500kcal%E3%80%81%E6%88%90%E4%BA%BA%E5%A5%B3%E6%80%A7%E3%81%AE%E5%A0%B4%E5%90%88%E7%B4%841%2C800%E3%80%9C2%2C200kcal%E3%81%8C%E6%8E%A8%E5%A5%A8%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82%E3%81%94%E5%8F%82%E8%80%83%E3%81%AB%E3%81%97%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82" for 192.168.65.1 at 2024-06-03 22:51:29 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"大変失礼いたしました。リストを提供していただかなくても構いません。一般的な1日の目安として、成人男性の場合約2,000〜2,500kcal、成人女性の場合約1,800〜2,200kcalが推奨されています。ご参考にしてください。"}
+Redirected to http://localhost:3000/recipes/chat?combined=%E5%A4%A7%E5%A4%89%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86%E3%81%94%E3%81%96%E3%81%84%E3%81%BE%E3%81%99%E3%80%82%E4%BA%86%E8%A7%A3%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%E6%88%90%E4%BA%BA%E7%94%B7%E6%80%A7%E3%81%AE%E5%A0%B4%E5%90%88%E7%B4%842%2C000%E3%80%9C2%2C500kcal%E3%80%81%E6%88%90%E4%BA%BA%E5%A5%B3%E6%80%A7%E3%81%AE%E5%A0%B4%E5%90%88%E7%B4%841%2C800%E3%80%9C2%2C200kcal%E3%81%8C1%E6%97%A5%E3%81%AE%E7%9B%AE%E5%AE%89%E3%81%A0%E3%81%A8%E3%81%84%E3%81%86%E3%81%93%E3%81%A8%E3%81%A7%E3%81%99%E3%81%AD%E3%80%82%E8%A6%9A%E3%81%88%E3%81%A6%E3%81%8A%E3%81%8D%E3%81%BE%E3%81%99%E3%80%82
+Completed 302 Found in 2297ms (ActiveRecord: 0.0ms | Allocations: 1618)
+
+
+Started GET "/recipes/chat?combined=%E5%A4%A7%E5%A4%89%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86%E3%81%94%E3%81%96%E3%81%84%E3%81%BE%E3%81%99%E3%80%82%E4%BA%86%E8%A7%A3%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%E6%88%90%E4%BA%BA%E7%94%B7%E6%80%A7%E3%81%AE%E5%A0%B4%E5%90%88%E7%B4%842%2C000%E3%80%9C2%2C500kcal%E3%80%81%E6%88%90%E4%BA%BA%E5%A5%B3%E6%80%A7%E3%81%AE%E5%A0%B4%E5%90%88%E7%B4%841%2C800%E3%80%9C2%2C200kcal%E3%81%8C1%E6%97%A5%E3%81%AE%E7%9B%AE%E5%AE%89%E3%81%A0%E3%81%A8%E3%81%84%E3%81%86%E3%81%93%E3%81%A8%E3%81%A7%E3%81%99%E3%81%AD%E3%80%82%E8%A6%9A%E3%81%88%E3%81%A6%E3%81%8A%E3%81%8D%E3%81%BE%E3%81%99%E3%80%82" for 192.168.65.1 at 2024-06-03 22:51:31 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"大変ありがとうございます。了解しました。成人男性の場合約2,000〜2,500kcal、成人女性の場合約1,800〜2,200kcalが1日の目安だということですね。覚えておきます。"}
+Redirected to http://localhost:3000/recipes/chat?combined=%E3%81%9D%E3%81%AE%E9%80%9A%E3%82%8A%E3%81%A7%E3%81%99%E3%80%82%E7%9B%AE%E5%AE%89%E3%81%A8%E3%81%97%E3%81%A6%E3%80%81%E6%88%90%E4%BA%BA%E7%94%B7%E6%80%A7%E3%81%AF1%E6%97%A5%E3%81%AB%E7%B4%842%2C000%E3%80%9C2%2C500kcal%E3%80%81%E6%88%90%E4%BA%BA%E5%A5%B3%E6%80%A7%E3%81%AF1%E6%97%A5%E3%81%AB%E7%B4%841%2C800%E3%80%9C2%2C200kcal%E3%81%AE%E6%91%82%E5%8F%96%E3%81%8C%E6%8E%A8%E5%A5%A8%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82%E3%81%9F%E3%81%A0%E3%81%97%E3%80%81%E5%80%8B%E3%80%85%E3%81%AE%E8%BA%AB%E4%BD%93%E6%B4%BB%E5%8B%95%E9%87%8F%E3%82%84%E4%BB%A3%E8%AC%9D%E7%8E%87%E3%80%81%E5%81%A5%E5%BA%B7%E7%8A%B6%E6%85%8B%E3%81%AA%E3%81%A9%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6%E9%81%A9%E5%88%87%E3%81%AA%E6%91%82%E5%8F%96%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E7%95%B0%E3%81%AA%E3%82%8B%E3%81%9F%E3%82%81%E3%80%81%E8%87%AA%E8%BA%AB%E3%81%AE%E4%BD%93%E8%AA%BF%E3%82%84%E7%9B%AE%E6%A8%99%E3%81%AB%E5%90%88%E3%82%8F%E3%81%9B%E3%81%A6%E9%81%A9%E5%88%87%E3%81%AA%E6%91%82%E5%8F%96%E9%87%8F%E3%82%92%E8%80%83%E3%81%88%E3%82%8B%E3%81%93%E3%81%A8%E3%81%8C%E5%A4%A7%E5%88%87%E3%81%A7%E3%81%99%E3%80%82
+Completed 302 Found in 3803ms (ActiveRecord: 0.0ms | Allocations: 1640)
+
+
+Started GET "/recipes/chat?combined=%E3%81%9D%E3%81%AE%E9%80%9A%E3%82%8A%E3%81%A7%E3%81%99%E3%80%82%E7%9B%AE%E5%AE%89%E3%81%A8%E3%81%97%E3%81%A6%E3%80%81%E6%88%90%E4%BA%BA%E7%94%B7%E6%80%A7%E3%81%AF1%E6%97%A5%E3%81%AB%E7%B4%842%2C000%E3%80%9C2%2C500kcal%E3%80%81%E6%88%90%E4%BA%BA%E5%A5%B3%E6%80%A7%E3%81%AF1%E6%97%A5%E3%81%AB%E7%B4%841%2C800%E3%80%9C2%2C200kcal%E3%81%AE%E6%91%82%E5%8F%96%E3%81%8C%E6%8E%A8%E5%A5%A8%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82%E3%81%9F%E3%81%A0%E3%81%97%E3%80%81%E5%80%8B%E3%80%85%E3%81%AE%E8%BA%AB%E4%BD%93%E6%B4%BB%E5%8B%95%E9%87%8F%E3%82%84%E4%BB%A3%E8%AC%9D%E7%8E%87%E3%80%81%E5%81%A5%E5%BA%B7%E7%8A%B6%E6%85%8B%E3%81%AA%E3%81%A9%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6%E9%81%A9%E5%88%87%E3%81%AA%E6%91%82%E5%8F%96%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E7%95%B0%E3%81%AA%E3%82%8B%E3%81%9F%E3%82%81%E3%80%81%E8%87%AA%E8%BA%AB%E3%81%AE%E4%BD%93%E8%AA%BF%E3%82%84%E7%9B%AE%E6%A8%99%E3%81%AB%E5%90%88%E3%82%8F%E3%81%9B%E3%81%A6%E9%81%A9%E5%88%87%E3%81%AA%E6%91%82%E5%8F%96%E9%87%8F%E3%82%92%E8%80%83%E3%81%88%E3%82%8B%E3%81%93%E3%81%A8%E3%81%8C%E5%A4%A7%E5%88%87%E3%81%A7%E3%81%99%E3%80%82" for 192.168.65.1 at 2024-06-03 22:51:35 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"その通りです。目安として、成人男性は1日に約2,000〜2,500kcal、成人女性は1日に約1,800〜2,200kcalの摂取が推奨されています。ただし、個々の身体活動量や代謝率、健康状態などによって適切な摂取カロリーは異なるため、自身の体調や目標に合わせて適切な摂取量を考えることが大切です。"}
+Redirected to http://localhost:3000/recipes/chat?combined=%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AE%E7%9B%AE%E5%AE%89%E3%82%92%E3%81%8A%E4%BC%9D%E3%81%88%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AF%E7%90%86%E8%A7%A3%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%E3%81%9D%E3%82%8C%E3%81%9E%E3%82%8C%E3%81%AE%E9%A3%9F%E4%BA%8B%E3%82%84%E3%82%B9%E3%83%8A%E3%83%83%E3%82%AF%E3%81%AE%E5%85%B7%E4%BD%93%E7%9A%84%E3%81%AA%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E6%83%85%E5%A0%B1%E3%82%84%E3%83%90%E3%83%A9%E3%83%B3%E3%82%B9%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E8%A9%B3%E7%B4%B0%E3%82%92%E7%9F%A5%E3%82%8A%E3%81%9F%E3%81%84%E5%A0%B4%E5%90%88%E3%81%AF%E3%80%81%E3%81%8A%E6%B0%97%E8%BB%BD%E3%81%AB%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82%E3%81%9D%E3%82%8C%E3%81%AB%E5%BF%9C%E3%81%98%E3%81%A6%E3%81%8A%E6%89%8B%E4%BC%9D%E3%81%84%E3%81%95%E3%81%9B%E3%81%A6%E3%81%84%E3%81%9F%E3%81%A0%E3%81%8D%E3%81%BE%E3%81%99%E3%80%82
+Completed 302 Found in 2788ms (ActiveRecord: 0.0ms | Allocations: 1616)
+
+
+Started GET "/recipes/chat?combined=%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AE%E7%9B%AE%E5%AE%89%E3%82%92%E3%81%8A%E4%BC%9D%E3%81%88%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AF%E7%90%86%E8%A7%A3%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%E3%81%9D%E3%82%8C%E3%81%9E%E3%82%8C%E3%81%AE%E9%A3%9F%E4%BA%8B%E3%82%84%E3%82%B9%E3%83%8A%E3%83%83%E3%82%AF%E3%81%AE%E5%85%B7%E4%BD%93%E7%9A%84%E3%81%AA%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E6%83%85%E5%A0%B1%E3%82%84%E3%83%90%E3%83%A9%E3%83%B3%E3%82%B9%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E8%A9%B3%E7%B4%B0%E3%82%92%E7%9F%A5%E3%82%8A%E3%81%9F%E3%81%84%E5%A0%B4%E5%90%88%E3%81%AF%E3%80%81%E3%81%8A%E6%B0%97%E8%BB%BD%E3%81%AB%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82%E3%81%9D%E3%82%8C%E3%81%AB%E5%BF%9C%E3%81%98%E3%81%A6%E3%81%8A%E6%89%8B%E4%BC%9D%E3%81%84%E3%81%95%E3%81%9B%E3%81%A6%E3%81%84%E3%81%9F%E3%81%A0%E3%81%8D%E3%81%BE%E3%81%99%E3%80%82" for 192.168.65.1 at 2024-06-03 22:51:38 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"合計カロリーの目安をお伝えすることは理解しました。それぞれの食事やスナックの具体的なカロリー情報やバランスについて詳細を知りたい場合は、お気軽にお知らせください。それに応じてお手伝いさせていただきます。"}
+Redirected to http://localhost:3000/recipes/chat?combined=%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AE%E7%9B%AE%E5%AE%89%E3%81%AF%E3%80%81%E4%B8%80%E8%88%AC%E7%9A%84%E3%81%AB1%E6%97%A5%E3%81%AE%E6%91%82%E5%8F%96%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6%E7%95%B0%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%99%E3%81%8C%E3%80%81%E4%B8%80%E8%88%AC%E7%9A%84%E3%81%AB%E3%81%AF%E6%88%90%E4%BA%BA%E7%94%B7%E6%80%A7%E3%81%8C%E7%B4%842%2C000%EF%BD%9E2%2C500kcal%E3%80%81%E6%88%90%E4%BA%BA%E5%A5%B3%E6%80%A7%E3%81%8C%E7%B4%841%2C800%EF%BD%9E2%2C200kcal%E3%81%8C%E6%8E%A8%E5%A5%A8%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82%E3%81%9F%E3%81%A0%E3%81%97%E3%80%81%E5%80%8B%E3%80%85%E3%81%AE%E8%BA%AB%E4%BD%93%E7%8A%B6%E6%B3%81%E3%82%84%E7%94%9F%E6%B4%BB%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6%E9%81%A9%E5%88%87%E3%81%AA%E6%91%82%E5%8F%96%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E7%95%B0%E3%81%AA%E3%82%8B%E3%81%9F%E3%82%81%E3%80%81%E8%A9%B3%E7%B4%B0%E3%81%AA%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E7%9B%AE%E6%A8%99%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AB%E3%81%AF%E3%80%81%E6%A0%84%E9%A4%8A%E5%A3%AB%E3%82%84%E5%8C%BB%E5%B8%AB%E3%81%A8%E7%9B%B8%E8%AB%87%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%82%92%E3%81%8A%E5%8B%A7%E3%82%81%E3%81%97%E3%81%BE%E3%81%99%E3%80%82
+Completed 302 Found in 4125ms (ActiveRecord: 0.0ms | Allocations: 1620)
+
+
+Started GET "/recipes/chat?combined=%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AE%E7%9B%AE%E5%AE%89%E3%81%AF%E3%80%81%E4%B8%80%E8%88%AC%E7%9A%84%E3%81%AB1%E6%97%A5%E3%81%AE%E6%91%82%E5%8F%96%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6%E7%95%B0%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%99%E3%81%8C%E3%80%81%E4%B8%80%E8%88%AC%E7%9A%84%E3%81%AB%E3%81%AF%E6%88%90%E4%BA%BA%E7%94%B7%E6%80%A7%E3%81%8C%E7%B4%842%2C000%EF%BD%9E2%2C500kcal%E3%80%81%E6%88%90%E4%BA%BA%E5%A5%B3%E6%80%A7%E3%81%8C%E7%B4%841%2C800%EF%BD%9E2%2C200kcal%E3%81%8C%E6%8E%A8%E5%A5%A8%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82%E3%81%9F%E3%81%A0%E3%81%97%E3%80%81%E5%80%8B%E3%80%85%E3%81%AE%E8%BA%AB%E4%BD%93%E7%8A%B6%E6%B3%81%E3%82%84%E7%94%9F%E6%B4%BB%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6%E9%81%A9%E5%88%87%E3%81%AA%E6%91%82%E5%8F%96%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E7%95%B0%E3%81%AA%E3%82%8B%E3%81%9F%E3%82%81%E3%80%81%E8%A9%B3%E7%B4%B0%E3%81%AA%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E7%9B%AE%E6%A8%99%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AB%E3%81%AF%E3%80%81%E6%A0%84%E9%A4%8A%E5%A3%AB%E3%82%84%E5%8C%BB%E5%B8%AB%E3%81%A8%E7%9B%B8%E8%AB%87%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%82%92%E3%81%8A%E5%8B%A7%E3%82%81%E3%81%97%E3%81%BE%E3%81%99%E3%80%82" for 192.168.65.1 at 2024-06-03 22:51:42 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"合計カロリーの目安は、一般的に1日の摂取カロリーによって異なりますが、一般的には成人男性が約2,000～2,500kcal、成人女性が約1,800～2,200kcalが推奨されています。ただし、個々の身体状況や生活スタイルによって適切な摂取カロリーは異なるため、詳細なカロリー目標を設定するためには、栄養士や医師と相談することをお勧めします。"}
+Redirected to http://localhost:3000/recipes/chat?combined=%E4%B8%8A%E8%A8%98%E3%81%AE%E6%83%85%E5%A0%B1%E3%82%92%E5%85%83%E3%81%AB%E3%81%97%E3%81%A6%E3%80%81%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AE%E7%9B%AE%E5%AE%89%E3%81%AF%E4%BB%A5%E4%B8%8B%E3%81%AE%E9%80%9A%E3%82%8A%E3%81%A7%E3%81%99%EF%BC%9A%0A-+%E6%88%90%E4%BA%BA%E7%94%B7%E6%80%A7%EF%BC%9A%E7%B4%842%2C000%EF%BD%9E2%2C500kcal%0A-+%E6%88%90%E4%BA%BA%E5%A5%B3%E6%80%A7%EF%BC%9A%E7%B4%841%2C800%EF%BD%9E2%2C200kcal%0A%0A%E3%81%9F%E3%81%A0%E3%81%97%E3%80%81%E5%80%8B%E3%80%85%E3%81%AE%E8%BA%AB%E4%BD%93%E7%8A%B6%E6%B3%81%E3%82%84%E7%94%9F%E6%B4%BB%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6%E9%81%A9%E5%88%87%E3%81%AA%E6%91%82%E5%8F%96%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E7%95%B0%E3%81%AA%E3%82%8B%E3%81%9F%E3%82%81%E3%80%81%E8%A9%B3%E7%B4%B0%E3%81%AA%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E7%9B%AE%E6%A8%99%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AB%E3%81%AF%E3%80%81%E6%A0%84%E9%A4%8A%E5%A3%AB%E3%82%84%E5%8C%BB%E5%B8%AB%E3%81%A8%E7%9B%B8%E8%AB%87%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%82%92%E3%81%8A%E5%8B%A7%E3%82%81%E3%81%97%E3%81%BE%E3%81%99%E3%80%82
+Completed 302 Found in 4150ms (ActiveRecord: 0.0ms | Allocations: 1648)
+
+
+Started GET "/recipes/chat?combined=%E4%B8%8A%E8%A8%98%E3%81%AE%E6%83%85%E5%A0%B1%E3%82%92%E5%85%83%E3%81%AB%E3%81%97%E3%81%A6%E3%80%81%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AE%E7%9B%AE%E5%AE%89%E3%81%AF%E4%BB%A5%E4%B8%8B%E3%81%AE%E9%80%9A%E3%82%8A%E3%81%A7%E3%81%99%EF%BC%9A%0A-+%E6%88%90%E4%BA%BA%E7%94%B7%E6%80%A7%EF%BC%9A%E7%B4%842%2C000%EF%BD%9E2%2C500kcal%0A-+%E6%88%90%E4%BA%BA%E5%A5%B3%E6%80%A7%EF%BC%9A%E7%B4%841%2C800%EF%BD%9E2%2C200kcal%0A%0A%E3%81%9F%E3%81%A0%E3%81%97%E3%80%81%E5%80%8B%E3%80%85%E3%81%AE%E8%BA%AB%E4%BD%93%E7%8A%B6%E6%B3%81%E3%82%84%E7%94%9F%E6%B4%BB%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6%E9%81%A9%E5%88%87%E3%81%AA%E6%91%82%E5%8F%96%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E7%95%B0%E3%81%AA%E3%82%8B%E3%81%9F%E3%82%81%E3%80%81%E8%A9%B3%E7%B4%B0%E3%81%AA%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E7%9B%AE%E6%A8%99%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AB%E3%81%AF%E3%80%81%E6%A0%84%E9%A4%8A%E5%A3%AB%E3%82%84%E5%8C%BB%E5%B8%AB%E3%81%A8%E7%9B%B8%E8%AB%87%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%82%92%E3%81%8A%E5%8B%A7%E3%82%81%E3%81%97%E3%81%BE%E3%81%99%E3%80%82" for 192.168.65.1 at 2024-06-03 22:51:46 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"上記の情報を元にして、合計カロリーの目安は以下の通りです：\n- 成人男性：約2,000～2,500kcal\n- 成人女性：約1,800～2,200kcal\n\nただし、個々の身体状況や生活スタイルによって適切な摂取カロリーは異なるため、詳細なカロリー目標を設定するためには、栄養士や医師と相談することをお勧めします。"}
+Redirected to http://localhost:3000/recipes/chat?combined=%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AE%E3%81%BF%E6%8F%90%E4%BE%9B%E3%81%95%E3%81%9B%E3%81%A6%E3%81%84%E3%81%9F%E3%81%A0%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F%E3%81%8C%E3%80%81%E5%80%8B%E3%80%85%E3%81%AE%E8%BA%AB%E4%BD%93%E7%8A%B6%E6%B3%81%E3%82%84%E7%9B%AE%E6%A8%99%E3%81%AB%E5%90%88%E3%82%8F%E3%81%9B%E3%81%A6%E6%91%82%E5%8F%96%E3%81%99%E3%81%B9%E3%81%8D%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E9%87%8F%E3%81%AF%E7%95%B0%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%99%E3%81%AE%E3%81%A7%E3%80%81%E8%A9%B3%E7%B4%B0%E3%81%AA%E6%8C%87%E5%B0%8E%E3%82%92%E5%8F%97%E3%81%91%E3%82%8B%E3%81%93%E3%81%A8%E3%82%92%E3%81%8A%E5%8B%A7%E3%82%81%E3%81%97%E3%81%BE%E3%81%99%E3%80%82
+Completed 302 Found in 4233ms (ActiveRecord: 0.0ms | Allocations: 1620)
+
+
+Started GET "/recipes/chat?combined=%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AE%E3%81%BF%E6%8F%90%E4%BE%9B%E3%81%95%E3%81%9B%E3%81%A6%E3%81%84%E3%81%9F%E3%81%A0%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F%E3%81%8C%E3%80%81%E5%80%8B%E3%80%85%E3%81%AE%E8%BA%AB%E4%BD%93%E7%8A%B6%E6%B3%81%E3%82%84%E7%9B%AE%E6%A8%99%E3%81%AB%E5%90%88%E3%82%8F%E3%81%9B%E3%81%A6%E6%91%82%E5%8F%96%E3%81%99%E3%81%B9%E3%81%8D%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E9%87%8F%E3%81%AF%E7%95%B0%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%99%E3%81%AE%E3%81%A7%E3%80%81%E8%A9%B3%E7%B4%B0%E3%81%AA%E6%8C%87%E5%B0%8E%E3%82%92%E5%8F%97%E3%81%91%E3%82%8B%E3%81%93%E3%81%A8%E3%82%92%E3%81%8A%E5%8B%A7%E3%82%81%E3%81%97%E3%81%BE%E3%81%99%E3%80%82" for 192.168.65.1 at 2024-06-03 22:51:50 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"合計カロリーのみ提供させていただきましたが、個々の身体状況や目標に合わせて摂取すべきカロリー量は異なりますので、詳細な指導を受けることをお勧めします。"}
+Redirected to http://localhost:3000/recipes/chat?combined=%E4%BA%86%E8%A7%A3%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E6%8F%90%E4%BE%9B%E3%81%97%E3%81%A6%E3%81%84%E3%81%9F%E3%81%A0%E3%81%8D%E3%80%81%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86%E3%81%94%E3%81%96%E3%81%84%E3%81%BE%E3%81%99%E3%80%82
+Completed 302 Found in 1007ms (ActiveRecord: 0.0ms | Allocations: 1626)
+
+
+Started GET "/recipes/chat?combined=%E4%BA%86%E8%A7%A3%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E6%8F%90%E4%BE%9B%E3%81%97%E3%81%A6%E3%81%84%E3%81%9F%E3%81%A0%E3%81%8D%E3%80%81%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86%E3%81%94%E3%81%96%E3%81%84%E3%81%BE%E3%81%99%E3%80%82" for 192.168.65.1 at 2024-06-03 22:51:52 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"了解しました。合計カロリーを提供していただき、ありがとうございます。"}
+Redirected to http://localhost:3000/recipes/chat?combined=%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E3%80%81%E9%A3%9F%E4%BA%8B%E5%86%85%E5%AE%B9%E3%82%92%E6%8A%8A%E6%8F%A1%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E3%81%9F%E3%82%81%E6%AD%A3%E7%A2%BA%E3%81%AA%E5%80%A4%E3%82%92%E6%8F%90%E4%BE%9B%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%9B%E3%82%93%E3%80%82%E9%A3%9F%E4%BA%8B%E5%86%85%E5%AE%B9%E3%81%8C%E3%82%8F%E3%81%8B%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AF%E3%80%81%E5%85%B7%E4%BD%93%E7%9A%84%E3%81%AA%E9%A3%9F%E5%93%81%E3%82%84%E9%87%8F%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E3%81%84%E3%81%9F%E3%81%A0%E3%81%91%E3%82%8C%E3%81%B0%E3%80%81%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%A8%88%E7%AE%97%E3%81%97%E3%81%BE%E3%81%99%E3%80%82%E3%81%8A%E6%89%8B%E4%BC%9D%E3%81%84%E3%81%A7%E3%81%8D%E3%82%8B%E3%81%93%E3%81%A8%E3%81%8C%E3%81%82%E3%82%8C%E3%81%B0%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82
+Completed 302 Found in 2620ms (ActiveRecord: 0.0ms | Allocations: 1617)
+
+
+Started GET "/recipes/chat?combined=%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E3%80%81%E9%A3%9F%E4%BA%8B%E5%86%85%E5%AE%B9%E3%82%92%E6%8A%8A%E6%8F%A1%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E3%81%9F%E3%82%81%E6%AD%A3%E7%A2%BA%E3%81%AA%E5%80%A4%E3%82%92%E6%8F%90%E4%BE%9B%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%9B%E3%82%93%E3%80%82%E9%A3%9F%E4%BA%8B%E5%86%85%E5%AE%B9%E3%81%8C%E3%82%8F%E3%81%8B%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AF%E3%80%81%E5%85%B7%E4%BD%93%E7%9A%84%E3%81%AA%E9%A3%9F%E5%93%81%E3%82%84%E9%87%8F%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E3%81%84%E3%81%9F%E3%81%A0%E3%81%91%E3%82%8C%E3%81%B0%E3%80%81%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%A8%88%E7%AE%97%E3%81%97%E3%81%BE%E3%81%99%E3%80%82%E3%81%8A%E6%89%8B%E4%BC%9D%E3%81%84%E3%81%A7%E3%81%8D%E3%82%8B%E3%81%93%E3%81%A8%E3%81%8C%E3%81%82%E3%82%8C%E3%81%B0%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82" for 192.168.65.1 at 2024-06-03 22:51:54 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"合計カロリーは、食事内容を把握できないため正確な値を提供できません。食事内容がわかる場合は、具体的な食品や量を教えていただければ、合計カロリーを計算します。お手伝いできることがあればお知らせください。"}
+Redirected to http://localhost:3000/recipes/chat?combined=%E5%A4%A7%E5%A4%89%E7%94%B3%E3%81%97%E8%A8%B3%E3%81%82%E3%82%8A%E3%81%BE%E3%81%9B%E3%82%93%E3%81%8C%E3%80%81%E5%85%B7%E4%BD%93%E7%9A%84%E3%81%AA%E6%83%85%E5%A0%B1%E3%81%8C%E3%81%AA%E3%81%84%E3%81%9F%E3%82%81%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E6%8F%90%E4%BE%9B%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%8C%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%9B%E3%82%93%E3%80%82%E9%A3%9F%E4%BA%8B%E5%86%85%E5%AE%B9%E3%82%84%E9%87%8F%E3%81%AA%E3%81%A9%E3%80%81%E8%A9%B3%E7%B4%B0%E3%81%AA%E6%83%85%E5%A0%B1%E3%82%92%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%E3%81%84%E3%81%9F%E3%81%A0%E3%81%91%E3%82%8C%E3%81%B0%E3%80%81%E3%81%8A%E6%89%8B%E4%BC%9D%E3%81%84%E3%81%95%E3%81%9B%E3%81%A6%E3%81%84%E3%81%9F%E3%81%A0%E3%81%8D%E3%81%BE%E3%81%99%E3%80%82%E3%81%8A%E5%9B%B0%E3%82%8A%E3%81%AE%E3%81%93%E3%81%A8%E3%81%8C%E3%81%82%E3%82%8C%E3%81%B0%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82
+Completed 302 Found in 2381ms (ActiveRecord: 0.0ms | Allocations: 1615)
+
+
+Started GET "/recipes/chat?combined=%E5%A4%A7%E5%A4%89%E7%94%B3%E3%81%97%E8%A8%B3%E3%81%82%E3%82%8A%E3%81%BE%E3%81%9B%E3%82%93%E3%81%8C%E3%80%81%E5%85%B7%E4%BD%93%E7%9A%84%E3%81%AA%E6%83%85%E5%A0%B1%E3%81%8C%E3%81%AA%E3%81%84%E3%81%9F%E3%82%81%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E6%8F%90%E4%BE%9B%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%8C%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%9B%E3%82%93%E3%80%82%E9%A3%9F%E4%BA%8B%E5%86%85%E5%AE%B9%E3%82%84%E9%87%8F%E3%81%AA%E3%81%A9%E3%80%81%E8%A9%B3%E7%B4%B0%E3%81%AA%E6%83%85%E5%A0%B1%E3%82%92%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%E3%81%84%E3%81%9F%E3%81%A0%E3%81%91%E3%82%8C%E3%81%B0%E3%80%81%E3%81%8A%E6%89%8B%E4%BC%9D%E3%81%84%E3%81%95%E3%81%9B%E3%81%A6%E3%81%84%E3%81%9F%E3%81%A0%E3%81%8D%E3%81%BE%E3%81%99%E3%80%82%E3%81%8A%E5%9B%B0%E3%82%8A%E3%81%AE%E3%81%93%E3%81%A8%E3%81%8C%E3%81%82%E3%82%8C%E3%81%B0%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82" for 192.168.65.1 at 2024-06-03 22:51:57 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"大変申し訳ありませんが、具体的な情報がないため合計カロリーを提供することができません。食事内容や量など、詳細な情報をお知らせいただければ、お手伝いさせていただきます。お困りのことがあればお知らせください。"}
+Redirected to http://localhost:3000/recipes/chat?combined=%E5%A4%A7%E4%B8%88%E5%A4%AB%E3%81%A7%E3%81%99%E3%80%82%E7%A7%81%E3%81%8C%E3%81%8A%E6%89%8B%E4%BC%9D%E3%81%84%E3%81%A7%E3%81%8D%E3%82%8B%E3%81%93%E3%81%A8%E3%81%8C%E3%81%82%E3%82%8C%E3%81%B0%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%81%AD%E3%80%82
+Completed 302 Found in 1149ms (ActiveRecord: 0.0ms | Allocations: 1613)
+
+
+Started GET "/recipes/chat?combined=%E5%A4%A7%E4%B8%88%E5%A4%AB%E3%81%A7%E3%81%99%E3%80%82%E7%A7%81%E3%81%8C%E3%81%8A%E6%89%8B%E4%BC%9D%E3%81%84%E3%81%A7%E3%81%8D%E3%82%8B%E3%81%93%E3%81%A8%E3%81%8C%E3%81%82%E3%82%8C%E3%81%B0%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%81%AD%E3%80%82" for 192.168.65.1 at 2024-06-03 22:51:58 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"大丈夫です。私がお手伝いできることがあればお知らせくださいね。"}
+Redirected to http://localhost:3000/recipes/chat?combined=%E3%82%8F%E3%81%8B%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E3%81%8A%E4%BC%9D%E3%81%88%E3%81%84%E3%81%9F%E3%81%97%E3%81%BE%E3%81%99%E3%80%82%0A%0A%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E3%80%81%E3%81%8A%E4%BC%9D%E3%81%88%E3%81%97%E3%81%9F%E3%81%84%E3%83%AC%E3%82%B7%E3%83%94%E3%82%84%E9%A3%9F%E4%BA%8B%E5%86%85%E5%AE%B9%E3%81%8C%E3%81%82%E3%82%8C%E3%81%B0%E6%95%99%E3%81%88%E3%81%A6%E3%81%84%E3%81%9F%E3%81%A0%E3%81%91%E3%81%BE%E3%81%99%E3%81%8B%EF%BC%9F%E3%81%9D%E3%82%8C%E3%81%A8%E3%82%82%E4%B8%80%E8%88%AC%E7%9A%84%E3%81%AA%E9%A3%9F%E4%BA%8B%E3%81%AE%E5%B9%B3%E5%9D%87%E7%9A%84%E3%81%AA%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E3%81%8A%E7%9F%A5%E3%82%8A%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%9F%E3%81%84%E3%81%A7%E3%81%99%E3%81%8B%EF%BC%9F
+Completed 302 Found in 2684ms (ActiveRecord: 0.0ms | Allocations: 1618)
+
+
+Started GET "/recipes/chat?combined=%E3%82%8F%E3%81%8B%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E3%81%8A%E4%BC%9D%E3%81%88%E3%81%84%E3%81%9F%E3%81%97%E3%81%BE%E3%81%99%E3%80%82%0A%0A%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E3%80%81%E3%81%8A%E4%BC%9D%E3%81%88%E3%81%97%E3%81%9F%E3%81%84%E3%83%AC%E3%82%B7%E3%83%94%E3%82%84%E9%A3%9F%E4%BA%8B%E5%86%85%E5%AE%B9%E3%81%8C%E3%81%82%E3%82%8C%E3%81%B0%E6%95%99%E3%81%88%E3%81%A6%E3%81%84%E3%81%9F%E3%81%A0%E3%81%91%E3%81%BE%E3%81%99%E3%81%8B%EF%BC%9F%E3%81%9D%E3%82%8C%E3%81%A8%E3%82%82%E4%B8%80%E8%88%AC%E7%9A%84%E3%81%AA%E9%A3%9F%E4%BA%8B%E3%81%AE%E5%B9%B3%E5%9D%87%E7%9A%84%E3%81%AA%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E3%81%8A%E7%9F%A5%E3%82%8A%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%9F%E3%81%84%E3%81%A7%E3%81%99%E3%81%8B%EF%BC%9F" for 192.168.65.1 at 2024-06-03 22:52:01 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"わかりました。合計カロリーはお伝えいたします。\n\n合計カロリーは、お伝えしたいレシピや食事内容があれば教えていただけますか？それとも一般的な食事の平均的な合計カロリーをお知りになりたいですか？"}
+Redirected to http://localhost:3000/recipes/chat?combined=%E4%B8%80%E8%88%AC%E7%9A%84%E3%81%AA%E9%A3%9F%E4%BA%8B%E3%81%AE%E5%B9%B3%E5%9D%87%E7%9A%84%E3%81%AA%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E3%81%8A%E7%9F%A5%E3%82%8A%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%9F%E3%81%84%E3%81%A7%E3%81%99%E3%80%82
+Completed 302 Found in 1243ms (ActiveRecord: 0.0ms | Allocations: 1615)
+
+
+Started GET "/recipes/chat?combined=%E4%B8%80%E8%88%AC%E7%9A%84%E3%81%AA%E9%A3%9F%E4%BA%8B%E3%81%AE%E5%B9%B3%E5%9D%87%E7%9A%84%E3%81%AA%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E3%81%8A%E7%9F%A5%E3%82%8A%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%9F%E3%81%84%E3%81%A7%E3%81%99%E3%80%82" for 192.168.65.1 at 2024-06-03 22:52:02 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"一般的な食事の平均的な合計カロリーをお知りになりたいです。"}
+Redirected to http://localhost:3000/recipes/chat?combined=%E4%B8%80%E8%88%AC%E7%9A%84%E3%81%AA%E9%A3%9F%E4%BA%8B%E3%81%AE%E5%B9%B3%E5%9D%87%E7%9A%84%E3%81%AA%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E3%80%811%E6%97%A5%E3%81%AB%E7%B4%842000%E3%80%9C2500%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%A7%E3%81%99%E3%80%82%E3%81%9F%E3%81%A0%E3%81%97%E3%80%81%E5%80%8B%E4%BA%BA%E3%81%AE%E5%B9%B4%E9%BD%A2%E3%80%81%E6%80%A7%E5%88%A5%E3%80%81%E8%BA%AB%E4%BD%93%E6%B4%BB%E5%8B%95%E3%83%AC%E3%83%99%E3%83%AB%E3%81%AA%E3%81%A9%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6%E5%BF%85%E8%A6%81%E3%81%AA%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E9%87%8F%E3%81%AF%E7%95%B0%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%99%E3%81%AE%E3%81%A7%E3%80%81%E5%80%8B%E3%80%85%E3%81%AE%E7%8A%B6%E6%B3%81%E3%81%AB%E5%90%88%E3%82%8F%E3%81%9B%E3%81%A6%E9%81%A9%E5%88%87%E3%81%AA%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E6%91%82%E5%8F%96%E9%87%8F%E3%82%92%E8%AA%BF%E6%95%B4%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%8C%E9%87%8D%E8%A6%81%E3%81%A7%E3%81%99%E3%80%82
+Completed 302 Found in 2897ms (ActiveRecord: 0.0ms | Allocations: 1619)
+
+
+Started GET "/recipes/chat?combined=%E4%B8%80%E8%88%AC%E7%9A%84%E3%81%AA%E9%A3%9F%E4%BA%8B%E3%81%AE%E5%B9%B3%E5%9D%87%E7%9A%84%E3%81%AA%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E3%80%811%E6%97%A5%E3%81%AB%E7%B4%842000%E3%80%9C2500%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%A7%E3%81%99%E3%80%82%E3%81%9F%E3%81%A0%E3%81%97%E3%80%81%E5%80%8B%E4%BA%BA%E3%81%AE%E5%B9%B4%E9%BD%A2%E3%80%81%E6%80%A7%E5%88%A5%E3%80%81%E8%BA%AB%E4%BD%93%E6%B4%BB%E5%8B%95%E3%83%AC%E3%83%99%E3%83%AB%E3%81%AA%E3%81%A9%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6%E5%BF%85%E8%A6%81%E3%81%AA%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E9%87%8F%E3%81%AF%E7%95%B0%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%99%E3%81%AE%E3%81%A7%E3%80%81%E5%80%8B%E3%80%85%E3%81%AE%E7%8A%B6%E6%B3%81%E3%81%AB%E5%90%88%E3%82%8F%E3%81%9B%E3%81%A6%E9%81%A9%E5%88%87%E3%81%AA%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E6%91%82%E5%8F%96%E9%87%8F%E3%82%92%E8%AA%BF%E6%95%B4%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%8C%E9%87%8D%E8%A6%81%E3%81%A7%E3%81%99%E3%80%82" for 192.168.65.1 at 2024-06-03 22:52:05 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"一般的な食事の平均的な合計カロリーは、1日に約2000〜2500カロリーです。ただし、個人の年齢、性別、身体活動レベルなどによって必要なカロリー量は異なりますので、個々の状況に合わせて適切なカロリー摂取量を調整することが重要です。"}
+Redirected to http://localhost:3000/recipes/chat?combined=%E7%90%86%E8%A7%A3%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%E4%B8%80%E8%88%AC%E7%9A%84%E3%81%AA%E9%A3%9F%E4%BA%8B%E3%81%AE%E5%B9%B3%E5%9D%87%E7%9A%84%E3%81%AA%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%8C1%E6%97%A5%E3%81%AB%E7%B4%842000%E3%80%9C2500%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%A7%E3%81%82%E3%82%8B%E3%81%93%E3%81%A8%E3%82%92%E6%8A%8A%E6%8F%A1%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86%E3%81%94%E3%81%96%E3%81%84%E3%81%BE%E3%81%99%E3%80%82
+Completed 302 Found in 1618ms (ActiveRecord: 0.0ms | Allocations: 1614)
+
+
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-06-03 22:55:32 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+Redirected to http://localhost:3000/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981
+Completed 302 Found in 328ms (ActiveRecord: 0.0ms | Allocations: 4212)
+
+
+Started GET "/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981" for 192.168.65.1 at 2024-06-03 22:55:33 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>["鶏もも肉: 250ｇ", "＊クレイジーソルト: 小さじ1/3～1/2", "＊カレー粉: 小さじ2", "玉ねぎ: 中1個", "パプリカ（黄・赤どちらでも）: 1/2個", "片栗粉: 適量", "サラダオイル: 適量", "◆醤油（濃口）: 小さじ2", "◆ウスターソース: 小さじ1", "◆酒: 小さじ1"]}
+Redirected to http://localhost:3000/recipes/chat?combined=%E3%81%93%E3%81%AE%E3%83%AC%E3%82%B7%E3%83%94%E3%81%AE%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E3%80%81%E7%B4%84600%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%A7%E3%81%99%E3%80%82
+Completed 302 Found in 1204ms (ActiveRecord: 0.0ms | Allocations: 1747)
+
+
+Started GET "/recipes/chat?combined=%E3%81%93%E3%81%AE%E3%83%AC%E3%82%B7%E3%83%94%E3%81%AE%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E3%80%81%E7%B4%84600%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%A7%E3%81%99%E3%80%82" for 192.168.65.1 at 2024-06-03 22:55:34 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"このレシピの合計カロリーは、約600カロリーです。"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 842)
+
+
+  
+NoMethodError (undefined method `join' for "このレシピの合計カロリーは、約600カロリーです。":String):
+  
+app/controllers/recipes_controller.rb:21:in `chat'
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-03 23:03:09 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1317)
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 28.0ms | Allocations: 5899)
+  Rendered shared/_flash_message.html.erb (Duration: 0.9ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 0.9ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 57.2ms | Allocations: 9051)
+Completed 200 OK in 334ms (Views: 56.8ms | ActiveRecord: 127.2ms | Allocations: 15892)
+
+
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-06-03 23:03:14 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+Redirected to http://localhost:3000/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981
+Completed 302 Found in 634ms (ActiveRecord: 0.0ms | Allocations: 4140)
+
+
+Started GET "/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981" for 192.168.65.1 at 2024-06-03 23:03:14 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>["鶏もも肉: 250ｇ", "＊クレイジーソルト: 小さじ1/3～1/2", "＊カレー粉: 小さじ2", "玉ねぎ: 中1個", "パプリカ（黄・赤どちらでも）: 1/2個", "片栗粉: 適量", "サラダオイル: 適量", "◆醤油（濃口）: 小さじ2", "◆ウスターソース: 小さじ1", "◆酒: 小さじ1"]}
+Redirected to http://localhost:3000/recipes/chat?combined=%E3%81%93%E3%81%AE%E3%83%AC%E3%82%B7%E3%83%94%E5%85%A8%E4%BD%93%E3%81%AE%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E7%B4%84580+kcal%E3%81%A7%E3%81%99%E3%80%82
+Completed 302 Found in 2178ms (ActiveRecord: 0.0ms | Allocations: 1755)
+
+
+Started GET "/recipes/chat?combined=%E3%81%93%E3%81%AE%E3%83%AC%E3%82%B7%E3%83%94%E5%85%A8%E4%BD%93%E3%81%AE%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E7%B4%84580+kcal%E3%81%A7%E3%81%99%E3%80%82" for 192.168.65.1 at 2024-06-03 23:03:17 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"このレシピ全体の合計カロリーは約580 kcalです。"}
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms | Allocations: 843)
+
+
+  
+NoMethodError (undefined method `join' for "このレシピ全体の合計カロリーは約580 kcalです。":String):
+  
+app/controllers/recipes_controller.rb:26:in `chat'
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-03 23:03:55 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 9.1ms | Allocations: 1317)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 20.6ms | Allocations: 5816)
+  Rendered shared/_flash_message.html.erb (Duration: 1.8ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 1.3ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 50.3ms | Allocations: 8956)
+Completed 200 OK in 101ms (Views: 53.8ms | ActiveRecord: 18.4ms | Allocations: 12966)
+
+
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-06-03 23:03:59 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+Redirected to http://localhost:3000/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981
+Completed 302 Found in 365ms (ActiveRecord: 0.0ms | Allocations: 4138)
+
+
+Started GET "/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981" for 192.168.65.1 at 2024-06-03 23:03:59 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>["鶏もも肉: 250ｇ", "＊クレイジーソルト: 小さじ1/3～1/2", "＊カレー粉: 小さじ2", "玉ねぎ: 中1個", "パプリカ（黄・赤どちらでも）: 1/2個", "片栗粉: 適量", "サラダオイル: 適量", "◆醤油（濃口）: 小さじ2", "◆ウスターソース: 小さじ1", "◆酒: 小さじ1"]}
+Redirected to http://localhost:3000/recipes/chat?combined=%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E7%B4%84578+kcal%E3%81%A7%E3%81%99%E3%80%82
+Completed 302 Found in 912ms (ActiveRecord: 0.0ms | Allocations: 1749)
+
+
+Started GET "/recipes/chat?combined=%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E7%B4%84578+kcal%E3%81%A7%E3%81%99%E3%80%82" for 192.168.65.1 at 2024-06-03 23:04:00 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"合計カロリーは約578 kcalです。"}
+Redirected to http://localhost:3000/recipes/chat?combined=578+kcal%E3%81%A7%E3%81%99%E3%80%82
+Completed 302 Found in 1026ms (ActiveRecord: 0.0ms | Allocations: 1629)
+
+
+Started GET "/recipes/chat?combined=578+kcal%E3%81%A7%E3%81%99%E3%80%82" for 192.168.65.1 at 2024-06-03 23:04:01 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"578 kcalです。"}
+Redirected to http://localhost:3000/recipes/chat?combined=%E7%90%86%E8%A7%A3%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF578+kcal%E3%81%A7%E3%81%99%E3%80%82%E3%81%9D%E3%82%8C%E4%BB%A5%E5%A4%96%E3%81%AB%E5%BF%85%E8%A6%81%E3%81%AA%E6%83%85%E5%A0%B1%E3%81%8C%E3%81%82%E3%82%8C%E3%81%B0%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82
+Completed 302 Found in 1140ms (ActiveRecord: 0.0ms | Allocations: 1614)
+
+
+Started GET "/recipes/chat?combined=%E7%90%86%E8%A7%A3%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF578+kcal%E3%81%A7%E3%81%99%E3%80%82%E3%81%9D%E3%82%8C%E4%BB%A5%E5%A4%96%E3%81%AB%E5%BF%85%E8%A6%81%E3%81%AA%E6%83%85%E5%A0%B1%E3%81%8C%E3%81%82%E3%82%8C%E3%81%B0%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82" for 192.168.65.1 at 2024-06-03 23:04:02 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"理解しました。合計カロリーは578 kcalです。それ以外に必要な情報があればお知らせください。"}
+Redirected to http://localhost:3000/recipes/chat?combined=%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86%E3%81%94%E3%81%96%E3%81%84%E3%81%BE%E3%81%99%E3%80%82%E4%BB%96%E3%81%AB%E5%BF%85%E8%A6%81%E3%81%AA%E6%83%85%E5%A0%B1%E3%81%AF%E3%81%82%E3%82%8A%E3%81%BE%E3%81%9B%E3%82%93%E3%80%82%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AE%E6%83%85%E5%A0%B1%E3%82%92%E6%8F%90%E4%BE%9B%E3%81%97%E3%81%A6%E3%81%84%E3%81%9F%E3%81%A0%E3%81%8D%E3%80%81%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86%E3%81%94%E3%81%96%E3%81%84%E3%81%BE%E3%81%99%E3%80%82
+Completed 302 Found in 1349ms (ActiveRecord: 0.0ms | Allocations: 1612)
+
+
+Started GET "/recipes/chat?combined=%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86%E3%81%94%E3%81%96%E3%81%84%E3%81%BE%E3%81%99%E3%80%82%E4%BB%96%E3%81%AB%E5%BF%85%E8%A6%81%E3%81%AA%E6%83%85%E5%A0%B1%E3%81%AF%E3%81%82%E3%82%8A%E3%81%BE%E3%81%9B%E3%82%93%E3%80%82%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AE%E6%83%85%E5%A0%B1%E3%82%92%E6%8F%90%E4%BE%9B%E3%81%97%E3%81%A6%E3%81%84%E3%81%9F%E3%81%A0%E3%81%8D%E3%80%81%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86%E3%81%94%E3%81%96%E3%81%84%E3%81%BE%E3%81%99%E3%80%82" for 192.168.65.1 at 2024-06-03 23:04:04 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"ありがとうございます。他に必要な情報はありません。合計カロリーの情報を提供していただき、ありがとうございます。"}
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-03 23:04:04 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1146)
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 10.2ms | Allocations: 507)
+  Rendered shared/_flash_message.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered shared/_footer.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 2654)
+Completed 200 OK in 47ms (Views: 27.1ms | ActiveRecord: 3.2ms | Allocations: 3256)
+
+
+Redirected to http://localhost:3000/recipes/chat?combined=%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E3%81%8A%E4%BC%9D%E3%81%88%E3%81%84%E3%81%9F%E3%81%97%E3%81%BE%E3%81%9B%E3%82%93%E3%80%82%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E6%83%85%E5%A0%B1%E3%81%8C%E5%BF%85%E8%A6%81%E3%81%A7%E3%81%97%E3%81%9F%E3%82%89%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82%E3%81%9D%E3%82%8C%E3%81%A7%E3%81%AF%E3%80%81%E4%BB%96%E3%81%AB%E4%BD%95%E3%81%8B%E3%81%8A%E6%89%8B%E4%BC%9D%E3%81%84%E3%81%A7%E3%81%8D%E3%82%8B%E3%81%93%E3%81%A8%E3%81%8C%E3%81%82%E3%82%8C%E3%81%B0%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82
+Completed 302 Found in 2161ms (ActiveRecord: 0.0ms | Allocations: 7014)
+
+
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-06-03 23:05:16 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+Redirected to http://localhost:3000/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981
+Completed 302 Found in 467ms (ActiveRecord: 0.0ms | Allocations: 4240)
+
+
+Started GET "/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981" for 192.168.65.1 at 2024-06-03 23:05:17 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>["鶏もも肉: 250ｇ", "＊クレイジーソルト: 小さじ1/3～1/2", "＊カレー粉: 小さじ2", "玉ねぎ: 中1個", "パプリカ（黄・赤どちらでも）: 1/2個", "片栗粉: 適量", "サラダオイル: 適量", "◆醤油（濃口）: 小さじ2", "◆ウスターソース: 小さじ1", "◆酒: 小さじ1"]}
+Redirected to http://localhost:3000/recipes/chat?combined=%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E7%B4%84620+kcal%E3%81%A7%E3%81%99%E3%80%82
+Completed 302 Found in 1033ms (ActiveRecord: 0.0ms | Allocations: 1760)
+
+
+Started GET "/recipes/chat?combined=%E5%90%88%E8%A8%88%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%81%AF%E7%B4%84620+kcal%E3%81%A7%E3%81%99%E3%80%82" for 192.168.65.1 at 2024-06-03 23:05:18 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>"合計カロリーは約620 kcalです。"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 842)
+
+
+  
+NoMethodError (undefined method `join' for "合計カロリーは約620 kcalです。":String):
+  
+app/controllers/recipes_controller.rb:21:in `chat'
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-03 23:06:27 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1321)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 18.9ms | Allocations: 5817)
+  Rendered shared/_flash_message.html.erb (Duration: 0.8ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 0.7ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 35.1ms | Allocations: 8977)
+Completed 200 OK in 98ms (Views: 35.4ms | ActiveRecord: 24.4ms | Allocations: 13000)
+
+
+Started GET "/recipes/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170&commit=%E3%82%AB%E3%83%AD%E3%83%AA%E3%83%BC%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B" for 192.168.65.1 at 2024-06-03 23:06:31 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as HTML
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "commit"=>"カロリーを調べる"}
+Redirected to http://localhost:3000/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981
+Completed 302 Found in 371ms (ActiveRecord: 0.0ms | Allocations: 4193)
+
+
+Started GET "/recipes/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981" for 192.168.65.1 at 2024-06-03 23:06:32 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+  Parameters: {"combined"=>["鶏もも肉: 250ｇ", "＊クレイジーソルト: 小さじ1/3～1/2", "＊カレー粉: 小さじ2", "玉ねぎ: 中1個", "パプリカ（黄・赤どちらでも）: 1/2個", "片栗粉: 適量", "サラダオイル: 適量", "◆醤油（濃口）: 小さじ2", "◆ウスターソース: 小さじ1", "◆酒: 小さじ1"]}
+Redirected to http://localhost:3000/recipes/chat
+Completed 302 Found in 1000ms (ActiveRecord: 0.0ms | Allocations: 1726)
+
+
+Started GET "/recipes/chat" for 192.168.65.1 at 2024-06-03 23:06:33 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 842)
+
+
+  
+NoMethodError (undefined method `join' for nil:NilClass):
+  
+app/controllers/recipes_controller.rb:21:in `chat'
+Started GET "/" for 192.168.65.1 at 2024-06-03 23:06:51 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StracticPagesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stractic_pages/top.html.erb within layouts/application
+  Rendered stractic_pages/top.html.erb within layouts/application (Duration: 2.6ms | Allocations: 97)
+  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 126.8ms | Allocations: 529)
+  Rendered shared/_flash_message.html.erb (Duration: 0.2ms | Allocations: 18)
+  Rendered shared/_footer.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 173.7ms | Allocations: 1660)
+Completed 200 OK in 187ms (Views: 171.6ms | ActiveRecord: 5.5ms | Allocations: 2503)
+
+
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-03 23:06:58 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 94.9ms | Allocations: 1146)
+  [1m[36mUser Load (14.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 27.9ms | Allocations: 507)
+  Rendered shared/_flash_message.html.erb (Duration: 0.3ms | Allocations: 17)
+  Rendered shared/_footer.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 144.3ms | Allocations: 2660)
+Completed 200 OK in 353ms (Views: 135.9ms | ActiveRecord: 13.9ms | Allocations: 3263)
+
+

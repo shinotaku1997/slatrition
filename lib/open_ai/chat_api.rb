@@ -20,27 +20,25 @@ module OpenAi
   
     def chat(content)
       @histories.push({ role: "user", content: content })
-  
+    
       conn = Faraday.new(url: @base_url) do |faraday|
         faraday.request :json
         faraday.response :json, content_type: /\bjson$/
         faraday.adapter Faraday.default_adapter
       end
-  
+    
       payload = {
         model: "gpt-3.5-turbo",
         max_tokens: 512,
         temperature: 0.9,
         messages: @histories,
       }
-  
+    
       response = conn.post do |req|
         req.headers = get_api_headers
         req.body = payload.to_json
       end
-      
-      puts response.body
-
+    
       if response.success?
         message = response.body["choices"][0]["message"]
         @histories.push(message)
@@ -49,6 +47,6 @@ module OpenAi
         puts "Error: #{response.status} - #{response.body}"
         nil
       end
-    end
+    end    
   end
 end  
