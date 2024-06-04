@@ -13,6 +13,15 @@ class RecipesController < ApplicationController
     page = agent.get(@individual_id)
     @ingredients = page.search(".name").map(&:text)
     @amounts = page.search(".amount").map(&:text)
+    @combined = @ingredients.zip(@amounts).map{ |pair| pair.join(": ") }
+    redirect_to recipes_chat_path(combined: @combined)
+  end
+
+  def chat
+    pp params[:combined]
+    combined_text = params[:combined].join(", ")
+    chat_api = OpenAi::ChatApi.new("合計カロリーのみ教えてください")
+    @combined = chat_api.chat(combined_text)
   end
 
   def create
@@ -24,10 +33,12 @@ class RecipesController < ApplicationController
     end
   end
 
-  def show; end
-
   private
   def recipe_params
     params.require(:recipe).permit(:individual_id)
+  end
+
+  def chat_params
+    params.permit(:combined)
   end
 end

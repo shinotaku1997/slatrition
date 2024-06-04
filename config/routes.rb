@@ -15,7 +15,8 @@ Rails.application.routes.draw do
     end
   end
   resources :recipes, only: %i[new create]
-   get '/recipes/result', to: 'recipes#result', as: 'recipes_result'
+  get '/recipes/result', to: 'recipes#result', as: 'recipes_result'
+  get '/recipes/chat', to: 'recipes#chat', as: 'recipes_chat'
   get 'login', to: 'user_sessions#new'
   post 'login', to: 'user_sessions#create'
   delete 'logout', to: 'user_sessions#destroy'
