@@ -24,12 +24,13 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      redirect_to new_user_body_path(@user)
+      session[:user_id] = @user.id
       flash[:success]= "アカウント登録に成功しました。"
+      redirect_to new_user_body_path(@user)
     else
+      flash[:danger]= "アカウント登録に失敗しました。"
       Rails.logger.info @user.errors.full_messages
       render :new, status: :unprocessable_entity
-      flash[:danger]= "アカウント登録に失敗しました。"
     end
   end
 
