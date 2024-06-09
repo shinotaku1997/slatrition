@@ -1,8 +1,12 @@
-<h1>レシピ</h1>
-<%= form_with url: recipes_result_path, method: :get, local: :true do |f| %>
-    <div class = "mb-3">
-    <%= f.label :individual_id, style: "display: block"%>
-    <%= f.text_field :individual_id %>
+<div class="p-3 mb-2 bg-secondary text-white">
+    <div class="mx-auto" style="width: 200px;">
+    <h1><%= t('recipes.recipe')%></h1>
+    <%= form_with url: recipes_result_path, method: :get, local: true do |f| %>
+        <div class = "mb-3">
+        <%= f.label :individual_id, t('recipes.individual_id'), style: "display: block"%>
+        <%= f.text_field :individual_id, placeholder: "URLを入力してください。" %>
+        </div>
+        <%= f.submit "カロリーを調べる" %>
+    <% end %>
     </div>
-    <%= f.submit "カロリーを調べる" %>
-<% end %>
+</div>

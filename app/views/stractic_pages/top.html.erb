@@ -1,8 +1,8 @@
 <div class="p-3 mb-2 bg-secondary text-white">
     <div class="mx-auto" style="width: 200px;">
-        <h2>説明文</h2>
+        <h2><%= t('defaults.top')%></h2>
     </div>
-    <h3>レシピの検索回数は３回までです。</h3>
+    <h3><%= t('defaults.limit') %></h3>
     <div class="mx-auto" style="width: 200px;"><button>
-    <%= link_to "早速使ってみる",recipes_new_path %></button></div>
+    <%= link_to t('defaults.try_service'),recipes_new_path %></button></div>
 </div>

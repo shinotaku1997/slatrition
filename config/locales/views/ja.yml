@@ -1,0 +1,14 @@
+ja:
+  defaults:
+    top: "説明文"
+    limit: "レシピの検索回数は３回までです。"
+    try_service: "サービスを利用してみましょう！"
+  recipes: 
+    top: "説明文"
+    individual_id: "レシピサイトのURL"
+    recipe: "レシピ"
+  users:
+    name: "ユーザー名"
+    email: "メールアドレス"
+    password: "パスワード"
+    password_confirmation: "パスワード確認(2回目)"

@@ -1,7 +1,7 @@
 require 'mechanize'
 
 class RecipesController < ApplicationController
-  skip_before_action :require_login
+  before_action :require_login
 
   def new
     @recipe = Recipe.new
