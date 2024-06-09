@@ -12,8 +12,8 @@
           <%= link_to "ログアウト", logout_path, method: :delete, class: "btn btn-outline-primary mr-2", data:{turbo_method: :delete} %>
         <% else %>
           <%= link_to "ログイン", "/login", class: "btn btn-outline-primary mr-2" %>
-        <% end %>
           <%= link_to "アカウント登録",new_user_path ,class: "btn btn-outline-success" %>
+        <% end %>
         </form>
       </div>
     </div>
