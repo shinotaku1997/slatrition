@@ -20,7 +20,7 @@ class RecipesController < ApplicationController
   def chat
     pp params[:combined]
     combined_text = params[:combined].join(", ")
-    chat_api = OpenAi::ChatApi.new("合計カロリーのみ教えてください")
+    chat_api = OpenAi::ChatApi.new("合計カロリー数,PFCだけ教えて。pタグで挟んで。")
     @combined = chat_api.chat(combined_text)
   end
 
