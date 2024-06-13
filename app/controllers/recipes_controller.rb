@@ -25,7 +25,7 @@ class RecipesController < ApplicationController
   end
 
   def create
-    @recipe = Recipe.new(recipe_params)
+    @recipe = Recipe.new(@combined)
     if @recipe.save
       redirect_to recipes_result_path(individual_id: @recipe.individual_id)
     else
