@@ -7,6 +7,28 @@ class RecipesController < ApplicationController
     @recipe = Recipe.new
   end
 
+  def create
+    # ①URLを入力
+    # ②URL保存時、重複しているかどうかを確認する
+    # ③重複している場合は保存しない、DBから情報を呼び出す
+    # ④重複していない場合は保存する
+    # ⑤保存したURLを元に、材料と分量を取得する
+    # ⑥取得した材料と分量を元に、OpenAIにリクエストを送る
+    # ⑦OpenAIからのレスポンスを元に、レシピを作成する
+    # ⑧保存したURLに紐づける形で、カロリーや含有量を保存する
+    
+
+  end
+
+  private
+  def recipe_params
+    params.require(:recipe).permit(:individual_id)
+  end
+
+  def chat_params
+    params.permit(:combined)
+  end
+
   def result
     @individual_id = params[:individual_id]
     agent = Mechanize.new
@@ -22,23 +44,5 @@ class RecipesController < ApplicationController
     combined_text = params[:combined].join(", ")
     chat_api = OpenAi::ChatApi.new("合計カロリー数,PFCだけ教えて。pタグで挟んで。")
     @combined = chat_api.chat(combined_text)
-  end
-
-  def create
-    @recipe = Recipe.new(@combined)
-    if @recipe.save
-      redirect_to recipes_root_path
-    else
-      render :new
-    end
-  end
-
-  private
-  def recipe_params
-    params.require(:recipe).permit(:individual_id)
-  end
-
-  def chat_params
-    params.permit(:combined)
   end
 end
