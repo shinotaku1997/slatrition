@@ -16,7 +16,6 @@ class RecipesController < ApplicationController
     # ⑥取得した材料と分量を元に、OpenAIにリクエストを送る
     # ⑦OpenAIからのレスポンスを元に、レシピを作成する
     # ⑧保存したURLに紐づける形で、カロリーや含有量を保存する
-    
 
   end
 
