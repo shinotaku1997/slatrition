@@ -2,6 +2,7 @@ require 'mechanize'
 
 class RecipesController < ApplicationController
   before_action :require_login
+  before_action :recipe_params, only: [:create]
 
   def new
     @recipe = Recipe.new
@@ -16,6 +17,15 @@ class RecipesController < ApplicationController
     # ⑥取得した材料と分量を元に、OpenAIにリクエストを送る
     # ⑦OpenAIからのレスポンスを元に、レシピを作成する
     # ⑧保存したURLに紐づける形で、カロリーや含有量を保存する
+    @recipe = Recipe.new(recipe_params)
+    if Recipe.exists?(individual_id: @recipe.individual_id)
+      @recipe = Recipe.find_by(individual_id: @recipe.individual_id)
+      redirect_to result_recipes_path(individual_id: @recipe.individual_id)
+    elsif @recipe.save
+      redirect_to result_recipes_path(individual_id: @recipe.individual_id)
+    else 
+      render :new
+    end
 
   end
 
@@ -35,7 +45,7 @@ class RecipesController < ApplicationController
     @ingredients = page.search(".name").map(&:text)
     @amounts = page.search(".amount").map(&:text)
     @combined = @ingredients.zip(@amounts).map{ |pair| pair.join(": ") }
-    redirect_to recipes_chat_path(combined: @combined)
+    #redirect_to recipes_chat_path(combined: @combined)
   end
 
   def chat
