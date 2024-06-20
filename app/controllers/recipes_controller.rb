@@ -20,22 +20,12 @@ class RecipesController < ApplicationController
     @recipe = Recipe.new(recipe_params)
     if Recipe.exists?(individual_id: @recipe.individual_id)
       @recipe = Recipe.find_by(individual_id: @recipe.individual_id)
-      redirect_to result_recipes_path(individual_id: @recipe.individual_id)
+      redirect_to recipes_result_path(individual_id: @recipe.individual_id)
     elsif @recipe.save
-      redirect_to result_recipes_path(individual_id: @recipe.individual_id)
+      redirect_to recipes_result_path(individual_id: @recipe.individual_id)
     else 
       render :new
     end
-
-  end
-
-  private
-  def recipe_params
-    params.require(:recipe).permit(:individual_id)
-  end
-
-  def chat_params
-    params.permit(:combined)
   end
 
   def result
@@ -45,13 +35,33 @@ class RecipesController < ApplicationController
     @ingredients = page.search(".name").map(&:text)
     @amounts = page.search(".amount").map(&:text)
     @combined = @ingredients.zip(@amounts).map{ |pair| pair.join(": ") }
-    #redirect_to recipes_chat_path(combined: @combined)
+    redirect_to recipes_chat_path(combined: @combined)
   end
 
   def chat
     pp params[:combined]
     combined_text = params[:combined].join(", ")
-    chat_api = OpenAi::ChatApi.new("合計カロリー数,PFCだけ教えて。pタグで挟んで。")
+    chat_api = OpenAi::ChatApi.new("totalcalories,proteins,carbhydrates,fats,salts,fibersの数値だけ答えてください。各項目の前に[,]つけて。例: 100,200,300,400,500,600")
     @combined = chat_api.chat(combined_text)
+    @combined = @combined.split(",")
+  end
+
+  def update
+    @recipe = Recipe.find(params[:individeal_id])
+    if @recipe.update(@combined)
+      redirect_to recipes_result_path(individual_id: @recipe.individual_id )
+    else
+      render :chat
+    end
+  end
+  
+
+  private
+  def recipe_params
+    params.require(:recipe).permit(:individual_id)
+  end
+
+  def chat_params
+    params.permit(:combined)
   end
 end
