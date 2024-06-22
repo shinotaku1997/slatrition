@@ -44,11 +44,12 @@ class RecipesController < ApplicationController
     chat_api = OpenAi::ChatApi.new("totalcalories,proteins,carbhydrates,fats,salts,fibersの数値だけ答えてください。各項目の前に[,]つけて。例: 100,200,300,400,500,600")
     @combined = chat_api.chat(combined_text)
     @combined = @combined.split(",")
+    redirect_to recipes_update_path(combined: @combined)
   end
 
   def update
-    @recipe = Recipe.find(params[:individeal_id])
-    if @recipe.update(@combined)
+    @recipe = Recipe.find(params[:id])
+    if @recipe.update(calories: combined[0], proteins: combined[1], carbhydrates: combined[2], fats: combined[3], salts: combined[4], fibers: combined[5])
       redirect_to recipes_result_path(individual_id: @recipe.individual_id )
     else
       render :chat
