@@ -18,9 +18,10 @@ class RecipesController < ApplicationController
     # ⑦OpenAIからのレスポンスを元に、レシピを作成する
     # ⑧保存したURLに紐づける形で、カロリーや含有量を保存する
     @recipe = Recipe.new(recipe_params)
-    if Recipe.exists?(individual_id: @recipe.individual_id)
-      @recipe = Recipe.find_by(individual_id: @recipe.individual_id)
-      redirect_to recipes_result_path(individual_id: @recipe.individual_id)
+    existing_recipe = Recipe.find_by(individual_id: @recipe.individual_id)
+    
+    if existing_recipe
+      redirect_to recipes_result_path(individual_id: existing_recipe.individual_id)
     elsif @recipe.save
       redirect_to recipes_result_path(individual_id: @recipe.individual_id)
     else 
@@ -48,9 +49,14 @@ class RecipesController < ApplicationController
   end
 
   def update
-    @recipe = Recipe.find(individual_id: params[:individual_id])
-    @recipe.update!(calories: combined[0], proteins: combined[1], carbhydrates: combined[2], fats: combined[3], salts: combined[4], fibers: combined[5])
-    redirect_to recipes_show_path(individual_id: params[:individual_id])
+    @recipe = Recipe.find_by(individual_id: params[:individual_id])
+    if @recipe
+      @recipe.update(calories: params[:calories],proteins: params[:proteins],carbhydrates: params[:carbhydrates],fats: params[:fats],salts: params[:salts],fibers: params[:fibers])
+      redirect_to recipes_show_path(individual_id: @recipe.individual_id)
+    else
+      flash[:error] = "レシピが見つかりませんでした。"
+      redirect_to new_recipe_path
+    end
   end
   
   def details
@@ -60,9 +66,5 @@ class RecipesController < ApplicationController
   private
   def recipe_params
     params.require(:recipe).permit(:individual_id)
-  end
-
-  def chat_params
-    params.permit(:combined)
   end
 end
