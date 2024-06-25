@@ -14,10 +14,13 @@ Rails.application.routes.draw do
       resources :goals 
     end
   end
-  resources :recipes, only: %i[new create update]
-  get '/recipes/result', to: 'recipes#result', as: 'recipes_result'
-  get '/recipes/chat', to: 'recipes#chat', as: 'recipes_chat'
-  get '/recipes/details', to: 'recipes#details', as: 'recipes_details'
+  resources :recipes, only: %i[new create update show] do
+    member do
+      get 'result'
+      get 'chat'
+      get 'details'
+    end
+  end
   get 'login', to: 'user_sessions#new'
   post 'login', to: 'user_sessions#create'
   delete 'logout', to: 'user_sessions#destroy'
