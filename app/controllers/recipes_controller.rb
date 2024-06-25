@@ -9,21 +9,12 @@ class RecipesController < ApplicationController
   end
 
   def create
-    # ①URLを入力
-    # ②URL保存時、重複しているかどうかを確認する
-    # ③重複している場合は保存しない、DBから情報を呼び出す
-    # ④重複していない場合は保存する
-    # ⑤保存したURLを元に、材料と分量を取得する
-    # ⑥取得した材料と分量を元に、OpenAIにリクエストを送る
-    # ⑦OpenAIからのレスポンスを元に、レシピを作成する
-    # ⑧保存したURLに紐づける形で、カロリーや含有量を保存する
     @recipe = Recipe.new(recipe_params)
-    existing_recipe = Recipe.find_by(individual_id: @recipe.individual_id)
-    
-    if existing_recipe
-      redirect_to recipes_result_path(individual_id: existing_recipe.individual_id)
+    if Recipe.exists?(individual_id: @recipe.individual_id)
+      @recipe = Recipe.find_by(individual_id: @recipe.individual_id)
+      redirect_to result_recipe_path(id: @recipe.individual_id)
     elsif @recipe.save
-      redirect_to recipes_result_path(individual_id: @recipe.individual_id)
+      redirect_to result_recipe_path(id: @recipe.individual_id)
     else 
       render :new
     end
@@ -36,7 +27,7 @@ class RecipesController < ApplicationController
     @ingredients = page.search(".name").map(&:text)
     @amounts = page.search(".amount").map(&:text)
     @combined = @ingredients.zip(@amounts).map{ |pair| pair.join(": ") }
-    redirect_to recipes_chat_path(combined: @combined, individual_id: @individual_id)
+    redirect_to recipes_chat_path(id: @recipe.id, combined: @combined)
   end
 
   def chat
@@ -45,18 +36,19 @@ class RecipesController < ApplicationController
     chat_api = OpenAi::ChatApi.new("totalcalories,proteins,carbhydrates,fats,salts,fibersの数値だけ答えてください。各項目の前に[,]つけて。例: 100,200,300,400,500,600")
     @combined = chat_api.chat(combined_text)
     @combined = @combined.split(",")
-    redirect_to recipes_path(individual_id: params[:individual_id])
+    redirect_to recipe_path(id: params[:individual_id])
   end
-
   def update
-    @recipe = Recipe.find_by(individual_id: params[:individual_id])
-    if @recipe
-      @recipe.update(calories: params[:calories],proteins: params[:proteins],carbhydrates: params[:carbhydrates],fats: params[:fats],salts: params[:salts],fibers: params[:fibers])
-      redirect_to recipes_show_path(individual_id: @recipe.individual_id)
-    else
-      flash[:error] = "レシピが見つかりませんでした。"
-      redirect_to new_recipe_path
-    end
+    @recipe = Recipe.find(params[:id])
+    @recipe.update!(
+      calories: @combined[0],
+      proteins: @combined[1],
+      carbhydrates: @combined[2],
+      fats: @combined[3],
+      salts: @combined[4],
+      fibers: @combined[5]
+    )
+    redirect_to recipes_show_path(id: @recipe.id)
   end
   
   def details
