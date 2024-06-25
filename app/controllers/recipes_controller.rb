@@ -48,7 +48,7 @@ class RecipesController < ApplicationController
       salts: @combined[4],
       fibers: @combined[5]
     )
-    redirect_to recipes_show_path(id: @recipe.id)
+    redirect_to recipes_path(id: @recipe.id)
   end
   
   def details
