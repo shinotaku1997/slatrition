@@ -21498,3 +21498,850 @@ Processing by RecipesController#new as HTML
 Completed 200 OK in 14ms (Views: 8.5ms | ActiveRecord: 0.3ms | Allocations: 2884)
 
 
+Started POST "/recipes" for 192.168.65.1 at 2024-06-26 22:31:39 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Exists? (4.8ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:13:in `create'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:14:in `create'
+Redirected to http://localhost:3000/recipes/1/result
+Completed 302 Found in 247ms (ActiveRecord: 87.1ms | Allocations: 15432)
+
+
+Started GET "/recipes/1/result" for 192.168.65.1 at 2024-06-26 22:31:40 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.3ms | Allocations: 3092)
+
+
+  
+ArgumentError (absolute URL needed (not nil)):
+  
+app/controllers/recipes_controller.rb:26:in `result'
+Started GET "/" for 192.168.65.1 at 2024-06-26 22:31:55 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StracticPagesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stractic_pages/top.html.erb within layouts/application
+  Rendered stractic_pages/top.html.erb within layouts/application (Duration: 3.4ms | Allocations: 276)
+  [1m[36mUser Load (10.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 30.2ms | Allocations: 706)
+  Rendered shared/_flash_message.html.erb (Duration: 1.0ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 0.8ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 48.6ms | Allocations: 2829)
+Completed 200 OK in 63ms (Views: 44.4ms | ActiveRecord: 10.2ms | Allocations: 4080)
+
+
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-26 22:31:57 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 538)
+  Rendered shared/_header.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 1124)
+Completed 200 OK in 19ms (Views: 8.6ms | ActiveRecord: 0.8ms | Allocations: 3357)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-26 22:32:00 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/7785535"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/7785535"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:13:in `create'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/7785535"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:14:in `create'
+Redirected to http://localhost:3000/recipes/2/result
+Completed 302 Found in 32ms (ActiveRecord: 3.8ms | Allocations: 2850)
+
+
+Started GET "/recipes/2/result" for 192.168.65.1 at 2024-06-26 22:32:00 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 2.7ms | Allocations: 2376)
+
+
+  
+ArgumentError (absolute URL needed (not nil)):
+  
+app/controllers/recipes_controller.rb:26:in `result'
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-26 22:37:04 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 585)
+  Rendered shared/_header.erb (Duration: 1.0ms | Allocations: 264)
+  Rendered shared/_flash_message.html.erb (Duration: 0.7ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 0.6ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 2189)
+Completed 200 OK in 121ms (Views: 17.6ms | ActiveRecord: 54.8ms | Allocations: 14937)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-26 22:37:07 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Exists? (1.5ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:13:in `create'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:14:in `create'
+Redirected to http://localhost:3000/recipes/1/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170
+Completed 302 Found in 86ms (ActiveRecord: 3.3ms | Allocations: 3172)
+
+
+Started GET "/recipes/1/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170" for 192.168.65.1 at 2024-06-26 22:37:07 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as TURBO_STREAM
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 674ms (ActiveRecord: 0.3ms | Allocations: 7247)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/recipes_controller.rb:30:in `result'
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-26 22:38:20 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 587)
+  Rendered shared/_header.erb (Duration: 0.8ms | Allocations: 264)
+  Rendered shared/_flash_message.html.erb (Duration: 0.6ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 0.6ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 2191)
+Completed 200 OK in 62ms (Views: 13.9ms | ActiveRecord: 11.4ms | Allocations: 14911)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-26 22:38:24 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:13:in `create'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:14:in `create'
+Redirected to http://localhost:3000/recipes/1/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170
+Completed 302 Found in 13ms (ActiveRecord: 1.4ms | Allocations: 3171)
+
+
+Started GET "/recipes/1/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170" for 192.168.65.1 at 2024-06-26 22:38:24 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as TURBO_STREAM
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (3.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:24:in `result'
+Completed 500 Internal Server Error in 402ms (ActiveRecord: 4.1ms | Allocations: 6920)
+
+
+  
+NoMethodError (undefined method `recipes_chat_path' for #<RecipesController:0x0000000003eda0>):
+  
+app/controllers/recipes_controller.rb:31:in `result'
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-26 22:38:56 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 587)
+  Rendered shared/_header.erb (Duration: 1.1ms | Allocations: 264)
+  Rendered shared/_flash_message.html.erb (Duration: 0.9ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 0.9ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 2191)
+Completed 200 OK in 79ms (Views: 18.9ms | ActiveRecord: 16.6ms | Allocations: 14896)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-26 22:38:59 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:13:in `create'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:14:in `create'
+Redirected to http://localhost:3000/recipes/1/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170
+Completed 302 Found in 19ms (ActiveRecord: 1.6ms | Allocations: 3165)
+
+
+Started GET "/recipes/1/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170" for 192.168.65.1 at 2024-06-26 22:38:59 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as TURBO_STREAM
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:24:in `result'
+Redirected to http://localhost:3000/recipes/1/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981
+Completed 302 Found in 252ms (ActiveRecord: 0.6ms | Allocations: 6676)
+
+
+Started GET "/recipes/1/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981" for 192.168.65.1 at 2024-06-26 22:38:59 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as TURBO_STREAM
+  Parameters: {"combined"=>["鶏もも肉: 250ｇ", "＊クレイジーソルト: 小さじ1/3～1/2", "＊カレー粉: 小さじ2", "玉ねぎ: 中1個", "パプリカ（黄・赤どちらでも）: 1/2個", "片栗粉: 適量", "サラダオイル: 適量", "◆醤油（濃口）: 小さじ2", "◆ウスターソース: 小さじ1", "◆酒: 小さじ1"], "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/recipes/1
+Completed 302 Found in 1104ms (ActiveRecord: 0.3ms | Allocations: 4260)
+
+
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-26 22:39:01 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for RecipesController):
+  
+actionpack (7.1.3.2) lib/abstract_controller/base.rb:155:in `process'
+actionview (7.1.3.2) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack (3.0.11) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.11) lib/rack/etag.rb:29:in `call'
+rack (3.0.11) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.11) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3.2) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.11) lib/rack/method_override.rb:28:in `call'
+rack (3.0.11) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.11) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3.2) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-26 22:39:01 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (7.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 266)
+  Rendered shared/_header.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered shared/_footer.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 848)
+Completed 200 OK in 29ms (Views: 7.4ms | ActiveRecord: 7.7ms | Allocations: 2907)
+
+
+[dotenv] Set [36mOPEN_AI_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[36mRecipe Load (1.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" /* loading for pp */ LIMIT $1[0m  [["LIMIT", 11]]
+[dotenv] Set [36mOPEN_AI_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started POST "/recipes" for 192.168.65.1 at 2024-06-27 22:19:01 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Exists? (5.1ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:13:in `create'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:14:in `create'
+Redirected to http://localhost:3000/recipes/1/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170
+Completed 302 Found in 373ms (ActiveRecord: 91.1ms | Allocations: 15444)
+
+
+Started GET "/recipes/1/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170" for 192.168.65.1 at 2024-06-27 22:19:02 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as TURBO_STREAM
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:24:in `result'
+Redirected to http://localhost:3000/recipes/1/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981
+Completed 302 Found in 434ms (ActiveRecord: 1.2ms | Allocations: 6705)
+
+
+Started GET "/recipes/1/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981" for 192.168.65.1 at 2024-06-27 22:19:03 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as TURBO_STREAM
+  Parameters: {"combined"=>["鶏もも肉: 250ｇ", "＊クレイジーソルト: 小さじ1/3～1/2", "＊カレー粉: 小さじ2", "玉ねぎ: 中1個", "パプリカ（黄・赤どちらでも）: 1/2個", "片栗粉: 適量", "サラダオイル: 適量", "◆醤油（濃口）: 小さじ2", "◆ウスターソース: 小さじ1", "◆酒: 小さじ1"], "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 1186ms (ActiveRecord: 0.4ms | Allocations: 3992)
+
+
+  
+NoMethodError (undefined method `update_recipe_path' for #<RecipesController:0x0000000004c2e8>):
+  
+app/controllers/recipes_controller.rb:40:in `chat'
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-27 22:25:31 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 11.6ms | Allocations: 589)
+  Rendered shared/_header.erb (Duration: 1.4ms | Allocations: 264)
+  Rendered shared/_flash_message.html.erb (Duration: 1.0ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 0.8ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 50.1ms | Allocations: 2197)
+Completed 200 OK in 301ms (Views: 78.6ms | ActiveRecord: 77.0ms | Allocations: 17103)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-27 22:25:37 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Exists? (7.1ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:13:in `create'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:14:in `create'
+Redirected to http://localhost:3000/recipes/1/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170
+Completed 302 Found in 50ms (ActiveRecord: 11.8ms | Allocations: 3192)
+
+
+Started GET "/recipes/1/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170" for 192.168.65.1 at 2024-06-27 22:25:37 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as TURBO_STREAM
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:24:in `result'
+Redirected to http://localhost:3000/recipes/1/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981
+Completed 302 Found in 379ms (ActiveRecord: 0.7ms | Allocations: 6713)
+
+
+Started GET "/recipes/1/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981" for 192.168.65.1 at 2024-06-27 22:25:38 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as TURBO_STREAM
+  Parameters: {"combined"=>["鶏もも肉: 250ｇ", "＊クレイジーソルト: 小さじ1/3～1/2", "＊カレー粉: 小さじ2", "玉ねぎ: 中1個", "パプリカ（黄・赤どちらでも）: 1/2個", "片栗粉: 適量", "サラダオイル: 適量", "◆醤油（濃口）: 小さじ2", "◆ウスターソース: 小さじ1", "◆酒: 小さじ1"], "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/recipes/1
+Completed 302 Found in 1591ms (ActiveRecord: 0.4ms | Allocations: 3737)
+
+
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-27 22:25:39 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for RecipesController):
+  
+actionpack (7.1.3.2) lib/abstract_controller/base.rb:155:in `process'
+actionview (7.1.3.2) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack (3.0.11) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.11) lib/rack/etag.rb:29:in `call'
+rack (3.0.11) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.11) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3.2) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.11) lib/rack/method_override.rb:28:in `call'
+rack (3.0.11) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.11) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3.2) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-27 22:25:39 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 266)
+  Rendered shared/_header.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered shared/_footer.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 848)
+Completed 200 OK in 14ms (Views: 4.7ms | ActiveRecord: 0.4ms | Allocations: 2885)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-27 22:26:01 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:13:in `create'
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:14:in `create'
+Redirected to http://localhost:3000/recipes/1/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170
+Completed 302 Found in 120ms (ActiveRecord: 69.9ms | Allocations: 13331)
+
+
+Started GET "/recipes/1/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170" for 192.168.65.1 at 2024-06-27 22:26:01 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as TURBO_STREAM
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:24:in `result'
+Redirected to http://localhost:3000/recipes/1/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981
+Completed 302 Found in 318ms (ActiveRecord: 0.9ms | Allocations: 6691)
+
+
+Started GET "/recipes/1/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981" for 192.168.65.1 at 2024-06-27 22:26:02 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as TURBO_STREAM
+  Parameters: {"combined"=>["鶏もも肉: 250ｇ", "＊クレイジーソルト: 小さじ1/3～1/2", "＊カレー粉: 小さじ2", "玉ねぎ: 中1個", "パプリカ（黄・赤どちらでも）: 1/2個", "片栗粉: 適量", "サラダオイル: 適量", "◆醤油（濃口）: 小さじ2", "◆ウスターソース: 小さじ1", "◆酒: 小さじ1"], "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/recipes/1
+Completed 302 Found in 1169ms (ActiveRecord: 0.2ms | Allocations: 6125)
+
+
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-27 22:26:03 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for RecipesController):
+  
+actionpack (7.1.3.2) lib/abstract_controller/base.rb:155:in `process'
+actionview (7.1.3.2) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack (3.0.11) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.11) lib/rack/etag.rb:29:in `call'
+rack (3.0.11) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.11) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3.2) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.11) lib/rack/method_override.rb:28:in `call'
+rack (3.0.11) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.11) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3.2) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-27 22:26:03 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 560)
+  Rendered shared/_header.erb (Duration: 1.0ms | Allocations: 264)
+  Rendered shared/_flash_message.html.erb (Duration: 0.7ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 0.6ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 2163)
+Completed 200 OK in 28ms (Views: 16.0ms | ActiveRecord: 1.7ms | Allocations: 4797)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-27 22:31:52 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Exists? (3.8ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:13:in `create'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:14:in `create'
+Redirected to http://localhost:3000/recipes/1/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170
+Completed 302 Found in 262ms (ActiveRecord: 142.7ms | Allocations: 5689)
+
+
+Started GET "/recipes/1/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170" for 192.168.65.1 at 2024-06-27 22:31:53 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as TURBO_STREAM
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:24:in `result'
+Redirected to http://localhost:3000/recipes/1/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981
+Completed 302 Found in 595ms (ActiveRecord: 0.9ms | Allocations: 6173)
+
+
+Started GET "/recipes/1/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981" for 192.168.65.1 at 2024-06-27 22:31:53 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as TURBO_STREAM
+  Parameters: {"combined"=>["鶏もも肉: 250ｇ", "＊クレイジーソルト: 小さじ1/3～1/2", "＊カレー粉: 小さじ2", "玉ねぎ: 中1個", "パプリカ（黄・赤どちらでも）: 1/2個", "片栗粉: 適量", "サラダオイル: 適量", "◆醤油（濃口）: 小さじ2", "◆ウスターソース: 小さじ1", "◆酒: 小さじ1"], "id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/recipes/1
+Completed 302 Found in 1244ms (ActiveRecord: 1.4ms | Allocations: 3634)
+
+
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-27 22:31:55 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for RecipesController):
+  
+actionpack (7.1.3.2) lib/abstract_controller/base.rb:155:in `process'
+actionview (7.1.3.2) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack (3.0.11) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.11) lib/rack/etag.rb:29:in `call'
+rack (3.0.11) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.11) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3.2) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.11) lib/rack/method_override.rb:28:in `call'
+rack (3.0.11) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.11) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3.2) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-27 22:31:55 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 266)
+  Rendered shared/_header.erb (Duration: 0.2ms | Allocations: 44)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered shared/_footer.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 848)
+Completed 200 OK in 18ms (Views: 6.3ms | ActiveRecord: 1.8ms | Allocations: 2883)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-27 22:38:18 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Exists? (3.5ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:13:in `create'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:14:in `create'
+Redirected to http://localhost:3000/recipes/1/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170
+Completed 302 Found in 183ms (ActiveRecord: 67.2ms | Allocations: 15438)
+
+
+Started GET "/recipes/1/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170" for 192.168.65.1 at 2024-06-27 22:38:19 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as TURBO_STREAM
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:24:in `result'
+Redirected to http://localhost:3000/recipes/1/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981
+Completed 302 Found in 453ms (ActiveRecord: 1.0ms | Allocations: 6737)
+
+
+Started GET "/recipes/1/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981" for 192.168.65.1 at 2024-06-27 22:38:19 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as TURBO_STREAM
+  Parameters: {"combined"=>["鶏もも肉: 250ｇ", "＊クレイジーソルト: 小さじ1/3～1/2", "＊カレー粉: 小さじ2", "玉ねぎ: 中1個", "パプリカ（黄・赤どちらでも）: 1/2個", "片栗粉: 適量", "サラダオイル: 適量", "◆醤油（濃口）: 小さじ2", "◆ウスターソース: 小さじ1", "◆酒: 小さじ1"], "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/recipes/1
+Completed 302 Found in 1545ms (ActiveRecord: 0.4ms | Allocations: 3735)
+
+
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-27 22:38:21 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for RecipesController):
+  
+actionpack (7.1.3.2) lib/abstract_controller/base.rb:155:in `process'
+actionview (7.1.3.2) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack (3.0.11) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.11) lib/rack/etag.rb:29:in `call'
+rack (3.0.11) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.11) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3.2) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.11) lib/rack/method_override.rb:28:in `call'
+rack (3.0.11) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.11) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3.2) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-27 22:38:21 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 560)
+  Rendered shared/_header.erb (Duration: 0.9ms | Allocations: 264)
+  Rendered shared/_flash_message.html.erb (Duration: 1.3ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 1.7ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 52.2ms | Allocations: 2163)
+Completed 200 OK in 74ms (Views: 57.1ms | ActiveRecord: 2.2ms | Allocations: 4794)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-27 22:41:29 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Exists? (1.5ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:13:in `create'
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:14:in `create'
+Redirected to http://localhost:3000/recipes/1/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170
+Completed 302 Found in 118ms (ActiveRecord: 58.9ms | Allocations: 13263)
+
+
+Started GET "/recipes/1/result?individual_id=https%3A%2F%2Fcookpad.com%2Frecipe%2F2589170" for 192.168.65.1 at 2024-06-27 22:41:30 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#result as TURBO_STREAM
+  Parameters: {"individual_id"=>"https://cookpad.com/recipe/2589170", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:24:in `result'
+Redirected to http://localhost:3000/recipes/1/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981
+Completed 302 Found in 362ms (ActiveRecord: 0.9ms | Allocations: 6751)
+
+
+Started GET "/recipes/1/chat?combined%5B%5D=%E9%B6%8F%E3%82%82%E3%82%82%E8%82%89%3A+250%EF%BD%87&combined%5B%5D=%EF%BC%8A%E3%82%AF%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%BD%E3%83%AB%E3%83%88%3A+%E5%B0%8F%E3%81%95%E3%81%981%2F3%EF%BD%9E1%2F2&combined%5B%5D=%EF%BC%8A%E3%82%AB%E3%83%AC%E3%83%BC%E7%B2%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E7%8E%89%E3%81%AD%E3%81%8E%3A+%E4%B8%AD1%E5%80%8B&combined%5B%5D=%E3%83%91%E3%83%97%E3%83%AA%E3%82%AB%EF%BC%88%E9%BB%84%E3%83%BB%E8%B5%A4%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E3%82%82%EF%BC%89%3A+1%2F2%E5%80%8B&combined%5B%5D=%E7%89%87%E6%A0%97%E7%B2%89%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E3%82%B5%E3%83%A9%E3%83%80%E3%82%AA%E3%82%A4%E3%83%AB%3A+%E9%81%A9%E9%87%8F&combined%5B%5D=%E2%97%86%E9%86%A4%E6%B2%B9%EF%BC%88%E6%BF%83%E5%8F%A3%EF%BC%89%3A+%E5%B0%8F%E3%81%95%E3%81%982&combined%5B%5D=%E2%97%86%E3%82%A6%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B9%3A+%E5%B0%8F%E3%81%95%E3%81%981&combined%5B%5D=%E2%97%86%E9%85%92%3A+%E5%B0%8F%E3%81%95%E3%81%981" for 192.168.65.1 at 2024-06-27 22:41:30 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#chat as TURBO_STREAM
+  Parameters: {"combined"=>["鶏もも肉: 250ｇ", "＊クレイジーソルト: 小さじ1/3～1/2", "＊カレー粉: 小さじ2", "玉ねぎ: 中1個", "パプリカ（黄・赤どちらでも）: 1/2個", "片栗粉: 適量", "サラダオイル: 適量", "◆醤油（濃口）: 小さじ2", "◆ウスターソース: 小さじ1", "◆酒: 小さじ1"], "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/recipes/1
+Completed 302 Found in 1027ms (ActiveRecord: 0.4ms | Allocations: 3730)
+
+
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-27 22:41:31 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (4.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:57:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 96)
+  Rendered shared/_header.erb (Duration: 1.4ms | Allocations: 287)
+  Rendered shared/_flash_message.html.erb (Duration: 0.8ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 0.9ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 1778)
+Completed 200 OK in 110ms (Views: 21.2ms | ActiveRecord: 5.1ms | Allocations: 4867)
+
+
