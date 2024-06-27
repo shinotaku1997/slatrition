@@ -20,11 +20,7 @@ class RecipesController < ApplicationController
       @ingredients = page.search(".name").map(&:text)
       @amounts = page.search(".amount").map(&:text)
       @combined = @ingredients.zip(@amounts).map{ |pair| pair.join(": ") }
-      pp params[:combined]
-      combined_text = params[:combined].join(", ")
-      chat_api = OpenAi::ChatApi.new("totalcalories,proteins,carbhydrates,fats,salts,fibersの数値だけ答えてください。各項目の前に[,]つけて。例: 100,200,300,400,500,600")
-      @combined = chat_api.chat(combined_text)
-      @combined = @combined.split(",")
+      
     end
   end
 
