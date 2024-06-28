@@ -20,25 +20,28 @@ class RecipesController < ApplicationController
       @ingredients = page.search(".name").map(&:text)
       @amounts = page.search(".amount").map(&:text)
       @combined = @ingredients.zip(@amounts).map{ |pair| pair.join(": ") }
-      
-    end
-  end
 
-  def chat
-    redirect_to recipe_path(id: params[:id]), action: :update
+      combined_text = params[:combined].join(",")
+      chat_api = OpenAi::ChatApi.new("totalcalories,proteins,carbhydrates,fats,salts,fibersの数値だけ答えてください。各項目の前に[,]つけて。例: 100,200,300,400,500,600")
+      chat_responce = chat_api.chat(combined_text)
+      @combined = chat_responce.split(",")
+      @recipe = Recipe.new(
+        individual_id: @individual_id,
+        calories: @combined[0],
+        proteins: @combined[1],
+        carbhydrates: @combined[2],
+        fats: @combined[3],
+        salts: @combined[4],
+        fibers: @combined[5])
+        if @recipe.save
+          redirect_to recipe_path(id: @recipe.id)
+        else
+          render :new
+        end
+    end
   end
   
   def update
-    @recipe = Recipe.find(params[:id])
-    @recipe.update!(
-      calories: @combined[0],
-      proteins: @combined[1],
-      carbhydrates: @combined[2],
-      fats: @combined[3],
-      salts: @combined[4],
-      fibers: @combined[5]
-    )
-    redirect_to recipe_path(id: @recipe.id)
   end
 
   def show
