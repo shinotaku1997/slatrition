@@ -10,18 +10,18 @@ class RecipesController < ApplicationController
 
   def create
     @recipe = Recipe.new(recipe_params)
+    @individual_id = @recipe.individual_id
     if Recipe.exists?(individual_id: @recipe.individual_id)
       @recipe = Recipe.find_by(individual_id: @recipe.individual_id)
       redirect_to recipe_path(id: @recipe.id)
     else 
-      @individual_id = params[:individual_id]
       agent = Mechanize.new
       page = agent.get(@individual_id)
       @ingredients = page.search(".name").map(&:text)
       @amounts = page.search(".amount").map(&:text)
       @combined = @ingredients.zip(@amounts).map{ |pair| pair.join(": ") }
 
-      combined_text = params[:combined].join(",")
+      combined_text = params[:@combined].join(",")
       chat_api = OpenAi::ChatApi.new("totalcalories,proteins,carbhydrates,fats,salts,fibersの数値だけ答えてください。各項目の前に[,]つけて。例: 100,200,300,400,500,600")
       chat_responce = chat_api.chat(combined_text)
       @combined = chat_responce.split(",")
