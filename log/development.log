@@ -22734,3 +22734,1179 @@ Completed 500 Internal Server Error in 366ms (ActiveRecord: 4.8ms | Allocations:
 NoMethodError (undefined method `join' for nil:NilClass):
   
 app/controllers/recipes_controller.rb:24:in `create'
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-29 14:35:01 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (5.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 8.5ms | Allocations: 589)
+  Rendered shared/_header.erb (Duration: 0.9ms | Allocations: 264)
+  Rendered shared/_flash_message.html.erb (Duration: 1.0ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 1.0ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 2193)
+Completed 200 OK in 326ms (Views: 25.5ms | ActiveRecord: 98.9ms | Allocations: 17083)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 14:35:05 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Exists? (9.5ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:14:in `create'
+Completed 500 Internal Server Error in 434ms (ActiveRecord: 11.0ms | Allocations: 6757)
+
+
+  
+NoMethodError (undefined method `join' for nil:NilClass):
+  
+app/controllers/recipes_controller.rb:24:in `create'
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-29 14:36:51 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 25.5ms | Allocations: 585)
+  Rendered shared/_header.erb (Duration: 3.2ms | Allocations: 264)
+  Rendered shared/_flash_message.html.erb (Duration: 1.8ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 3.3ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 71.4ms | Allocations: 2189)
+Completed 200 OK in 794ms (Views: 80.9ms | ActiveRecord: 434.8ms | Allocations: 14932)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 14:36:55 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (7.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Exists? (8.6ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:14:in `create'
+Completed 500 Internal Server Error in 1938ms (ActiveRecord: 15.8ms | Allocations: 8072)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'carbhydrates' for Recipe.):
+  
+app/controllers/recipes_controller.rb:28:in `create'
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-29 14:37:41 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 589)
+  Rendered shared/_header.erb (Duration: 0.8ms | Allocations: 264)
+  Rendered shared/_flash_message.html.erb (Duration: 0.6ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 0.6ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 2193)
+Completed 200 OK in 67ms (Views: 16.0ms | ActiveRecord: 13.9ms | Allocations: 14908)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 14:37:45 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:14:in `create'
+  [1m[36mCACHE Recipe Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:36:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 268)
+  Rendered shared/_header.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered shared/_footer.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 889)
+Completed 200 OK in 1626ms (Views: 11.7ms | ActiveRecord: 2.7ms | Allocations: 10099)
+
+
+  [1m[36mRecipe Load (20.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" /* loading for pp */ LIMIT $1[0m  [["LIMIT", 11]]
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 14:43:46 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/7785535"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Exists? (6.2ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/7785535"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:14:in `create'
+  [1m[36mCACHE Recipe Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/7785535"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:36:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 258)
+  Rendered shared/_header.erb (Duration: 0.2ms | Allocations: 44)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered shared/_footer.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 836)
+Completed 200 OK in 1385ms (Views: 7.5ms | ActiveRecord: 68.6ms | Allocations: 12133)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 14:47:36 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:14:in `create'
+  [1m[36mCACHE Recipe Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:36:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 568)
+  Rendered shared/_header.erb (Duration: 0.9ms | Allocations: 264)
+  Rendered shared/_flash_message.html.erb (Duration: 0.7ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 0.7ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 2210)
+Completed 200 OK in 1418ms (Views: 20.1ms | ActiveRecord: 49.3ms | Allocations: 22028)
+
+
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-29 14:49:29 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 585)
+  Rendered shared/_header.erb (Duration: 1.3ms | Allocations: 264)
+  Rendered shared/_flash_message.html.erb (Duration: 0.7ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 0.8ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 2189)
+Completed 200 OK in 84ms (Views: 23.3ms | ActiveRecord: 13.0ms | Allocations: 14909)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 14:49:31 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:14:in `create'
+  [1m[36mCACHE Recipe Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:36:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 268)
+  Rendered shared/_header.erb (Duration: 0.2ms | Allocations: 44)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered shared/_footer.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 889)
+Completed 200 OK in 1636ms (Views: 9.0ms | ActiveRecord: 1.6ms | Allocations: 10037)
+
+
+  [1m[36mRecipe Load (5.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" /* loading for pp */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mRecipe Pluck (13.5ms)[0m  [1m[34mSELECT "recipes"."individual_id" FROM "recipes"[0m
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 15:10:23 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:13:in `create'
+Completed 500 Internal Server Error in 288ms (ActiveRecord: 81.2ms | Allocations: 15185)
+
+
+  
+ArgumentError (absolute URL needed (not nil)):
+  
+app/controllers/recipes_controller.rb:18:in `create'
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-29 15:10:41 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 587)
+  Rendered shared/_header.erb (Duration: 0.8ms | Allocations: 264)
+  Rendered shared/_flash_message.html.erb (Duration: 0.7ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 0.6ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 2191)
+Completed 200 OK in 121ms (Views: 18.5ms | ActiveRecord: 55.2ms | Allocations: 14975)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 15:10:44 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:13:in `create'
+  [1m[36mCACHE Recipe Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:35:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 774)
+  Rendered shared/_header.erb (Duration: 0.3ms | Allocations: 44)
+  Rendered shared/_flash_message.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered shared/_footer.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 1395)
+Completed 200 OK in 1593ms (Views: 13.0ms | ActiveRecord: 0.9ms | Allocations: 10600)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 15:11:10 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:13:in `create'
+  [1m[36mCACHE Recipe Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:35:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 697)
+  Rendered shared/_header.erb (Duration: 0.3ms | Allocations: 44)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered shared/_footer.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 1275)
+Completed 200 OK in 1147ms (Views: 13.1ms | ActiveRecord: 4.1ms | Allocations: 9752)
+
+
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-29 15:18:21 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 587)
+  Rendered shared/_header.erb (Duration: 1.2ms | Allocations: 264)
+  Rendered shared/_flash_message.html.erb (Duration: 0.8ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 0.7ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 2191)
+Completed 200 OK in 298ms (Views: 21.2ms | ActiveRecord: 85.9ms | Allocations: 17059)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 15:18:24 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 3.8ms | Allocations: 2437)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x0000ffffa6404790>):
+  
+app/controllers/recipes_controller.rb:13:in `create'
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-29 15:20:14 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 585)
+  Rendered shared/_header.erb (Duration: 0.9ms | Allocations: 264)
+  Rendered shared/_flash_message.html.erb (Duration: 0.7ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 1.2ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 2189)
+Completed 200 OK in 140ms (Views: 24.5ms | ActiveRecord: 65.3ms | Allocations: 14935)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 15:20:18 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 1.8ms | Allocations: 2405)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x0000ffffa407ea28>):
+  
+app/controllers/recipes_controller.rb:14:in `create'
+[dotenv] Set [36mOPEN_AI_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (3.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mSQL (9.6ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "bodies" CASCADE[0m
+  [1m[35m (45.8ms)[0m  [1m[35mCREATE TABLE "bodies" ("id" bigserial primary key, "user_id" bigint NOT NULL, "sex" integer, "age" integer, "weight" integer, "height" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE INDEX "index_bodies_on_user_id" ON "bodies" ("user_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "goals" CASCADE[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "goals" ("id" bigserial primary key, "user_id" bigint NOT NULL, "body_id" bigint NOT NULL, "goal_weight" integer, "volume_of_activity" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE INDEX "index_goals_on_body_id" ON "goals" ("body_id")[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE INDEX "index_goals_on_user_id" ON "goals" ("user_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "recipes" CASCADE[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" bigserial primary key, "individual_id" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "calories" integer, "proteins" integer, "carbhydarates" integer, "fats" integer, "salts" integer, "fibers" integer)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying NOT NULL, "crypted_password" character varying, "salt" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "name" character varying)[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (11.2ms)[0m  [1m[35mALTER TABLE "bodies" ADD CONSTRAINT "fk_rails_4801326700"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "goals" ADD CONSTRAINT "fk_rails_91b043aee6"
+FOREIGN KEY ("body_id")
+  REFERENCES "bodies" ("id")
+[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "goals" ADD CONSTRAINT "fk_rails_c5fd9c8a38"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (12.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20240620123727)[0m
+  [1m[35m (3.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20240520144233),
+(20240517034332),
+(20240517033924),
+(20240514135037),
+(20240514132419);[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (3.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2024-06-29 06:21:55.907595', '2024-06-29 06:21:55.907608') RETURNING "key"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Update (2.7ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = 'test', "updated_at" = '2024-06-29 06:21:55.915352' WHERE "ar_internal_metadata"."key" = 'environment'[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '81241e1f3d249bde6eb09bd71006cdfbe97c52a9', '2024-06-29 06:21:55.920158', '2024-06-29 06:21:55.920160') RETURNING "key"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-29 15:22:11 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 118.4ms | Allocations: 30941)
+  Rendered shared/_header.erb (Duration: 0.8ms | Allocations: 293)
+  Rendered shared/_flash_message.html.erb (Duration: 0.6ms | Allocations: 183)
+  Rendered shared/_footer.erb (Duration: 0.6ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 126.5ms | Allocations: 32807)
+Completed 200 OK in 493ms (Views: 132.9ms | ActiveRecord: 95.0ms | Allocations: 73319)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 15:22:16 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[dotenv] Set [36mOPEN_AI_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-29 15:25:27 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (3.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 180.0ms | Allocations: 30945)
+  Rendered shared/_header.erb (Duration: 1.1ms | Allocations: 293)
+  Rendered shared/_flash_message.html.erb (Duration: 0.6ms | Allocations: 183)
+  Rendered shared/_footer.erb (Duration: 0.7ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 189.3ms | Allocations: 32811)
+Completed 200 OK in 493ms (Views: 196.1ms | ActiveRecord: 92.3ms | Allocations: 73353)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 15:25:32 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[dotenv] Set [36mOPEN_AI_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.8ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 15:34:53 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (4.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[dotenv] Set [36mOPEN_AI_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-29 15:39:26 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 120.8ms | Allocations: 30940)
+  Rendered shared/_header.erb (Duration: 0.8ms | Allocations: 293)
+  Rendered shared/_flash_message.html.erb (Duration: 0.6ms | Allocations: 183)
+  Rendered shared/_footer.erb (Duration: 0.6ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 128.8ms | Allocations: 32805)
+Completed 200 OK in 375ms (Views: 141.1ms | ActiveRecord: 88.6ms | Allocations: 73371)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 15:39:30 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[dotenv] Set [36mOPEN_AI_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-29 15:40:28 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 171.0ms | Allocations: 30939)
+  Rendered shared/_header.erb (Duration: 1.2ms | Allocations: 293)
+  Rendered shared/_flash_message.html.erb (Duration: 7.0ms | Allocations: 183)
+  Rendered shared/_footer.erb (Duration: 1.6ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 196.5ms | Allocations: 32804)
+Completed 200 OK in 540ms (Views: 204.7ms | ActiveRecord: 95.2ms | Allocations: 73333)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 15:40:32 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[dotenv] Set [36mOPEN_AI_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mOPEN_AI_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-29 16:11:01 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 157.7ms | Allocations: 30939)
+  Rendered shared/_header.erb (Duration: 0.8ms | Allocations: 293)
+  Rendered shared/_flash_message.html.erb (Duration: 0.6ms | Allocations: 183)
+  Rendered shared/_footer.erb (Duration: 1.0ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 167.2ms | Allocations: 32804)
+Completed 200 OK in 661ms (Views: 175.1ms | ActiveRecord: 181.3ms | Allocations: 73324)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 16:11:10 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[dotenv] Set [36mOPEN_AI_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-29 16:13:39 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 141.7ms | Allocations: 30940)
+  Rendered shared/_header.erb (Duration: 0.8ms | Allocations: 293)
+  Rendered shared/_flash_message.html.erb (Duration: 0.7ms | Allocations: 183)
+  Rendered shared/_footer.erb (Duration: 0.8ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 150.7ms | Allocations: 32805)
+Completed 200 OK in 493ms (Views: 158.7ms | ActiveRecord: 98.3ms | Allocations: 73322)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 16:13:50 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[dotenv] Set [36mOPEN_AI_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (117.4ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "bodies" CASCADE[0m
+  [1m[35m (115.3ms)[0m  [1m[35mCREATE TABLE "bodies" ("id" bigserial primary key, "user_id" bigint NOT NULL, "sex" integer, "age" integer, "weight" integer, "height" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE INDEX "index_bodies_on_user_id" ON "bodies" ("user_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "goals" CASCADE[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "goals" ("id" bigserial primary key, "user_id" bigint NOT NULL, "body_id" bigint NOT NULL, "goal_weight" integer, "volume_of_activity" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE INDEX "index_goals_on_body_id" ON "goals" ("body_id")[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE INDEX "index_goals_on_user_id" ON "goals" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "recipes" CASCADE[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" bigserial primary key, "individual_id" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "calories" integer, "proteins" integer, "carbhydarates" integer, "fats" integer, "salts" integer, "fibers" integer)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying NOT NULL, "crypted_password" character varying, "salt" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "name" character varying)[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (10.7ms)[0m  [1m[35mALTER TABLE "bodies" ADD CONSTRAINT "fk_rails_4801326700"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "goals" ADD CONSTRAINT "fk_rails_91b043aee6"
+FOREIGN KEY ("body_id")
+  REFERENCES "bodies" ("id")
+[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "goals" ADD CONSTRAINT "fk_rails_c5fd9c8a38"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20240620123727)[0m
+  [1m[35m (2.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20240520144233),
+(20240517034332),
+(20240517033924),
+(20240514135037),
+(20240514132419);[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (3.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2024-06-29 07:25:01.743060', '2024-06-29 07:25:01.743071') RETURNING "key"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '81241e1f3d249bde6eb09bd71006cdfbe97c52a9', '2024-06-29 07:25:01.751356', '2024-06-29 07:25:01.751358') RETURNING "key"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (69.3ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "bodies" CASCADE[0m
+  [1m[35m (34.4ms)[0m  [1m[35mCREATE TABLE "bodies" ("id" bigserial primary key, "user_id" bigint NOT NULL, "sex" integer, "age" integer, "weight" integer, "height" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE INDEX "index_bodies_on_user_id" ON "bodies" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "goals" CASCADE[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "goals" ("id" bigserial primary key, "user_id" bigint NOT NULL, "body_id" bigint NOT NULL, "goal_weight" integer, "volume_of_activity" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE INDEX "index_goals_on_body_id" ON "goals" ("body_id")[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE INDEX "index_goals_on_user_id" ON "goals" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "recipes" CASCADE[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" bigserial primary key, "individual_id" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "calories" integer, "proteins" integer, "carbhydarates" integer, "fats" integer, "salts" integer, "fibers" integer)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying NOT NULL, "crypted_password" character varying, "salt" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "name" character varying)[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (10.4ms)[0m  [1m[35mALTER TABLE "bodies" ADD CONSTRAINT "fk_rails_4801326700"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "goals" ADD CONSTRAINT "fk_rails_91b043aee6"
+FOREIGN KEY ("body_id")
+  REFERENCES "bodies" ("id")
+[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "goals" ADD CONSTRAINT "fk_rails_c5fd9c8a38"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20240620123727)[0m
+  [1m[35m (2.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20240520144233),
+(20240517034332),
+(20240517033924),
+(20240514135037),
+(20240514132419);[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (2.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2024-06-29 07:25:02.264981', '2024-06-29 07:25:02.264984') RETURNING "key"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Update (2.0ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = 'test', "updated_at" = '2024-06-29 07:25:02.271116' WHERE "ar_internal_metadata"."key" = 'environment'[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '81241e1f3d249bde6eb09bd71006cdfbe97c52a9', '2024-06-29 07:25:02.274895', '2024-06-29 07:25:02.274896') RETURNING "key"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-29 16:27:16 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 171ms (ActiveRecord: 77.5ms | Allocations: 17517)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-06-29 16:27:16 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user_sessions/new.erb within layouts/application
+  Rendered user_sessions/new.erb within layouts/application (Duration: 239.9ms | Allocations: 33238)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 3.1ms | Allocations: 727)
+  Rendered shared/_flash_message.html.erb (Duration: 0.7ms | Allocations: 173)
+  Rendered shared/_footer.erb (Duration: 0.6ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 251.2ms | Allocations: 35521)
+Completed 200 OK in 306ms (Views: 264.1ms | ActiveRecord: 11.4ms | Allocations: 48361)
+
+
+Started GET "/users/new" for 192.168.65.1 at 2024-06-29 16:27:18 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_message.erb (Duration: 1.1ms | Allocations: 191)
+  Rendered users/_form.html.erb (Duration: 14.4ms | Allocations: 1816)
+  Rendered users/new.html.erb within layouts/application (Duration: 33.0ms | Allocations: 2090)
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 10.4ms | Allocations: 483)
+  Rendered shared/_flash_message.html.erb (Duration: 0.2ms | Allocations: 18)
+  Rendered shared/_footer.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 51.0ms | Allocations: 3115)
+Completed 200 OK in 66ms (Views: 51.2ms | ActiveRecord: 3.3ms | Allocations: 4016)
+
+
+Started GET "/users/new" for 192.168.65.1 at 2024-06-29 16:27:21 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_message.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered users/_form.html.erb (Duration: 6.3ms | Allocations: 1091)
+  Rendered users/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1169)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 5.4ms | Allocations: 480)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered shared/_footer.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 2187)
+Completed 200 OK in 26ms (Views: 17.8ms | ActiveRecord: 1.2ms | Allocations: 2803)
+
+
+Started GET "/users/new" for 192.168.65.1 at 2024-06-29 16:27:22 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_message.erb (Duration: 0.0ms | Allocations: 13)
+  Rendered users/_form.html.erb (Duration: 2.8ms | Allocations: 1091)
+  Rendered users/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1169)
+  [1m[36mUser Load (19.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 25.4ms | Allocations: 483)
+  Rendered shared/_flash_message.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered shared/_footer.erb (Duration: 0.4ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 34.9ms | Allocations: 2190)
+Completed 200 OK in 40ms (Views: 17.6ms | ActiveRecord: 19.1ms | Allocations: 2806)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-06-29 16:27:25 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user_sessions/new.erb within layouts/application
+  Rendered user_sessions/new.erb within layouts/application (Duration: 6.5ms | Allocations: 2561)
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 5.6ms | Allocations: 475)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered shared/_footer.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 3574)
+Completed 200 OK in 19ms (Views: 13.0ms | ActiveRecord: 2.7ms | Allocations: 4183)
+
+
+Started GET "/users/new" for 192.168.65.1 at 2024-06-29 16:27:28 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_message.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered users/_form.html.erb (Duration: 10.4ms | Allocations: 1091)
+  Rendered users/new.html.erb within layouts/application (Duration: 11.1ms | Allocations: 1169)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 6.1ms | Allocations: 474)
+  Rendered shared/_flash_message.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered shared/_footer.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 2181)
+Completed 200 OK in 29ms (Views: 20.6ms | ActiveRecord: 1.8ms | Allocations: 2791)
+
+
+Started POST "/users" for 192.168.65.1 at 2024-06-29 16:27:36 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"teta", "email"=>"te@te1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"登録"}
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:26:in `create'
+  [1m[36mUser Exists? (34.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "te@te1"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:26:in `create'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:26:in `create'
+["Passwordは3文字以上で入力してください", "Password confirmationを入力してください"]
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_message.erb (Duration: 1.2ms | Allocations: 629)
+  Rendered users/_form.html.erb (Duration: 7.2ms | Allocations: 2146)
+  Rendered users/new.html.erb within layouts/application (Duration: 8.2ms | Allocations: 2267)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 3.9ms | Allocations: 472)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered shared/_footer.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 3268)
+Completed 422 Unprocessable Entity in 111ms (Views: 17.9ms | ActiveRecord: 39.4ms | Allocations: 8081)
+
+
+Started POST "/users" for 192.168.65.1 at 2024-06-29 16:27:41 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"teta", "email"=>"te@te1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"登録"}
+  [1m[36mTRANSACTION (9.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:26:in `create'
+  [1m[36mUser Exists? (20.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "te@te1"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:26:in `create'
+  [1m[36mUser Create (31.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "crypted_password", "salt", "created_at", "updated_at", "name") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "te@te1"], ["crypted_password", "$2a$10$icfCqyZZXU6Fv7us9yVOZO5RzeSQAb4cdem3LOVCYQVyHvrZc7ony"], ["salt", "1mvtHqCx5MKAs4zy6xhz"], ["created_at", "2024-06-29 07:27:42.175091"], ["updated_at", "2024-06-29 07:27:42.175091"], ["name", "teta"]]
+  ↳ app/controllers/users_controller.rb:26:in `create'
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:26:in `create'
+Redirected to http://localhost:3000/users/1/bodies/new
+Completed 302 Found in 188ms (ActiveRecord: 64.6ms | Allocations: 4421)
+
+
+Started GET "/users/1/bodies/new" for 192.168.65.1 at 2024-06-29 16:27:42 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BodiesController#new as TURBO_STREAM
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bodies_controller.rb:34:in `set_user'
+  [1m[36mBody Load (1.0ms)[0m  [1m[34mSELECT "bodies".* FROM "bodies" WHERE "bodies"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bodies_controller.rb:4:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering bodies/new.html.erb within layouts/application
+  Rendered shared/_error_message.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered bodies/new.html.erb within layouts/application (Duration: 18.6ms | Allocations: 4334)
+  Rendered shared/_header.erb (Duration: 0.2ms | Allocations: 53)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 4928)
+Completed 200 OK in 107ms (Views: 24.1ms | ActiveRecord: 18.0ms | Allocations: 21055)
+
+
+Started GET "/" for 192.168.65.1 at 2024-06-29 16:27:46 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StracticPagesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stractic_pages/top.html.erb within layouts/application
+  Rendered stractic_pages/top.html.erb within layouts/application (Duration: 3.0ms | Allocations: 254)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 9.3ms | Allocations: 499)
+  Rendered shared/_flash_message.html.erb (Duration: 0.2ms | Allocations: 18)
+  Rendered shared/_footer.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 1776)
+Completed 200 OK in 33ms (Views: 23.4ms | ActiveRecord: 1.9ms | Allocations: 2628)
+
+
+Started GET "/" for 192.168.65.1 at 2024-06-29 16:27:47 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StracticPagesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stractic_pages/top.html.erb within layouts/application
+  Rendered stractic_pages/top.html.erb within layouts/application (Duration: 0.4ms | Allocations: 84)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 2.3ms | Allocations: 485)
+  Rendered shared/_flash_message.html.erb (Duration: 0.0ms | Allocations: 17)
+  Rendered shared/_footer.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 1599)
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.3ms | Allocations: 2188)
+
+
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-29 16:27:48 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 542)
+  Rendered shared/_header.erb (Duration: 0.2ms | Allocations: 44)
+  Rendered shared/_flash_message.html.erb (Duration: 0.2ms | Allocations: 18)
+  Rendered shared/_footer.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 1129)
+Completed 200 OK in 92ms (Views: 13.2ms | ActiveRecord: 11.5ms | Allocations: 14256)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 16:27:55 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[dotenv] Set [36mOPEN_AI_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 16:32:15 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:14:in `create'
+  [1m[36mCACHE Recipe Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:36:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 120.7ms | Allocations: 30821)
+  Rendered shared/_header.erb (Duration: 0.8ms | Allocations: 293)
+  Rendered shared/_flash_message.html.erb (Duration: 0.6ms | Allocations: 183)
+  Rendered shared/_footer.erb (Duration: 0.6ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 129.2ms | Allocations: 32706)
+Completed 200 OK in 1816ms (Views: 154.3ms | ActiveRecord: 95.1ms | Allocations: 83289)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 16:32:40 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[dotenv] Set [36mOPEN_AI_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (5.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (7.8ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-29 16:40:17 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 156.2ms | Allocations: 30939)
+  Rendered shared/_header.erb (Duration: 0.9ms | Allocations: 293)
+  Rendered shared/_flash_message.html.erb (Duration: 0.7ms | Allocations: 183)
+  Rendered shared/_footer.erb (Duration: 0.9ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 166.6ms | Allocations: 32804)
+Completed 200 OK in 570ms (Views: 180.6ms | ActiveRecord: 120.6ms | Allocations: 73457)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 16:40:26 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[dotenv] Set [36mOPEN_AI_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (4.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (9.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-29 16:42:21 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (8.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 164.6ms | Allocations: 30940)
+  Rendered shared/_header.erb (Duration: 0.8ms | Allocations: 293)
+  Rendered shared/_flash_message.html.erb (Duration: 1.0ms | Allocations: 183)
+  Rendered shared/_footer.erb (Duration: 1.1ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 176.7ms | Allocations: 32805)
+Completed 200 OK in 807ms (Views: 186.0ms | ActiveRecord: 193.1ms | Allocations: 73378)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 16:42:28 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[dotenv] Set [36mOPEN_AI_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.8ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-29 16:45:13 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 117.0ms | Allocations: 30939)
+  Rendered shared/_header.erb (Duration: 1.0ms | Allocations: 293)
+  Rendered shared/_flash_message.html.erb (Duration: 0.9ms | Allocations: 183)
+  Rendered shared/_footer.erb (Duration: 0.9ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 127.8ms | Allocations: 32804)
+Completed 200 OK in 383ms (Views: 138.5ms | ActiveRecord: 92.2ms | Allocations: 73333)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 16:45:18 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[dotenv] Set [36mOPEN_AI_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-29 16:47:40 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (3.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 132.7ms | Allocations: 30939)
+  Rendered shared/_header.erb (Duration: 1.2ms | Allocations: 293)
+  Rendered shared/_flash_message.html.erb (Duration: 0.7ms | Allocations: 183)
+  Rendered shared/_footer.erb (Duration: 0.7ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 144.6ms | Allocations: 32804)
+Completed 200 OK in 519ms (Views: 151.3ms | ActiveRecord: 107.1ms | Allocations: 73356)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 16:47:44 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (6.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Exists? (34.3ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:15:in `create'
+  [1m[36mCACHE Recipe Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:37:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 271)
+  Rendered shared/_header.erb (Duration: 0.5ms | Allocations: 44)
+  Rendered shared/_flash_message.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered shared/_footer.erb (Duration: 0.4ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 892)
+Completed 200 OK in 633914ms (Views: 12.2ms | ActiveRecord: 41.0ms | Allocations: 1010554)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 16:59:13 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Exists? (5.7ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/recipes_controller.rb:37:in `create'
+  [1m[36mRecipe Exists? (6.0ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "#<Recipe:0x0000ffff96c92250>"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:37:in `create'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/recipes_controller.rb:37:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 22.8ms | Allocations: 571)
+  Rendered shared/_header.erb (Duration: 1.3ms | Allocations: 264)
+  Rendered shared/_flash_message.html.erb (Duration: 1.7ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 1.0ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 37.8ms | Allocations: 2217)
+Completed 200 OK in 22428ms (Views: 52.3ms | ActiveRecord: 31.4ms | Allocations: 67660)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 17:01:20 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Exists? (6.1ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/recipes_controller.rb:36:in `create'
+  [1m[36mRecipe Exists? (6.9ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:36:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/recipes_controller.rb:36:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1174)
+  Rendered shared/_header.erb (Duration: 1.4ms | Allocations: 264)
+  Rendered shared/_flash_message.html.erb (Duration: 1.1ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 1.7ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 2820)
+Completed 200 OK in 74319ms (Views: 35.5ms | ActiveRecord: 28.1ms | Allocations: 320987)
+
+
+Started GET "/recipes/new" for 192.168.65.1 at 2024-06-29 17:03:03 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 9.1ms | Allocations: 585)
+  Rendered shared/_header.erb (Duration: 1.3ms | Allocations: 264)
+  Rendered shared/_flash_message.html.erb (Duration: 2.0ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 2.7ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 2189)
+Completed 200 OK in 119ms (Views: 42.7ms | ActiveRecord: 18.0ms | Allocations: 14939)
+
+
+Started POST "/recipes" for 192.168.65.1 at 2024-06-29 17:03:06 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"individual_id"=>"https://cookpad.com/recipe/2589170"}, "commit"=>"カロリーを調べる"}
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" = $1 LIMIT $2[0m  [["individual_id", "https://cookpad.com/recipe/2589170"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/recipes_controller.rb:35:in `create'
+  [1m[36mRecipe Exists? (2.5ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" WHERE "recipes"."individual_id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:35:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/recipes_controller.rb:35:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 720)
+  Rendered shared/_header.erb (Duration: 0.4ms | Allocations: 44)
+  Rendered shared/_flash_message.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered shared/_footer.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 1341)
+Completed 200 OK in 1525ms (Views: 11.7ms | ActiveRecord: 8.0ms | Allocations: 13934)
+
+
