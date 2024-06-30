@@ -25,7 +25,7 @@ class RecipesController < ApplicationController
       chat_responce = chat_api.chat(combined_text)
       @combined = chat_responce.split(",")
       @recipe = Recipe.new(
-        individual_id: @individual_id,
+        individual_id: @recipe.individual_id,
         calories: @combined[0],
         proteins: @combined[1],
         carbhydarates: @combined[2],
@@ -33,6 +33,7 @@ class RecipesController < ApplicationController
         salts: @combined[4],
         fibers: @combined[5])
         if @recipe.save
+          flash[:success] = "Recipe created"
           redirect_to recipe_path(id: @recipe.id)
         else
           render :new
