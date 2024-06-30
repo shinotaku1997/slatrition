@@ -21,9 +21,8 @@ Rails.application.routes.draw do
     collection do
       get :bookmarks
     end
+    resources :bookmarks, only: %i[create destroy], shallow: true
   end
-
-  resources :bookmarks, only: %i[create destroy]
   
   get 'login', to: 'user_sessions#new'
   post 'login', to: 'user_sessions#create'

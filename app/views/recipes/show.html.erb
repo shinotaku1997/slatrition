@@ -7,7 +7,7 @@
 <h1>栄養価画面</h1>
 <%= @recipe.calories%>
 
-<%= render partial: "bookmark_button" %>
+<%= render partial: "shared/bookmark_button", locals: { recipe: @recipe} %>
 <%="共有ボタン"%>
 
 <canvas id="myChart"></canvas>

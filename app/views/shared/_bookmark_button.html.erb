@@ -1,6 +1,5 @@
-<% if current_user.bookmark?(recipe) %>
-  <%= render 'bookmarks/unbookmark', recipe: recipe %>
+<% if current_user.bookmarks?(recipe) %>
+  <%= render partial: 'shared/unbookmark', locals: { recipe: @recipe} %>
 <% else %>
-  <%= render 'bookmarks/bookmark', recipe: recipe %>
+  <%= render partial: 'shared/bookmark', locals: { recipe: @recipe} %>
 <% end %>
-

@@ -7,7 +7,7 @@ class User < ApplicationRecord
   validates :password_confirmation, presence: true, if: -> { new_record? || changes[:crypted_password] }
   validates :email, presence: true, uniqueness: true
   has_many :bookmarks, dependent: :destroy
-  has_many :bookmarks_recipes, through: :bookmarks, source: :recipes
+  has_many :bookmarks_recipes, through: :bookmarks, source: :recipe
   
   def own?(object)
     id == object.user_id
@@ -21,7 +21,7 @@ class User < ApplicationRecord
     bookmarks_recipes.delete(recipe)
   end
 
-  def bookmark?(recipe)
+  def bookmarks?(recipe)
     bookmarks_recipes.include?(recipe)
   end
 end

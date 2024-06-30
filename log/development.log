@@ -24586,3 +24586,785 @@ Searched in:
     13: <canvas id="myChart"></canvas>
   
 app/views/recipes/show.html.erb:10
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-30 20:54:10 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-30 20:54:11 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (6.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1452)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 1544)
+Completed 500 Internal Server Error in 506ms (ActiveRecord: 128.5ms | Allocations: 18844)
+
+
+  
+ActionView::Template::Error (Missing partial share/_bookmark_button with {:locale=>[:ja], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/myapp/app/views"
+  * "/usr/local/bundle/gems/turbo-rails-2.0.5/app/views"
+  * "/usr/local/bundle/gems/actiontext-7.1.3.2/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-7.1.3.2/app/views"
+):
+     7: <h1>栄養価画面</h1>
+     8: <%= @recipe.calories%>
+     9: 
+    10: <%= render partial: "share/bookmark_button" %>
+    11: <%="共有ボタン"%>
+    12: 
+    13: <canvas id="myChart"></canvas>
+  
+app/views/recipes/show.html.erb:10
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1450)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1542)
+Completed 500 Internal Server Error in 115ms (ActiveRecord: 54.9ms | Allocations: 16735)
+
+
+  
+ActionView::Template::Error (Missing partial share/_bookmark_button with {:locale=>[:ja], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/myapp/app/views"
+  * "/usr/local/bundle/gems/turbo-rails-2.0.5/app/views"
+  * "/usr/local/bundle/gems/actiontext-7.1.3.2/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-7.1.3.2/app/views"
+):
+     7: <h1>栄養価画面</h1>
+     8: <%= @recipe.calories%>
+     9: 
+    10: <%= render partial: "share/bookmark_button" %>
+    11: <%="共有ボタン"%>
+    12: 
+    13: <canvas id="myChart"></canvas>
+  
+app/views/recipes/show.html.erb:10
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-30 20:55:44 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered shared/_bookmark_button.html.erb (Duration: 56.8ms | Allocations: 1240)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 104.7ms | Allocations: 1731)
+  Rendered layout layouts/application.html.erb (Duration: 107.4ms | Allocations: 1823)
+Completed 500 Internal Server Error in 188ms (ActiveRecord: 17.2ms | Allocations: 16932)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `recipe' for #<ActionView::Base:0x000000000c3d48>):
+    1: <% if current_user.bookmark?(recipe) %>
+    2:   <%= render 'bookmarks/unbookmark', recipe: recipe %>
+    3: <% else %>
+    4:   <%= render 'bookmarks/bookmark', recipe: recipe %>
+  
+app/views/shared/_bookmark_button.html.erb:1
+app/views/recipes/show.html.erb:10
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-30 20:57:45 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered shared/_bookmark_button.html.erb (Duration: 222.2ms | Allocations: 6709)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 241.8ms | Allocations: 7193)
+  Rendered layout layouts/application.html.erb (Duration: 244.1ms | Allocations: 7285)
+Completed 500 Internal Server Error in 414ms (ActiveRecord: 29.1ms | Allocations: 22398)
+
+
+  
+ActionView::Template::Error (Could not find the source association(s) :recipes in model Bookmark. Try 'has_many :bookmarks_recipes, :through => :bookmarks, :source => <name>'. Is it one of user or recipe?):
+    1: <% if current_user.bookmark?(@recipe) %>
+    2:   <%= render 'bookmarks/unbookmark', recipe: @recipe %>
+    3: <% else %>
+    4:   <%= render 'bookmarks/bookmark', recipe: @recipe %>
+  
+app/models/user.rb:25:in `bookmark?'
+app/views/shared/_bookmark_button.html.erb:1
+app/views/recipes/show.html.erb:10
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-30 20:59:39 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered shared/_bookmark_button.html.erb (Duration: 3.7ms | Allocations: 1353)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 9.9ms | Allocations: 1837)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 1929)
+Completed 500 Internal Server Error in 135ms (ActiveRecord: 25.8ms | Allocations: 17144)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `bookmarks_recipes' for #<User id: 1, email: "te@te1", crypted_password: "$2a$10$icfCqyZZXU6Fv7us9yVOZO5RzeSQAb4cdem3LOVCYQV...", salt: "1mvtHqCx5MKAs4zy6xhz", created_at: "2024-06-29 07:27:42.175091000 +0000", updated_at: "2024-06-29 07:27:42.175091000 +0000", name: "teta">):
+    1: <% if current_user.bookmark?(@recipe) %>
+    2:   <%= render 'bookmarks/unbookmark', recipe: @recipe %>
+    3: <% else %>
+    4:   <%= render 'bookmarks/bookmark', recipe: @recipe %>
+  
+app/models/user.rb:25:in `bookmark?'
+app/views/shared/_bookmark_button.html.erb:1
+app/views/recipes/show.html.erb:10
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-30 21:00:52 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered shared/_bookmark_button.html.erb (Duration: 5.4ms | Allocations: 1352)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 10.7ms | Allocations: 1838)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 1930)
+Completed 500 Internal Server Error in 244ms (ActiveRecord: 33.8ms | Allocations: 17143)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `bookmarkded_recipes' for #<User id: 1, email: "te@te1", crypted_password: "$2a$10$icfCqyZZXU6Fv7us9yVOZO5RzeSQAb4cdem3LOVCYQV...", salt: "1mvtHqCx5MKAs4zy6xhz", created_at: "2024-06-29 07:27:42.175091000 +0000", updated_at: "2024-06-29 07:27:42.175091000 +0000", name: "teta">):
+    1: <% if current_user.bookmark?(@recipe) %>
+    2:   <%= render 'bookmarks/unbookmark', recipe: @recipe %>
+    3: <% else %>
+    4:   <%= render 'bookmarks/bookmark', recipe: @recipe %>
+  
+app/models/user.rb:25:in `bookmark?'
+app/views/shared/_bookmark_button.html.erb:1
+app/views/recipes/show.html.erb:10
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-30 21:02:20 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered shared/_bookmark_button.html.erb (Duration: 2.6ms | Allocations: 1351)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1837)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 1929)
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 32.9ms | Allocations: 17141)
+
+
+  
+ActionView::Template::Error (undefined method `bookmark?' for #<User id: 1, email: "te@te1", crypted_password: "$2a$10$icfCqyZZXU6Fv7us9yVOZO5RzeSQAb4cdem3LOVCYQV...", salt: "1mvtHqCx5MKAs4zy6xhz", created_at: "2024-06-29 07:27:42.175091000 +0000", updated_at: "2024-06-29 07:27:42.175091000 +0000", name: "teta">):
+    1: <% if current_user.bookmark?(@recipe) %>
+    2:   <%= render 'bookmarks/unbookmark', recipe: @recipe %>
+    3: <% else %>
+    4:   <%= render 'bookmarks/bookmark', recipe: @recipe %>
+  
+app/views/shared/_bookmark_button.html.erb:1
+app/views/recipes/show.html.erb:10
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-30 21:03:01 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered shared/_bookmark_button.html.erb (Duration: 23.7ms | Allocations: 2732)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 27.7ms | Allocations: 3218)
+  Rendered layout layouts/application.html.erb (Duration: 29.2ms | Allocations: 3310)
+Completed 500 Internal Server Error in 133ms (ActiveRecord: 17.2ms | Allocations: 18520)
+
+
+  
+ActionView::Template::Error (Could not find the source association(s) :recipes in model Bookmark. Try 'has_many :bookmarks_recipes, :through => :bookmarks, :source => <name>'. Is it one of user or recipe?):
+    1: <% if current_user.bookmark?(@recipe) %>
+    2:   <%= render 'bookmarks/unbookmark', recipe: @recipe %>
+    3: <% else %>
+    4:   <%= render 'bookmarks/bookmark', recipe: @recipe %>
+  
+app/models/user.rb:25:in `bookmark?'
+app/views/shared/_bookmark_button.html.erb:1
+app/views/recipes/show.html.erb:10
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-30 21:03:15 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered shared/_bookmark_button.html.erb (Duration: 3.1ms | Allocations: 1353)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1839)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 1931)
+Completed 500 Internal Server Error in 114ms (ActiveRecord: 19.1ms | Allocations: 17200)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `bookmarked_recipes' for #<User id: 1, email: "te@te1", crypted_password: "$2a$10$icfCqyZZXU6Fv7us9yVOZO5RzeSQAb4cdem3LOVCYQV...", salt: "1mvtHqCx5MKAs4zy6xhz", created_at: "2024-06-29 07:27:42.175091000 +0000", updated_at: "2024-06-29 07:27:42.175091000 +0000", name: "teta">):
+    1: <% if current_user.bookmark?(@recipe) %>
+    2:   <%= render 'bookmarks/unbookmark', recipe: @recipe %>
+    3: <% else %>
+    4:   <%= render 'bookmarks/bookmark', recipe: @recipe %>
+  
+app/models/user.rb:25:in `bookmark?'
+app/views/shared/_bookmark_button.html.erb:1
+app/views/recipes/show.html.erb:10
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-30 21:03:32 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered shared/_bookmark_button.html.erb (Duration: 2.2ms | Allocations: 1351)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1835)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 1927)
+Completed 500 Internal Server Error in 119ms (ActiveRecord: 14.2ms | Allocations: 17134)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `bookmarked_recipes' for #<User id: 1, email: "te@te1", crypted_password: "$2a$10$icfCqyZZXU6Fv7us9yVOZO5RzeSQAb4cdem3LOVCYQV...", salt: "1mvtHqCx5MKAs4zy6xhz", created_at: "2024-06-29 07:27:42.175091000 +0000", updated_at: "2024-06-29 07:27:42.175091000 +0000", name: "teta">):
+    1: <% if current_user.bookmarked?(@recipe) %>
+    2:   <%= render 'bookmarks/unbookmark', recipe: @recipe %>
+    3: <% else %>
+    4:   <%= render 'bookmarks/bookmark', recipe: @recipe %>
+  
+app/models/user.rb:25:in `bookmarked?'
+app/views/shared/_bookmark_button.html.erb:1
+app/views/recipes/show.html.erb:10
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-30 21:04:19 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered shared/_bookmark_button.html.erb (Duration: 11.2ms | Allocations: 1350)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 18.6ms | Allocations: 1834)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 1926)
+Completed 500 Internal Server Error in 182ms (ActiveRecord: 31.4ms | Allocations: 17031)
+
+
+  
+ActionView::Template::Error (undefined method `bookmark?' for #<User id: 1, email: "te@te1", crypted_password: "$2a$10$icfCqyZZXU6Fv7us9yVOZO5RzeSQAb4cdem3LOVCYQV...", salt: "1mvtHqCx5MKAs4zy6xhz", created_at: "2024-06-29 07:27:42.175091000 +0000", updated_at: "2024-06-29 07:27:42.175091000 +0000", name: "teta">):
+    1: <% if current_user.bookmark?(@recipe) %>
+    2:   <%= render 'bookmarks/unbookmark', recipe: @recipe %>
+    3: <% else %>
+    4:   <%= render 'bookmarks/bookmark', recipe: @recipe %>
+  
+app/views/shared/_bookmark_button.html.erb:1
+app/views/recipes/show.html.erb:10
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-30 21:07:01 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered shared/_bookmark_button.html.erb (Duration: 2.7ms | Allocations: 1353)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1841)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 1933)
+Completed 500 Internal Server Error in 115ms (ActiveRecord: 23.4ms | Allocations: 17046)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `bookmarked_recipes' for #<User id: 1, email: "te@te1", crypted_password: "$2a$10$icfCqyZZXU6Fv7us9yVOZO5RzeSQAb4cdem3LOVCYQV...", salt: "1mvtHqCx5MKAs4zy6xhz", created_at: "2024-06-29 07:27:42.175091000 +0000", updated_at: "2024-06-29 07:27:42.175091000 +0000", name: "teta">):
+    1: <% if current_user.bookmarked?(recipe) %>
+    2:   <%= render 'bookmarks/unbookmark', recipe: @recipe %>
+    3: <% else %>
+    4:   <%= render 'bookmarks/bookmark', recipe: @recipe %>
+  
+app/models/user.rb:25:in `bookmarked?'
+app/views/shared/_bookmark_button.html.erb:1
+app/views/recipes/show.html.erb:10
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-30 21:09:01 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered shared/_bookmark_button.html.erb (Duration: 11.2ms | Allocations: 2733)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 17.0ms | Allocations: 3220)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 3312)
+Completed 500 Internal Server Error in 187ms (ActiveRecord: 35.5ms | Allocations: 18525)
+
+
+  
+ActionView::Template::Error (Could not find the source association(s) :recipes in model Bookmark. Try 'has_many :bookmarks_recipes, :through => :bookmarks, :source => <name>'. Is it one of user or recipe?):
+    1: <% if current_user.bookmarks?(recipe) %>
+    2:   <%= render 'bookmarks/unbookmark', recipe: @recipe %>
+    3: <% else %>
+    4:   <%= render 'bookmarks/bookmark', recipe: @recipe %>
+  
+app/models/user.rb:25:in `bookmarks?'
+app/views/shared/_bookmark_button.html.erb:1
+app/views/recipes/show.html.erb:10
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-30 21:12:39 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (1.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mRecipe Exists? (31.9ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" INNER JOIN "bookmarks" ON "recipes"."id" = "bookmarks"."recipe_id" WHERE "bookmarks"."user_id" = $1 AND "recipes"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:25:in `bookmarks?'
+  Rendered shared/_bookmark_button.html.erb (Duration: 69.5ms | Allocations: 8195)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 73.8ms | Allocations: 8682)
+  Rendered layout layouts/application.html.erb (Duration: 75.1ms | Allocations: 8774)
+Completed 500 Internal Server Error in 187ms (ActiveRecord: 56.0ms | Allocations: 23705)
+
+
+  
+ActionView::Template::Error (Missing partial bookmarks/_bookmark with {:locale=>[:ja], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/myapp/app/views"
+  * "/usr/local/bundle/gems/turbo-rails-2.0.5/app/views"
+  * "/usr/local/bundle/gems/actiontext-7.1.3.2/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-7.1.3.2/app/views"
+):
+    1: <% if current_user.bookmarks?(recipe) %>
+    2:   <%= render 'bookmarks/unbookmark', recipe: @recipe %>
+    3: <% else %>
+    4:   <%= render 'bookmarks/bookmark', recipe: @recipe %>
+    5: <% end %>
+  
+app/views/shared/_bookmark_button.html.erb:4
+app/views/recipes/show.html.erb:10
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-30 21:14:14 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mRecipe Exists? (2.8ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" INNER JOIN "bookmarks" ON "recipes"."id" = "bookmarks"."recipe_id" WHERE "bookmarks"."user_id" = $1 AND "recipes"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:25:in `bookmarks?'
+  Rendered shared/_bookmark_button.html.erb (Duration: 34.0ms | Allocations: 5834)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 40.1ms | Allocations: 6323)
+  Rendered layout layouts/application.html.erb (Duration: 41.7ms | Allocations: 6415)
+Completed 500 Internal Server Error in 138ms (ActiveRecord: 31.5ms | Allocations: 21184)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_bookmark with {:locale=>[:ja], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/myapp/app/views"
+  * "/usr/local/bundle/gems/turbo-rails-2.0.5/app/views"
+  * "/usr/local/bundle/gems/actiontext-7.1.3.2/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-7.1.3.2/app/views"
+):
+    1: <% if current_user.bookmarks?(recipe) %>
+    2:   <%= render 'shared/unbookmark', recipe: @recipe %>
+    3: <% else %>
+    4:   <%= render 'shared/bookmark', recipe: @recipe %>
+    5: <% end %>
+  
+app/views/shared/_bookmark_button.html.erb:4
+app/views/recipes/show.html.erb:10
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-30 21:15:22 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mRecipe Exists? (2.0ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" INNER JOIN "bookmarks" ON "recipes"."id" = "bookmarks"."recipe_id" WHERE "bookmarks"."user_id" = $1 AND "recipes"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:25:in `bookmarks?'
+  Rendered shared/_bookmark_button.html.erb (Duration: 142.8ms | Allocations: 5829)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 180.2ms | Allocations: 6318)
+  Rendered layout layouts/application.html.erb (Duration: 190.5ms | Allocations: 6410)
+Completed 500 Internal Server Error in 486ms (ActiveRecord: 78.6ms | Allocations: 21170)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_bookmark with {:locale=>[:ja], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/myapp/app/views"
+  * "/usr/local/bundle/gems/turbo-rails-2.0.5/app/views"
+  * "/usr/local/bundle/gems/actiontext-7.1.3.2/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-7.1.3.2/app/views"
+):
+    1: <% if current_user.bookmarks?(recipe) %>
+    2:   <%= render 'shared/unbookmark'%>
+    3: <% else %>
+    4:   <%= render 'shared/bookmark' %>
+    5: <% end %>
+  
+app/views/shared/_bookmark_button.html.erb:4
+app/views/recipes/show.html.erb:10
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-30 21:17:42 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mRecipe Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" INNER JOIN "bookmarks" ON "recipes"."id" = "bookmarks"."recipe_id" WHERE "bookmarks"."user_id" = $1 AND "recipes"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:25:in `bookmarks?'
+  Rendered shared/_bookmark_button.html.erb (Duration: 37.8ms | Allocations: 5848)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 42.1ms | Allocations: 6333)
+  Rendered layout layouts/application.html.erb (Duration: 43.7ms | Allocations: 6425)
+Completed 500 Internal Server Error in 169ms (ActiveRecord: 30.6ms | Allocations: 21181)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_bookmark with {:locale=>[:ja], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/myapp/app/views"
+  * "/usr/local/bundle/gems/turbo-rails-2.0.5/app/views"
+  * "/usr/local/bundle/gems/actiontext-7.1.3.2/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-7.1.3.2/app/views"
+):
+    1: <% if current_user.bookmarks?(recipe) %>
+    2:   <%= render partial: 'shared/unbookmark'%>
+    3: <% else %>
+    4:   <%= render partial: 'shared/bookmark' %>
+    5: <% end %>
+  
+app/views/shared/_bookmark_button.html.erb:4
+app/views/recipes/show.html.erb:10
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-30 21:18:12 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered shared/_bookmark_button.html.erb (Duration: 3.1ms | Allocations: 1270)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 11.1ms | Allocations: 1771)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 1871)
+Completed 500 Internal Server Error in 86ms (ActiveRecord: 13.9ms | Allocations: 16716)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% if current_user.bookmarks?(recipe) %>
+  <%= render partial: 'shared/unbookmark', locals: { recipe: @recipe}%>
+<% else %>
+  <%= render partial: 'shared/bookmark' locals: { recipe: @recipe}%>
+<% end %>
+
+
+):
+1:    <% if current_user.bookmarks?(recipe) %>
+2:      <%= render partial: 'shared/unbookmark', locals: { recipe: @recipe}%>
+3:    <% else %>
+4:      <%= render partial: 'shared/bookmark' locals: { recipe: @recipe}%>
+5:    <% end %>
+  
+app/views/shared/_bookmark_button.html.erb:4: syntax error, unexpected local variable or method, expecting ')'
+app/views/recipes/show.html.erb:10
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-30 21:19:09 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mRecipe Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" INNER JOIN "bookmarks" ON "recipes"."id" = "bookmarks"."recipe_id" WHERE "bookmarks"."user_id" = $1 AND "recipes"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:25:in `bookmarks?'
+  Rendered shared/_bookmark_button.html.erb (Duration: 28.9ms | Allocations: 5849)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 38.2ms | Allocations: 6334)
+  Rendered layout layouts/application.html.erb (Duration: 39.7ms | Allocations: 6426)
+Completed 500 Internal Server Error in 149ms (ActiveRecord: 21.7ms | Allocations: 21184)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_bookmark with {:locale=>[:ja], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/myapp/app/views"
+  * "/usr/local/bundle/gems/turbo-rails-2.0.5/app/views"
+  * "/usr/local/bundle/gems/actiontext-7.1.3.2/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-7.1.3.2/app/views"
+):
+    1: <% if current_user.bookmarks?(recipe) %>
+    2:   <%= render partial: 'shared/unbookmark' %>
+    3: <% else %>
+    4:   <%= render partial: 'shared/bookmark' %>
+    5: <% end %>
+  
+app/views/shared/_bookmark_button.html.erb:4
+app/views/recipes/show.html.erb:10
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-30 21:21:53 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mRecipe Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" INNER JOIN "bookmarks" ON "recipes"."id" = "bookmarks"."recipe_id" WHERE "bookmarks"."user_id" = $1 AND "recipes"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:25:in `bookmarks?'
+  Rendered shared/_bookmark.html.erb (Duration: 2.1ms | Allocations: 1289)
+  Rendered shared/_bookmark_button.html.erb (Duration: 20.6ms | Allocations: 6084)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 24.9ms | Allocations: 6570)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 6662)
+Completed 500 Internal Server Error in 103ms (ActiveRecord: 15.3ms | Allocations: 21424)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `recipe' for #<ActionView::Base:0x000000001392c8>):
+    1: <%= link_to recipe_bookmarks_path(recipe_id: recipe.id), id: "js-bookmark-button-for-recipe-#{recipe.id}", method: :post do %>
+    2:   <%= icon 'far', 'star' %>
+    3: <% end%>
+  
+app/views/shared/_bookmark.html.erb:1
+app/views/shared/_bookmark_button.html.erb:4
+app/views/recipes/show.html.erb:10
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-30 21:22:34 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mRecipe Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" INNER JOIN "bookmarks" ON "recipes"."id" = "bookmarks"."recipe_id" WHERE "bookmarks"."user_id" = $1 AND "recipes"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:25:in `bookmarks?'
+  Rendered shared/_bookmark.html.erb (Duration: 2.5ms | Allocations: 1287)
+  Rendered shared/_bookmark_button.html.erb (Duration: 20.8ms | Allocations: 6086)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 24.9ms | Allocations: 6570)
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 6662)
+Completed 500 Internal Server Error in 133ms (ActiveRecord: 27.6ms | Allocations: 21420)
+
+
+  
+ActionView::Template::Error (undefined method `recipe_bookmarks_path' for #<ActionView::Base:0x000000001402f8>):
+    1: <%= link_to recipe_bookmarks_path(recipe_id: recipe.id), id: "js-bookmark-button-for-recipe-#{recipe.id}", method: :post do %>
+    2:   <%= icon 'far', 'star' %>
+    3: <% end%>
+  
+app/views/shared/_bookmark.html.erb:1
+app/views/shared/_bookmark_button.html.erb:4
+app/views/recipes/show.html.erb:10
+[dotenv] Set [36mOPEN_AI_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-30 21:34:52 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (2.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mRecipe Exists? (8.1ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" INNER JOIN "bookmarks" ON "recipes"."id" = "bookmarks"."recipe_id" WHERE "bookmarks"."user_id" = $1 AND "recipes"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:25:in `bookmarks?'
+  Rendered shared/_bookmark.html.erb (Duration: 4.1ms | Allocations: 1412)
+  Rendered shared/_bookmark_button.html.erb (Duration: 66.7ms | Allocations: 6011)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 72.7ms | Allocations: 6497)
+  Rendered layout layouts/application.html.erb (Duration: 75.0ms | Allocations: 6589)
+Completed 500 Internal Server Error in 489ms (ActiveRecord: 125.4ms | Allocations: 23545)
+
+
+  
+ActionView::Template::Error (undefined method `icon' for #<ActionView::Base:0x00000000147378>):
+    1: <%= link_to bookmarks_path(recipe_id: recipe.id), id: "js-bookmark-button-for-recipe-#{recipe.id}", method: :post do %>
+    2:   <%= icon 'far', 'star' %>
+    3: <% end%>
+  
+app/views/shared/_bookmark.html.erb:2
+app/views/shared/_bookmark.html.erb:1
+app/views/shared/_bookmark_button.html.erb:4
+app/views/recipes/show.html.erb:10
+[dotenv] Set [36mOPEN_AI_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-30 21:38:25 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (1.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mRecipe Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" INNER JOIN "bookmarks" ON "recipes"."id" = "bookmarks"."recipe_id" WHERE "bookmarks"."user_id" = $1 AND "recipes"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:25:in `bookmarks?'
+  Rendered shared/_bookmark.html.erb (Duration: 4.7ms | Allocations: 1396)
+  Rendered shared/_bookmark_button.html.erb (Duration: 38.2ms | Allocations: 6195)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 46.2ms | Allocations: 6681)
+  Rendered layout layouts/application.html.erb (Duration: 48.4ms | Allocations: 6773)
+Completed 500 Internal Server Error in 303ms (ActiveRecord: 139.9ms | Allocations: 21554)
+
+
+  
+ActionView::Template::Error (undefined method `icon' for #<ActionView::Base:0x0000000014e628>):
+    1: <%= link_to recipe_bookmarks_path(recipe_id: recipe.id), id: "js-bookmark-button-for-recipe-#{recipe.id}", method: :post do %>
+    2:   <%= icon 'far', 'star' %>
+    3: <% end%>
+  
+app/views/shared/_bookmark.html.erb:2
+app/views/shared/_bookmark.html.erb:1
+app/views/shared/_bookmark_button.html.erb:4
+app/views/recipes/show.html.erb:10
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-30 21:41:06 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mRecipe Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" INNER JOIN "bookmarks" ON "recipes"."id" = "bookmarks"."recipe_id" WHERE "bookmarks"."user_id" = $1 AND "recipes"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:25:in `bookmarks?'
+  Rendered shared/_bookmark.html.erb (Duration: 2.6ms | Allocations: 224)
+  Rendered shared/_bookmark_button.html.erb (Duration: 34.2ms | Allocations: 5097)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 43.4ms | Allocations: 5636)
+  Rendered shared/_header.erb (Duration: 3.7ms | Allocations: 256)
+  Rendered shared/_flash_message.html.erb (Duration: 1.5ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 1.5ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 69.1ms | Allocations: 7247)
+Completed 200 OK in 178ms (Views: 74.4ms | ActiveRecord: 31.1ms | Allocations: 22022)
+
+
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-30 21:47:14 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (7.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mRecipe Exists? (7.3ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" INNER JOIN "bookmarks" ON "recipes"."id" = "bookmarks"."recipe_id" WHERE "bookmarks"."user_id" = $1 AND "recipes"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:25:in `bookmarks?'
+  Rendered shared/_bookmark.html.erb (Duration: 7.1ms | Allocations: 223)
+  Rendered shared/_bookmark_button.html.erb (Duration: 42.5ms | Allocations: 4821)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 49.5ms | Allocations: 5360)
+  Rendered shared/_header.erb (Duration: 2.6ms | Allocations: 256)
+  Rendered shared/_flash_message.html.erb (Duration: 3.8ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 3.0ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 80.3ms | Allocations: 6969)
+Completed 200 OK in 427ms (Views: 80.4ms | ActiveRecord: 134.0ms | Allocations: 23885)
+
+
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-30 22:02:48 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mRecipe Exists? (4.6ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" INNER JOIN "bookmarks" ON "recipes"."id" = "bookmarks"."recipe_id" WHERE "bookmarks"."user_id" = $1 AND "recipes"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:25:in `bookmarks?'
+  Rendered shared/_bookmark.html.erb (Duration: 1.7ms | Allocations: 224)
+  Rendered shared/_bookmark_button.html.erb (Duration: 25.1ms | Allocations: 4822)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 30.5ms | Allocations: 5363)
+  Rendered shared/_header.erb (Duration: 1.2ms | Allocations: 256)
+  Rendered shared/_flash_message.html.erb (Duration: 1.4ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 1.9ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 46.9ms | Allocations: 6972)
+Completed 200 OK in 409ms (Views: 48.7ms | ActiveRecord: 135.5ms | Allocations: 23891)
+
+
+Started GET "/recipes/1/bookmarks" for 192.168.65.1 at 2024-06-30 22:03:37 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/recipes/1/bookmarks"):
+  
+[dotenv] Set [36mOPEN_AI_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (8.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (14.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (8.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (16.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to CreateBookmarks (20240630054327)
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (173.6ms)[0m  [1m[35mCREATE TABLE "bookmarks" ("id" bigserial primary key, "user_id" bigint NOT NULL, "recipe_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_c1ff6fa4ac"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_729536f735"
+FOREIGN KEY ("recipe_id")
+  REFERENCES "recipes" ("id")
+)[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE INDEX "index_bookmarks_on_user_id" ON "bookmarks" ("user_id")[0m
+  [1m[35m (19.3ms)[0m  [1m[35mCREATE INDEX "index_bookmarks_on_recipe_id" ON "bookmarks" ("recipe_id")[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_bookmarks_on_user_id_and_recipe_id" ON "bookmarks" ("user_id", "recipe_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (15.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240630054327') RETURNING "version"[0m
+  [1m[36mTRANSACTION (6.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1235955690063948105)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/recipes/1" for 192.168.65.1 at 2024-06-30 22:20:49 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mRecipe Exists? (2.8ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" INNER JOIN "bookmarks" ON "recipes"."id" = "bookmarks"."recipe_id" WHERE "bookmarks"."user_id" = $1 AND "recipes"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:25:in `bookmarks?'
+  Rendered shared/_bookmark.html.erb (Duration: 2.2ms | Allocations: 396)
+  Rendered shared/_bookmark_button.html.erb (Duration: 47.1ms | Allocations: 8218)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 52.7ms | Allocations: 8920)
+  Rendered shared/_header.erb (Duration: 1.3ms | Allocations: 276)
+  Rendered shared/_flash_message.html.erb (Duration: 0.9ms | Allocations: 183)
+  Rendered shared/_footer.erb (Duration: 1.0ms | Allocations: 223)
+  Rendered layout layouts/application.html.erb (Duration: 69.5ms | Allocations: 10765)
+Completed 200 OK in 438ms (Views: 74.6ms | ActiveRecord: 140.1ms | Allocations: 53631)
+
+
+Started GET "/recipes/1/bookmarks" for 192.168.65.1 at 2024-06-30 22:20:52 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/recipes/1/bookmarks"):
+  
