@@ -6,4 +6,11 @@ class Recipe < ApplicationRecord
     validates :fats, numericality: {only_integer: true, greater_than: 0}
     validates :salts, numericality: {only_integer: true, greater_than: 0}
     validates :fibers, numericality: {only_integer: true, greater_than: 0}
+
+    has_many :bookmarks, dependent: :destroy
+
+    def bookmarked_by?(user)
+        bookmarks.where(user_id: user).exists?
+      end
+    
 end
