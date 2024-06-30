@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_06_20_123727) do
+ActiveRecord::Schema[7.1].define(version: 2024_06_30_054327) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -23,6 +23,16 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_20_123727) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_bodies_on_user_id"
+  end
+
+  create_table "bookmarks", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "recipe_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["recipe_id"], name: "index_bookmarks_on_recipe_id"
+    t.index ["user_id", "recipe_id"], name: "index_bookmarks_on_user_id_and_recipe_id", unique: true
+    t.index ["user_id"], name: "index_bookmarks_on_user_id"
   end
 
   create_table "goals", force: :cascade do |t|
@@ -59,6 +69,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_20_123727) do
   end
 
   add_foreign_key "bodies", "users"
+  add_foreign_key "bookmarks", "recipes"
+  add_foreign_key "bookmarks", "users"
   add_foreign_key "goals", "bodies"
   add_foreign_key "goals", "users"
 end

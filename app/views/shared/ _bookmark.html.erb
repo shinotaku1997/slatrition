@@ -1,0 +1,3 @@
+<%= link_to recipe_bookmarks_path(recipe_id: recipe.id), id: "js-bookmark-button-for-recipe-#{recipe.id}", method: :post do %>
+  <%= icon 'far', 'star' %>
+<% end%>

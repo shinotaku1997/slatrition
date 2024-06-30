@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'bookmark/create'
+  get 'bookmark/destroy'
   get 'recipes/new'
   get 'goals/new'
   get 'goals/create'
@@ -14,13 +16,15 @@ Rails.application.routes.draw do
       resources :goals 
     end
   end
+
   resources :recipes, only: %i[new create update show] do
-    member do
-      get 'result'
-      get 'chat'
-      get 'details'
+    collection do
+      get :bookmarks
     end
   end
+
+  resources :bookmarks, only: %i[create destroy]
+  
   get 'login', to: 'user_sessions#new'
   post 'login', to: 'user_sessions#create'
   delete 'logout', to: 'user_sessions#destroy'

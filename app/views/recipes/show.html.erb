@@ -1,1 +1,61 @@
-<h1>テスト</h1>
+
+#星評価を表示する
+#五角形のグラフを表示
+#共有ボタンとブックマーく機能の実装
+#テーブルにして各数値を表示させる
+#この部分はボックスにして見た目を整える
+<h1>栄養価画面</h1>
+<%= @recipe.calories%>
+
+<%= render partial: "bookmark_button" %>
+<%="共有ボタン"%>
+
+<canvas id="myChart"></canvas>
+<script>
+var ctx = document.getElementById("myChart");
+var myChart = new Chart(ctx, {
+  type: 'radar',
+  data: {
+    labels: ["タンパク質", "脂質", "糖質", "食物繊維"],
+    datasets: 
+    [
+        {
+        label: '栄養価',
+        backgroundColor: 'rgba(102,255,129,0.2)',
+        borderColor: 'rgba(122,255,129,0.2)',
+        data: [<%= @recipe.proteins%>, <%= @recipe.fats%>, <%= @recipe.carbhydarates %>, <%= @recipe.fibers %>]
+        }
+    ]
+  },
+  options: {
+      scale: {
+          ticks: {
+              suggestedMin: 0,
+              suggestedMax: 100
+          }
+      }
+  }
+});
+</script>
+
+<table class="table">
+    <tbody>
+        <tr>
+        <td>カロリー</td>
+        <td>タンパク質</td>
+        <td>脂質</td>
+        <td>炭水化物</td>
+        <td>食物繊維</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+        <td><%= @recipe.calories%></td>
+        <td><%= @recipe.proteins%></td>
+        <td><%= @recipe.fats%></td>
+        <td><%= @recipe.carbhydarates %></td>
+        <td><%= @recipe.fibers%></td>
+        </tr>
+    </tbody>
+</table>
+<%= link_to "別レシピを試す", recipes_new_path %>
