@@ -19,10 +19,10 @@ Rails.application.routes.draw do
 
   resources :recipes, only: %i[new create update show] do
     collection do
-      get :bookmarks
+      get 'bookmarks'
     end
-    resources :bookmarks, only: %i[create destroy], shallow: true
   end
+  resources :bookmarks, only: %i[create destroy], shallow: true
   
   get 'login', to: 'user_sessions#new'
   post 'login', to: 'user_sessions#create'
