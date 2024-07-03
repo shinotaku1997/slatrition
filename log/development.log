@@ -27904,3 +27904,57 @@ Processing by RecipesController#show as TURBO_STREAM
 Completed 200 OK in 22ms (Views: 13.6ms | ActiveRecord: 1.6ms | Allocations: 4635)
 
 
+Started GET "/recipes/1" for 192.168.65.1 at 2024-07-03 22:38:24 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mRecipe Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" INNER JOIN "bookmarks" ON "recipes"."id" = "bookmarks"."recipe_id" WHERE "bookmarks"."user_id" = $1 AND "recipes"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:25:in `bookmarks?'
+  [1m[36mBookmark Load (0.8ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = $1 AND "bookmarks"."recipe_id" = $2 LIMIT $3[0m  [["user_id", 1], ["recipe_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_unbookmark.html.erb:1
+  Rendered shared/_unbookmark.html.erb (Duration: 9.7ms | Allocations: 3696)
+  Rendered shared/_bookmark_button.html.erb (Duration: 24.4ms | Allocations: 8471)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 28.9ms | Allocations: 9003)
+  Rendered shared/_header.erb (Duration: 1.1ms | Allocations: 258)
+  Rendered shared/_flash_message.html.erb (Duration: 0.8ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 1.2ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 41.3ms | Allocations: 10612)
+Completed 200 OK in 157ms (Views: 41.3ms | ActiveRecord: 20.7ms | Allocations: 25388)
+
+
+Started GET "/recipes/1" for 192.168.65.1 at 2024-07-03 23:00:05 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (15.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (1.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mRecipe Exists? (8.3ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" INNER JOIN "bookmarks" ON "recipes"."id" = "bookmarks"."recipe_id" WHERE "bookmarks"."user_id" = $1 AND "recipes"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:25:in `bookmarks?'
+  [1m[36mBookmark Load (0.8ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = $1 AND "bookmarks"."recipe_id" = $2 LIMIT $3[0m  [["user_id", 1], ["recipe_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_unbookmark.html.erb:1
+  Rendered shared/_unbookmark.html.erb (Duration: 20.4ms | Allocations: 3671)
+  Rendered shared/_bookmark_button.html.erb (Duration: 54.8ms | Allocations: 8244)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 71.2ms | Allocations: 9648)
+  Rendered layout layouts/application.html.erb (Duration: 73.4ms | Allocations: 9740)
+Completed 500 Internal Server Error in 593ms (ActiveRecord: 190.1ms | Allocations: 26640)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `post' for #<ActionView::Base:0x00000000068448>):
+    2: <%= @recipe.calories%>
+    3: 
+    4: <%= render partial: "shared/bookmark_button", locals: { recipe: @recipe} %>
+    5: <%= link_to "https://twitter.com/share?url=#{ request.url }&text=【テスト】%0a%0a#{ post.content }、シェアさいこう〜", target: '_blank' do %>
+    6:   <i class="fab fa-twitter" style='color: #3399FF;'></i>シェア
+    7: <% end %>
+    8: 
+  
+app/views/recipes/show.html.erb:5

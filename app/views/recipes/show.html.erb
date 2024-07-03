@@ -1,14 +1,10 @@
-
-#星評価を表示する
-#五角形のグラフを表示
-#共有ボタンとブックマーく機能の実装
-#テーブルにして各数値を表示させる
-#この部分はボックスにして見た目を整える
 <h1>栄養価画面</h1>
 <%= @recipe.calories%>
 
 <%= render partial: "shared/bookmark_button", locals: { recipe: @recipe} %>
-<%="共有ボタン"%>
+<%= link_to "https://twitter.com/share?url=#{ request.url }&text=【テスト】%0a%0a#{ post.content }、シェアさいこう〜", target: '_blank' do %>
+  <i class="fab fa-twitter" style='color: #3399FF;'></i>シェア
+<% end %>
 
 <canvas id="myChart"></canvas>
 <script>
