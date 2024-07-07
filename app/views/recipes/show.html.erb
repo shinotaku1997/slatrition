@@ -2,9 +2,7 @@
 <%= @recipe.calories%>
 
 <%= render partial: "shared/bookmark_button", locals: { recipe: @recipe} %>
-<%= link_to "https://twitter.com/share?url=#{ request.url }&text=【テスト】%0a%0a#{ post.content }、シェアさいこう〜", target: '_blank' do %>
-  <i class="fab fa-twitter" style='color: #3399FF;'></i>シェア
-<% end %>
+<%="共有ボタン"%>
 
 <canvas id="myChart"></canvas>
 <script>

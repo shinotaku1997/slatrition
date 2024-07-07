@@ -27958,3 +27958,136 @@ ActionView::Template::Error (undefined local variable or method `post' for #<Act
     8: 
   
 app/views/recipes/show.html.erb:5
+Started GET "/recipes/1" for 192.168.65.1 at 2024-07-07 14:30:28 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (1.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:45:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mRecipe Exists? (5.0ms)[0m  [1m[34mSELECT 1 AS one FROM "recipes" INNER JOIN "bookmarks" ON "recipes"."id" = "bookmarks"."recipe_id" WHERE "bookmarks"."user_id" = $1 AND "recipes"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:25:in `bookmarks?'
+  [1m[36mBookmark Load (0.4ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = $1 AND "bookmarks"."recipe_id" = $2 LIMIT $3[0m  [["user_id", 1], ["recipe_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_unbookmark.html.erb:1
+  Rendered shared/_unbookmark.html.erb (Duration: 15.1ms | Allocations: 3671)
+  Rendered shared/_bookmark_button.html.erb (Duration: 43.4ms | Allocations: 8246)
+  Rendered recipes/show.html.erb within layouts/application (Duration: 51.2ms | Allocations: 8777)
+  Rendered shared/_header.erb (Duration: 1.5ms | Allocations: 258)
+  Rendered shared/_flash_message.html.erb (Duration: 1.4ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 1.2ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 70.5ms | Allocations: 10390)
+Completed 200 OK in 424ms (Views: 73.4ms | ActiveRecord: 102.2ms | Allocations: 27349)
+
+
+Started DELETE "/logout?_method=delete" for 192.168.65.1 at 2024-07-07 14:33:21 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#destroy as TURBO_STREAM
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 288ms (ActiveRecord: 148.6ms | Allocations: 8107)
+
+
+Started GET "/" for 192.168.65.1 at 2024-07-07 14:33:22 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StracticPagesController#top as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering stractic_pages/top.html.erb within layouts/application
+  Rendered stractic_pages/top.html.erb within layouts/application (Duration: 3.7ms | Allocations: 261)
+  Rendered shared/_header.erb (Duration: 1.4ms | Allocations: 270)
+  Rendered shared/_flash_message.html.erb (Duration: 0.8ms | Allocations: 160)
+  Rendered shared/_footer.erb (Duration: 1.0ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 2430)
+Completed 200 OK in 34ms (Views: 29.1ms | ActiveRecord: 0.0ms | Allocations: 3769)
+
+
+Started GET "/users/new" for 192.168.65.1 at 2024-07-07 14:33:23 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_message.erb (Duration: 1.6ms | Allocations: 186)
+  Rendered users/_form.html.erb (Duration: 24.7ms | Allocations: 2193)
+  Rendered users/new.html.erb within layouts/application (Duration: 30.2ms | Allocations: 2464)
+  Rendered shared/_header.erb (Duration: 0.2ms | Allocations: 51)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 35.7ms | Allocations: 3057)
+Completed 200 OK in 55ms (Views: 39.5ms | ActiveRecord: 0.0ms | Allocations: 3958)
+
+
+Started POST "/users" for 192.168.65.1 at 2024-07-07 14:33:38 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"test", "email"=>"tete@tete", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"登録"}
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:26:in `create'
+  [1m[36mUser Exists? (13.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tete@tete"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:26:in `create'
+  [1m[36mUser Create (16.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "crypted_password", "salt", "created_at", "updated_at", "name") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "tete@tete"], ["crypted_password", "$2a$10$Zf92G2GlHda.G.lTZYliXOqSnexu6N/38s2Zx1slcl70So5zWfKu6"], ["salt", "h2TfWgFahzs2zUrX-xvk"], ["created_at", "2024-07-07 05:33:39.126538"], ["updated_at", "2024-07-07 05:33:39.126538"], ["name", "test"]]
+  ↳ app/controllers/users_controller.rb:26:in `create'
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:26:in `create'
+Redirected to http://localhost:3000/users/2/bodies/new
+Completed 302 Found in 190ms (ActiveRecord: 36.5ms | Allocations: 3911)
+
+
+Started GET "/users/2/bodies/new" for 192.168.65.1 at 2024-07-07 14:33:39 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BodiesController#new as TURBO_STREAM
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bodies_controller.rb:34:in `set_user'
+  [1m[36mBody Load (1.3ms)[0m  [1m[34mSELECT "bodies".* FROM "bodies" WHERE "bodies"."user_id" = $1 LIMIT $2[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bodies_controller.rb:4:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering bodies/new.html.erb within layouts/application
+  Rendered shared/_error_message.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered bodies/new.html.erb within layouts/application (Duration: 19.9ms | Allocations: 4374)
+  Rendered shared/_header.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 4963)
+Completed 200 OK in 80ms (Views: 25.4ms | ActiveRecord: 6.3ms | Allocations: 18670)
+
+
+Started POST "/users/2/bodies" for 192.168.65.1 at 2024-07-07 14:34:00 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BodiesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "body"=>{"sex"=>"1", "age"=>"27", "height"=>"178", "weight"=>"87", "goal_attributes"=>{"goal_weight"=>"80", "volume_of_activity"=>"0"}}, "commit"=>"保存", "user_id"=>"2"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bodies_controller.rb:34:in `set_user'
+  [1m[36mBody Load (0.5ms)[0m  [1m[34mSELECT "bodies".* FROM "bodies" WHERE "bodies"."user_id" = $1 LIMIT $2[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bodies_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bodies_controller.rb:11:in `create'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bodies_controller.rb:11:in `create'
+  [1m[36mBody Create (46.8ms)[0m  [1m[32mINSERT INTO "bodies" ("user_id", "sex", "age", "weight", "height", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["user_id", 2], ["sex", 1], ["age", 27], ["weight", 87], ["height", 178], ["created_at", "2024-07-07 05:34:00.310688"], ["updated_at", "2024-07-07 05:34:00.310688"]]
+  ↳ app/controllers/bodies_controller.rb:11:in `create'
+  [1m[36mGoal Create (5.9ms)[0m  [1m[32mINSERT INTO "goals" ("user_id", "body_id", "goal_weight", "volume_of_activity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 2], ["body_id", 1], ["goal_weight", 80], ["volume_of_activity", 0], ["created_at", "2024-07-07 05:34:00.364370"], ["updated_at", "2024-07-07 05:34:00.364370"]]
+  ↳ app/controllers/bodies_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bodies_controller.rb:11:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 202ms (ActiveRecord: 62.1ms | Allocations: 20703)
+
+
+Started GET "/" for 192.168.65.1 at 2024-07-07 14:34:00 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StracticPagesController#top as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering stractic_pages/top.html.erb within layouts/application
+  Rendered stractic_pages/top.html.erb within layouts/application (Duration: 1.5ms | Allocations: 84)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 7.2ms | Allocations: 486)
+  Rendered shared/_flash_message.html.erb (Duration: 0.9ms | Allocations: 20)
+  Rendered shared/_footer.erb (Duration: 0.8ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 1610)
+Completed 200 OK in 24ms (Views: 18.6ms | ActiveRecord: 0.8ms | Allocations: 2204)
+
+
