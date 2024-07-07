@@ -8,6 +8,7 @@ class User < ApplicationRecord
   validates :email, presence: true, uniqueness: true
   has_many :bookmarks, dependent: :destroy
   has_many :bookmarks_recipes, through: :bookmarks, source: :recipe
+  validates :reset_password_token, presence: true, uniqueness: true, allow_nil: true
   
   def own?(object)
     id == object.user_id
