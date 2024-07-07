@@ -28340,3 +28340,630 @@ Processing by LetterOpenerWeb::LettersController#index as HTML
 Completed 200 OK in 20ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 2077)
 
 
+Started POST "/password_resets" for 192.168.65.1 at 2024-07-07 16:59:24 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PasswordResetsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"test@test", "commit"=>"申請"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@test"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:7:in `create'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 288ms (ActiveRecord: 92.8ms | Allocations: 8588)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-07-07 16:59:24 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as TURBO_STREAM
+  Rendering user_sessions/new.erb
+  Rendered user_sessions/new.erb (Duration: 12.5ms | Allocations: 2802)
+Completed 200 OK in 46ms (Views: 26.1ms | ActiveRecord: 0.0ms | Allocations: 8248)
+
+
+Started GET "/password_resets/new" for 192.168.65.1 at 2024-07-07 17:08:14 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PasswordResetsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 13.9ms | Allocations: 1871)
+  Rendered shared/_header.erb (Duration: 2.7ms | Allocations: 271)
+  Rendered shared/_flash_message.html.erb (Duration: 2.5ms | Allocations: 160)
+  Rendered shared/_footer.erb (Duration: 1.0ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 34.2ms | Allocations: 3486)
+Completed 200 OK in 56ms (Views: 40.6ms | ActiveRecord: 0.0ms | Allocations: 4412)
+
+
+Started GET "/letter_opener/" for 192.168.65.1 at 2024-07-07 17:08:18 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.1ms | Allocations: 9)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 7.5ms | Allocations: 220)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 1.4ms | Allocations: 8)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 4.5ms | Allocations: 192)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.4ms | Allocations: 10)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.1ms | Allocations: 10)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 2.0ms | Allocations: 140)
+  Rendered layout /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 23.7ms | Allocations: 1264)
+Completed 200 OK in 47ms (Views: 26.6ms | ActiveRecord: 0.0ms | Allocations: 1972)
+
+
+Started POST "/password_resets" for 192.168.65.1 at 2024-07-07 22:36:56 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PasswordResetsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"test@test", "commit"=>"申請"}
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@test"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:7:in `create'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 285ms (ActiveRecord: 80.6ms | Allocations: 4336)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-07-07 22:36:57 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as TURBO_STREAM
+  Rendering user_sessions/new.erb
+  Rendered user_sessions/new.erb (Duration: 14.7ms | Allocations: 2536)
+Completed 200 OK in 33ms (Views: 19.3ms | ActiveRecord: 0.0ms | Allocations: 3318)
+
+
+Started GET "/letter_opener/" for 192.168.65.1 at 2024-07-07 22:37:02 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.1ms | Allocations: 9)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 5.0ms | Allocations: 219)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.4ms | Allocations: 9)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 3.2ms | Allocations: 8)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 18.0ms | Allocations: 192)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 1.7ms | Allocations: 10)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.4ms | Allocations: 10)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 13.8ms | Allocations: 140)
+  Rendered layout /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 68.5ms | Allocations: 1301)
+Completed 200 OK in 89ms (Views: 72.6ms | ActiveRecord: 0.0ms | Allocations: 2008)
+
+
+Started GET "/" for 192.168.65.1 at 2024-07-07 22:45:45 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StracticPagesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stractic_pages/top.html.erb within layouts/application
+  Rendered stractic_pages/top.html.erb within layouts/application (Duration: 10.9ms | Allocations: 1151)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 1242)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms | Allocations: 2211)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `recipes_new_path' for #<ActionView::Base:0x00000000024dd8>):
+    4:     </div>
+    5:     <h3><%= t('defaults.limit') %></h3>
+    6:     <div class="mx-auto" style="width: 200px;"><button>
+    7:     <%= link_to t('defaults.try_service'),recipes_new_path %></button></div>
+    8: </div>
+  
+app/views/stractic_pages/top.html.erb:7
+Started GET "/password_resets/new" for 192.168.65.1 at 2024-07-07 22:46:17 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PasswordResetsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1877)
+  Rendered shared/_header.erb (Duration: 1.3ms | Allocations: 271)
+  Rendered shared/_flash_message.html.erb (Duration: 1.1ms | Allocations: 160)
+  Rendered shared/_footer.erb (Duration: 0.9ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 3491)
+Completed 200 OK in 36ms (Views: 26.1ms | ActiveRecord: 0.0ms | Allocations: 4929)
+
+
+Started POST "/password_resets" for 192.168.65.1 at 2024-07-07 22:46:18 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PasswordResetsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"", "commit"=>"申請"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:7:in `create'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 267ms (ActiveRecord: 141.3ms | Allocations: 8592)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-07-07 22:46:19 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as TURBO_STREAM
+  Rendering user_sessions/new.erb
+  Rendered user_sessions/new.erb (Duration: 6.8ms | Allocations: 2750)
+Completed 200 OK in 21ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 7828)
+
+
+Started POST "/password_resets" for 192.168.65.1 at 2024-07-07 22:46:27 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PasswordResetsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"test00@test.com", "commit"=>"申請"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test00@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:7:in `create'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 24ms (ActiveRecord: 2.0ms | Allocations: 1533)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-07-07 22:46:27 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as TURBO_STREAM
+  Rendering user_sessions/new.erb
+  Rendered user_sessions/new.erb (Duration: 5.5ms | Allocations: 2531)
+Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 3318)
+
+
+Started GET "/users/new" for 192.168.65.1 at 2024-07-07 22:46:28 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_message.erb (Duration: 1.2ms | Allocations: 179)
+  Rendered users/_form.html.erb (Duration: 7.1ms | Allocations: 1684)
+  Rendered users/new.html.erb within layouts/application (Duration: 10.3ms | Allocations: 1956)
+  Rendered shared/_header.erb (Duration: 0.1ms | Allocations: 51)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 2552)
+Completed 200 OK in 24ms (Views: 18.5ms | ActiveRecord: 0.0ms | Allocations: 3593)
+
+
+Started GET "/" for 192.168.65.1 at 2024-07-07 22:47:14 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StracticPagesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stractic_pages/top.html.erb within layouts/application
+  Rendered stractic_pages/top.html.erb within layouts/application (Duration: 2.8ms | Allocations: 260)
+  Rendered shared/_header.erb (Duration: 1.2ms | Allocations: 267)
+  Rendered shared/_flash_message.html.erb (Duration: 0.9ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 0.8ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 2373)
+Completed 200 OK in 27ms (Views: 20.8ms | ActiveRecord: 0.0ms | Allocations: 3811)
+
+
+Started GET "/users/new" for 192.168.65.1 at 2024-07-07 22:47:18 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_message.erb (Duration: 0.8ms | Allocations: 179)
+  Rendered users/_form.html.erb (Duration: 7.8ms | Allocations: 1704)
+  Rendered users/new.html.erb within layouts/application (Duration: 11.5ms | Allocations: 2860)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 2951)
+Completed 500 Internal Server Error in 111ms (ActiveRecord: 62.2ms | Allocations: 12019)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_password_reset_path' for #<ActionView::Base:0x00000000032528>):
+    1: <h1>新規アカウント登録</h1>
+    2: <%= render "form", user: @user %>
+    3: <%= link_to 'passwordをお忘れの方はコチラ', new_password_reset_path %>
+  
+app/views/users/new.html.erb:3
+Started GET "/users/new" for 192.168.65.1 at 2024-07-07 22:48:01 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_message.erb (Duration: 2.0ms | Allocations: 180)
+  Rendered users/_form.html.erb (Duration: 20.3ms | Allocations: 1727)
+  Rendered users/new.html.erb within layouts/application (Duration: 24.5ms | Allocations: 2889)
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 2981)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 7.8ms | Allocations: 12480)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_password_reset_path' for #<ActionView::Base:0x00000000039580>):
+    1: <h1>新規アカウント登録</h1>
+    2: <%= render "form", user: @user %>
+    3: <%= link_to 'passwordをお忘れの方はコチラ', new_password_reset_path %>
+  
+app/views/users/new.html.erb:3
+Started GET "/users/new" for 192.168.65.1 at 2024-07-07 22:48:15 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_message.erb (Duration: 0.8ms | Allocations: 180)
+  Rendered users/_form.html.erb (Duration: 8.0ms | Allocations: 1727)
+  Rendered users/new.html.erb within layouts/application (Duration: 11.3ms | Allocations: 2006)
+  Rendered shared/_header.erb (Duration: 1.0ms | Allocations: 265)
+  Rendered shared/_flash_message.html.erb (Duration: 0.8ms | Allocations: 157)
+  Rendered shared/_footer.erb (Duration: 0.9ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 3615)
+Completed 200 OK in 65ms (Views: 25.9ms | ActiveRecord: 9.8ms | Allocations: 13185)
+
+
+Started GET "/password_resets/new" for 192.168.65.1 at 2024-07-07 22:48:17 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PasswordResetsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1852)
+  Rendered shared/_header.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered shared/_flash_message.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered shared/_footer.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 2446)
+Completed 200 OK in 12ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 3431)
+
+
+Started POST "/password_resets" for 192.168.65.1 at 2024-07-07 22:48:27 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PasswordResetsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"test@test", "commit"=>"申請"}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@test"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:7:in `create'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 44ms (ActiveRecord: 2.9ms | Allocations: 1761)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-07-07 22:48:27 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as TURBO_STREAM
+  Rendering user_sessions/new.erb
+  Rendered user_sessions/new.erb (Duration: 5.2ms | Allocations: 2752)
+Completed 200 OK in 13ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 4079)
+
+
+Started GET "/letter_opener/" for 192.168.65.1 at 2024-07-07 22:48:31 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.0ms | Allocations: 9)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 5.2ms | Allocations: 654)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.9ms | Allocations: 93)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 7.6ms | Allocations: 627)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.4ms | Allocations: 168)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 20.2ms | Allocations: 1432)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 3.7ms | Allocations: 1908)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 1.9ms | Allocations: 314)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 11.4ms | Allocations: 2797)
+  Rendered layout /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 43.9ms | Allocations: 6010)
+Completed 200 OK in 52ms (Views: 46.1ms | ActiveRecord: 0.0ms | Allocations: 7622)
+
+
+Started GET "/password_resets/new" for 192.168.65.1 at 2024-07-07 22:58:03 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PasswordResetsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 9.7ms | Allocations: 2092)
+  Rendered shared/_header.erb (Duration: 0.9ms | Allocations: 271)
+  Rendered shared/_flash_message.html.erb (Duration: 1.2ms | Allocations: 160)
+  Rendered shared/_footer.erb (Duration: 1.0ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 3706)
+Completed 200 OK in 33ms (Views: 25.9ms | ActiveRecord: 0.0ms | Allocations: 5144)
+
+
+Started POST "/password_resets" for 192.168.65.1 at 2024-07-07 22:58:24 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PasswordResetsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"", "commit"=>"<span class=\"translation_missing\" title=\"translation missing: ja.password_resets.new.submit\">Submit</span>"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:7:in `create'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 250ms (ActiveRecord: 76.2ms | Allocations: 8524)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-07-07 22:58:24 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as TURBO_STREAM
+  Rendering user_sessions/new.erb
+  Rendered user_sessions/new.erb (Duration: 7.8ms | Allocations: 2784)
+Completed 200 OK in 38ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 7862)
+
+
+Started GET "/password_resets/new" for 192.168.65.1 at 2024-07-07 22:58:52 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PasswordResetsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2011)
+  Rendered shared/_header.erb (Duration: 1.8ms | Allocations: 271)
+  Rendered shared/_flash_message.html.erb (Duration: 1.4ms | Allocations: 160)
+  Rendered shared/_footer.erb (Duration: 1.2ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 3625)
+Completed 200 OK in 38ms (Views: 29.2ms | ActiveRecord: 0.0ms | Allocations: 5058)
+
+
+Started GET "/letter_opener/" for 192.168.65.1 at 2024-07-07 22:58:58 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.1ms | Allocations: 9)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 4.2ms | Allocations: 642)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 1.1ms | Allocations: 93)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 8.9ms | Allocations: 627)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 1.1ms | Allocations: 168)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 18.3ms | Allocations: 1428)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 5.2ms | Allocations: 1908)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 1.8ms | Allocations: 314)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 13.7ms | Allocations: 2794)
+  Rendered layout /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 57.8ms | Allocations: 5991)
+Completed 200 OK in 73ms (Views: 61.5ms | ActiveRecord: 0.0ms | Allocations: 7577)
+
+
+Started GET "/password_resets/new" for 192.168.65.1 at 2024-07-07 23:01:05 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PasswordResetsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 13.4ms | Allocations: 1754)
+  Rendered shared/_header.erb (Duration: 0.7ms | Allocations: 49)
+  Rendered shared/_flash_message.html.erb (Duration: 0.3ms | Allocations: 17)
+  Rendered shared/_footer.erb (Duration: 0.4ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 2341)
+Completed 200 OK in 46ms (Views: 25.8ms | ActiveRecord: 0.0ms | Allocations: 3052)
+
+
+Started POST "/password_resets" for 192.168.65.1 at 2024-07-07 23:01:13 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PasswordResetsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"test@test", "commit"=>"再送"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@test"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:7:in `create'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 165ms (ActiveRecord: 41.1ms | Allocations: 8474)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-07-07 23:01:14 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as TURBO_STREAM
+  Rendering user_sessions/new.erb
+  Rendered user_sessions/new.erb (Duration: 6.2ms | Allocations: 2764)
+Completed 200 OK in 39ms (Views: 8.6ms | ActiveRecord: 15.7ms | Allocations: 7883)
+
+
+Started GET "/letter_opener/" for 192.168.65.1 at 2024-07-07 23:01:18 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.1ms | Allocations: 9)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 7.2ms | Allocations: 227)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.2ms | Allocations: 9)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.8ms | Allocations: 8)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 4.0ms | Allocations: 192)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.2ms | Allocations: 10)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.1ms | Allocations: 10)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 1.8ms | Allocations: 140)
+  Rendered layout /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 21.5ms | Allocations: 1300)
+Completed 200 OK in 35ms (Views: 24.6ms | ActiveRecord: 0.0ms | Allocations: 2007)
+
+
+Started POST "/letter_opener/clear" for 192.168.65.1 at 2024-07-07 23:06:39 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#clear as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/letter_opener/
+Completed 302 Found in 23ms (ActiveRecord: 0.0ms | Allocations: 2566)
+
+
+Started GET "/letter_opener/" for 192.168.65.1 at 2024-07-07 23:06:39 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.1ms | Allocations: 9)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 6.0ms | Allocations: 640)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.7ms | Allocations: 93)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 10.1ms | Allocations: 627)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.8ms | Allocations: 168)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 25.4ms | Allocations: 1428)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 5.4ms | Allocations: 1908)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.9ms | Allocations: 314)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 12.0ms | Allocations: 2793)
+  Rendered layout /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 55.7ms | Allocations: 5978)
+Completed 200 OK in 67ms (Views: 60.2ms | ActiveRecord: 0.0ms | Allocations: 7270)
+
+
+Started GET "/letter_opener/" for 192.168.65.1 at 2024-07-07 23:06:40 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.0ms | Allocations: 9)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 1.0ms | Allocations: 219)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 2.2ms | Allocations: 192)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.5ms | Allocations: 10)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 2.4ms | Allocations: 140)
+  Rendered layout /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 9.7ms | Allocations: 1322)
+Completed 200 OK in 15ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 2106)
+
+
+Started GET "/password_resets/new" for 192.168.65.1 at 2024-07-07 23:06:47 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PasswordResetsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 10.2ms | Allocations: 2061)
+  Rendered shared/_header.erb (Duration: 1.5ms | Allocations: 271)
+  Rendered shared/_flash_message.html.erb (Duration: 1.2ms | Allocations: 160)
+  Rendered shared/_footer.erb (Duration: 0.9ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | Allocations: 3675)
+Completed 200 OK in 41ms (Views: 32.4ms | ActiveRecord: 0.0ms | Allocations: 5044)
+
+
+Started GET "/users/new" for 192.168.65.1 at 2024-07-07 23:06:52 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_message.erb (Duration: 4.9ms | Allocations: 179)
+  Rendered users/_form.html.erb (Duration: 11.9ms | Allocations: 1682)
+  Rendered users/new.html.erb within layouts/application (Duration: 14.9ms | Allocations: 1952)
+  Rendered shared/_header.erb (Duration: 0.3ms | Allocations: 51)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 2546)
+Completed 200 OK in 180ms (Views: 21.8ms | ActiveRecord: 59.5ms | Allocations: 13933)
+
+
+[dotenv] Set [36mOPEN_AI_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT $1[0m  [["LIMIT", 11]]
+Started POST "/password_resets" for 192.168.65.1 at 2024-07-07 23:07:27 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PasswordResetsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"tete@tete", "commit"=>"再送"}
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tete@tete"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:7:in `create'
+  [1m[36mUser Update All (28.4ms)[0m  [1m[33mUPDATE "users" SET "reset_password_token" = $1, "reset_password_email_sent_at" = $2 WHERE "users"."id" = $3[0m  [["reset_password_token", "Fwiaym8Q_FRQhbQ7sDeT"], ["reset_password_email_sent_at", "2024-07-07 14:07:27.660584"], ["id", 2]]
+  ↳ app/controllers/password_resets_controller.rb:8:in `create'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/mailers/user_mailer.rb:3:in `reset_password_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering user_mailer/reset_password_email.html.erb within layouts/mailer
+  Rendered user_mailer/reset_password_email.html.erb within layouts/mailer (Duration: 7.1ms | Allocations: 151)
+  Rendered layout layouts/mailer.html.erb (Duration: 17.3ms | Allocations: 368)
+  Rendering layout layouts/mailer.text.erb
+  Rendering user_mailer/reset_password_email.text.erb within layouts/mailer
+  Rendered user_mailer/reset_password_email.text.erb within layouts/mailer (Duration: 2.8ms | Allocations: 118)
+  Rendered layout layouts/mailer.text.erb (Duration: 6.9ms | Allocations: 310)
+UserMailer#reset_password_email: processed outbound mail in 121.3ms
+Delivered mail 668aa11fccd9a_f4fc449156@6ac3e799e41b.mail (124.0ms)
+Date: Sun, 07 Jul 2024 23:07:27 +0900
+From: from@example.com
+To: tete@tete
+Message-ID: <668aa11fccd9a_f4fc449156@6ac3e799e41b.mail>
+Subject: Translation missing: ja.defaults.password_reset
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_668aa11fc7a30_f4fc449035";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_668aa11fc7a30_f4fc449035
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+dGVzdOanmA0KDQrjg5Hjgrnjg6/jg7zjg4nlho3nmbrooYzjga7jgZTkvp3p
+oLzjgpLlj5fjgZHku5jjgZHjgb7jgZfjgZ/jgIINCg0K44GT44Gh44KJ44Gu
+44Oq44Oz44Kv44GL44KJ44OR44K544Ov44O844OJ44Gu5YaN55m66KGM44KS
+6KGM44Gj44Gm44GP44Gg44GV44GE44CCDQoNCmh0dHA6Ly9sb2NhbGhvc3Q6
+MzAwMC9wYXNzd29yZF9yZXNldHMvRndpYXltOFFfRlJRaGJRN3NEZVQvZWRp
+dA0K
+
+----==_mimepart_668aa11fc7a30_f4fc449035
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPG1ldGEg
+aHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7
+IGNoYXJzZXQ9dXRmLTgiPg0KICAgIDxzdHlsZT4NCiAgICAgIC8qIEVtYWls
+IHN0eWxlcyBuZWVkIHRvIGJlIGlubGluZSAqLw0KICAgIDwvc3R5bGU+DQog
+IDwvaGVhZD4NCg0KICA8Ym9keT4NCiAgICA8cD50ZXN05qeYPC9wPg0KDQo8
+cD7jg5Hjgrnjg6/jg7zjg4nlho3nmbrooYzjga7jgZTkvp3poLzjgpLlj5fj
+gZHku5jjgZHjgb7jgZfjgZ/jgII8L3A+DQoNCjxwPuOBk+OBoeOCieOBruOD
+quODs+OCr+OBi+OCieODkeOCueODr+ODvOODieOBruWGjeeZuuihjOOCkuih
+jOOBo+OBpuOBj+OBoOOBleOBhOOAgjwvcD4NCg0KPHA+PGEgaHJlZj0iaHR0
+cDovL2xvY2FsaG9zdDozMDAwL3Bhc3N3b3JkX3Jlc2V0cy9Gd2lheW04UV9G
+UlFoYlE3c0RlVC9lZGl0Ij5odHRwOi8vbG9jYWxob3N0OjMwMDAvcGFzc3dv
+cmRfcmVzZXRzL0Z3aWF5bThRX0ZSUWhiUTdzRGVUL2VkaXQ8L2E+PC9wPg0K
+ICA8L2JvZHk+DQo8L2h0bWw+DQo=
+
+----==_mimepart_668aa11fc7a30_f4fc449035--
+
+Redirected to http://localhost:3000/login
+Completed 302 Found in 355ms (ActiveRecord: 38.6ms | Allocations: 55211)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-07-07 23:07:27 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as TURBO_STREAM
+  Rendering user_sessions/new.erb
+  Rendered user_sessions/new.erb (Duration: 5.4ms | Allocations: 2757)
+Completed 200 OK in 13ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 4088)
+
+
+Started GET "/letter_opener/" for 192.168.65.1 at 2024-07-07 23:07:30 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb (Duration: 12.0ms | Allocations: 2058)
+  Rendered collection of /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.0ms | Allocations: 9)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 16.0ms | Allocations: 2463)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 1.2ms | Allocations: 8)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 3.7ms | Allocations: 191)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 1.0ms | Allocations: 10)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.1ms | Allocations: 10)
+  Rendered /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 2.5ms | Allocations: 140)
+  Rendered layout /usr/local/bundle/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 28.6ms | Allocations: 3529)
+Completed 200 OK in 43ms (Views: 31.1ms | ActiveRecord: 0.0ms | Allocations: 4254)
+
+
+Started GET "/letter_opener/1720361247_882166_7089aa4/rich" for 192.168.65.1 at 2024-07-07 23:07:30 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1720361247_882166_7089aa4", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 8)
+Completed 200 OK in 15ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 1366)
+
+
+Started GET "/letter_opener/1720361247_882166_7089aa4/rich" for 192.168.65.1 at 2024-07-07 23:07:31 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1720361247_882166_7089aa4", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 11ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 1133)
+
+
+Started GET "/letter_opener/1720361247_882166_7089aa4/rich" for 192.168.65.1 at 2024-07-07 23:07:31 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1720361247_882166_7089aa4", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 10ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 1133)
+
+
+Started GET "/password_resets/Fwiaym8Q_FRQhbQ7sDeT/edit" for 192.168.65.1 at 2024-07-07 23:07:33 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"id"=>"Fwiaym8Q_FRQhbQ7sDeT"}
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."reset_password_token" = 'Fwiaym8Q_FRQhbQ7sDeT' ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:15:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering password_resets/edit.html.erb within layouts/application
+  Rendered password_resets/edit.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1638)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 1729)
+Completed 500 Internal Server Error in 84ms (ActiveRecord: 7.0ms | Allocations: 3337)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_error_messages with {:locale=>[:ja], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/myapp/app/views"
+  * "/usr/local/bundle/gems/letter_opener_web-3.0.0/app/views"
+  * "/usr/local/bundle/gems/turbo-rails-2.0.5/app/views"
+  * "/usr/local/bundle/gems/actiontext-7.1.3.2/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-7.1.3.2/app/views"
+):
+    3:     <div class="col-md-10 col-lg-8 mx-auto">
+    4:       <h1><%= t('.title') %></h1>
+    5:       <%= form_with model: @user, url: password_reset_path(@token), method: :patch do |f| %>
+    6:       <%= render 'shared/error_messages', object: f.object %>
+    7:         <div class="mb-3">
+    8:           <%= f.label :email, class: "form-label" %>
+    9:           <%= @user.email %>
+  
+app/views/password_resets/edit.html.erb:6
+app/views/password_resets/edit.html.erb:5
