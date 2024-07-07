@@ -1,13 +1,7 @@
 Rails.application.routes.draw do
-  get 'bookmark/create'
-  get 'bookmark/destroy'
-  get 'recipes/new'
-  get 'goals/new'
-  get 'goals/create'
-  get 'goals/show'
-  get 'goals/update'
-  get 'goals/edit'
+  mount LetterOpenerWeb::Engine, at: '/letter_opener' if Rails.env.development?
   root "stractic_pages#top"
+  get 'password_resets/create'
   get "up" => "rails/health#show", as: :rails_health_check
 
   get 'terms_of_service', to: 'stractic_pages#terms_of_service'
@@ -23,6 +17,8 @@ Rails.application.routes.draw do
     end
   end
   resources :bookmarks, only: %i[create destroy], shallow: true
+  resources :password_resets, only: %i[new create edit update]
+
   
   get 'login', to: 'user_sessions#new'
   post 'login', to: 'user_sessions#create'
