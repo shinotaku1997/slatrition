@@ -6,7 +6,7 @@ class BookmarksController < ApplicationController
     end
     
     def destroy
-        recipe = current_user.bookmarks.find(params[:recipe_id]).recipe
+        recipe = current_user.bookmarks.find_by(params[:recipe_id]).recipe
         current_user.unbookmark(recipe)
         redirect_to recipe_path(recipe), notice: "ブックマークを解除しました"
     end
