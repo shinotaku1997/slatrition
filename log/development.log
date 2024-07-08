@@ -28967,3 +28967,451 @@ Searched in:
   
 app/views/password_resets/edit.html.erb:6
 app/views/password_resets/edit.html.erb:5
+Started GET "/password_resets/Fwiaym8Q_FRQhbQ7sDeT/edit" for 192.168.65.1 at 2024-07-08 22:45:25 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"id"=>"Fwiaym8Q_FRQhbQ7sDeT"}
+  [1m[36mUser Load (7.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."reset_password_token" = 'Fwiaym8Q_FRQhbQ7sDeT' ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:15:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering password_resets/edit.html.erb within layouts/application
+  Rendered password_resets/edit.html.erb within layouts/application (Duration: 19.3ms | Allocations: 1215)
+  Rendered layout layouts/application.html.erb (Duration: 56.9ms | Allocations: 1306)
+Completed 500 Internal Server Error in 414ms (ActiveRecord: 100.1ms | Allocations: 5415)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_error_messages with {:locale=>[:ja], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/myapp/app/views"
+  * "/usr/local/bundle/gems/letter_opener_web-3.0.0/app/views"
+  * "/usr/local/bundle/gems/turbo-rails-2.0.5/app/views"
+  * "/usr/local/bundle/gems/actiontext-7.1.3.2/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-7.1.3.2/app/views"
+):
+    3:     <div class="col-md-10 col-lg-8 mx-auto">
+    4:       <h1><%= t('.title') %></h1>
+    5:       <%= form_with model: @user, url: password_reset_path(@token), method: :patch do |f| %>
+    6:       <%= render 'shared/error_messages', object: f.object %>
+    7:         <div class="mb-3">
+    8:           <%= f.label :email, class: "form-label" %>
+    9:           <%= @user.email %>
+  
+app/views/password_resets/edit.html.erb:6
+app/views/password_resets/edit.html.erb:5
+Started GET "/password_resets/Fwiaym8Q_FRQhbQ7sDeT/edit" for 192.168.65.1 at 2024-07-08 22:45:31 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"id"=>"Fwiaym8Q_FRQhbQ7sDeT"}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."reset_password_token" = 'Fwiaym8Q_FRQhbQ7sDeT' ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:15:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering password_resets/edit.html.erb within layouts/application
+  Rendered password_resets/edit.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1215)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 1306)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 3.6ms | Allocations: 2567)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_error_messages with {:locale=>[:ja], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/myapp/app/views"
+  * "/usr/local/bundle/gems/letter_opener_web-3.0.0/app/views"
+  * "/usr/local/bundle/gems/turbo-rails-2.0.5/app/views"
+  * "/usr/local/bundle/gems/actiontext-7.1.3.2/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-7.1.3.2/app/views"
+):
+    3:     <div class="col-md-10 col-lg-8 mx-auto">
+    4:       <h1><%= t('.title') %></h1>
+    5:       <%= form_with model: @user, url: password_reset_path(@token), method: :patch do |f| %>
+    6:       <%= render 'shared/error_messages', object: f.object %>
+    7:         <div class="mb-3">
+    8:           <%= f.label :email, class: "form-label" %>
+    9:           <%= @user.email %>
+  
+app/views/password_resets/edit.html.erb:6
+app/views/password_resets/edit.html.erb:5
+Started GET "/password_resets/Fwiaym8Q_FRQhbQ7sDeT/edit" for 192.168.65.1 at 2024-07-08 22:50:55 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"id"=>"Fwiaym8Q_FRQhbQ7sDeT"}
+  [1m[36mUser Load (6.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."reset_password_token" = 'Fwiaym8Q_FRQhbQ7sDeT' ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:15:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering password_resets/edit.html.erb within layouts/application
+  Rendered shared/_error_message.erb (Duration: 1.2ms | Allocations: 1252)
+  Rendered password_resets/edit.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1827)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 1919)
+Completed 500 Internal Server Error in 233ms (ActiveRecord: 75.9ms | Allocations: 14591)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `model' for #<ActionView::Base:0x0000000005eab0>):
+    1: <% if model.errors.any? %>
+    2:   <div class="alert alert-danger">
+    3:     <ul class="mb-0">
+    4:       <% model.errors.full_messages.each do |msg| %>
+  
+app/views/shared/_error_message.erb:1
+app/views/password_resets/edit.html.erb:6
+app/views/password_resets/edit.html.erb:5
+Started GET "/password_resets/Fwiaym8Q_FRQhbQ7sDeT/edit" for 192.168.65.1 at 2024-07-08 22:51:32 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"id"=>"Fwiaym8Q_FRQhbQ7sDeT"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."reset_password_token" = 'Fwiaym8Q_FRQhbQ7sDeT' ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:15:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering password_resets/edit.html.erb within layouts/application
+  Rendered password_resets/edit.html.erb within layouts/application (Duration: 16.1ms | Allocations: 1820)
+  Rendered shared/_header.erb (Duration: 1.0ms | Allocations: 271)
+  Rendered shared/_flash_message.html.erb (Duration: 1.0ms | Allocations: 160)
+  Rendered shared/_footer.erb (Duration: 1.3ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 3430)
+Completed 200 OK in 139ms (Views: 35.5ms | ActiveRecord: 64.3ms | Allocations: 13702)
+
+
+Started PATCH "/password_resets/Fwiaym8Q_FRQhbQ7sDeT" for 192.168.65.1 at 2024-07-08 22:51:40 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PasswordResetsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"更新する", "id"=>"Fwiaym8Q_FRQhbQ7sDeT"}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."reset_password_token" = 'Fwiaym8Q_FRQhbQ7sDeT' ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:21:in `update'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/password_resets_controller.rb:29:in `update'
+  [1m[36mUser Update (27.0ms)[0m  [1m[33mUPDATE "users" SET "crypted_password" = $1, "salt" = $2, "updated_at" = $3, "reset_password_token" = $4 WHERE "users"."id" = $5[0m  [["crypted_password", "$2a$10$3xj1rke01GF72ZTzjFKZM.nMim8zxPUGxga2caog4Ro1cIMLABaXK"], ["salt", "Jn98z7azNF5BtK862kV3"], ["updated_at", "2024-07-08 13:51:41.107395"], ["reset_password_token", nil], ["id", 2]]
+  ↳ app/controllers/password_resets_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/password_resets_controller.rb:29:in `update'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 216ms (ActiveRecord: 58.8ms | Allocations: 4975)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-07-08 22:51:41 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as TURBO_STREAM
+  Rendering user_sessions/new.erb
+  Rendered user_sessions/new.erb (Duration: 4.8ms | Allocations: 2751)
+Completed 200 OK in 13ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 4086)
+
+
+Started PATCH "/password_resets/Fwiaym8Q_FRQhbQ7sDeT" for 192.168.65.1 at 2024-07-08 22:51:45 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PasswordResetsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"更新する", "id"=>"Fwiaym8Q_FRQhbQ7sDeT"}
+  [1m[36mUser Load (6.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."reset_password_token" = 'Fwiaym8Q_FRQhbQ7sDeT' ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:21:in `update'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 53ms (ActiveRecord: 6.4ms | Allocations: 1685)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-07-08 22:51:46 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as TURBO_STREAM
+  Rendering user_sessions/new.erb
+  Rendered user_sessions/new.erb (Duration: 6.4ms | Allocations: 2531)
+Completed 200 OK in 15ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 3313)
+
+
+Started GET "/password_resets/Fwiaym8Q_FRQhbQ7sDeT/edit" for 192.168.65.1 at 2024-07-08 22:52:09 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"id"=>"Fwiaym8Q_FRQhbQ7sDeT"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."reset_password_token" = 'Fwiaym8Q_FRQhbQ7sDeT' ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:15:in `edit'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 151ms (ActiveRecord: 28.6ms | Allocations: 6199)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-07-08 22:52:09 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user_sessions/new.erb within layouts/application
+  Rendered user_sessions/new.erb within layouts/application (Duration: 10.1ms | Allocations: 2851)
+  Rendered shared/_header.erb (Duration: 2.0ms | Allocations: 271)
+  Rendered shared/_flash_message.html.erb (Duration: 1.6ms | Allocations: 160)
+  Rendered shared/_footer.erb (Duration: 1.0ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 4467)
+Completed 200 OK in 58ms (Views: 32.4ms | ActiveRecord: 0.0ms | Allocations: 9653)
+
+
+Started POST "/login" for 192.168.65.1 at 2024-07-08 22:52:35 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"te@te", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'te@te' ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/user_sessions_controller.rb:9:in `create'
+  Rendering user_sessions/new.erb
+  Rendered user_sessions/new.erb (Duration: 3.9ms | Allocations: 2208)
+Completed 200 OK in 70ms (Views: 9.3ms | ActiveRecord: 15.4ms | Allocations: 9599)
+
+
+Started GET "/users/new" for 192.168.65.1 at 2024-07-08 22:52:38 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_message.erb (Duration: 1.8ms | Allocations: 180)
+  Rendered users/_form.html.erb (Duration: 9.7ms | Allocations: 1695)
+  Rendered users/new.html.erb within layouts/application (Duration: 15.0ms | Allocations: 1970)
+  Rendered shared/_header.erb (Duration: 1.5ms | Allocations: 265)
+  Rendered shared/_flash_message.html.erb (Duration: 1.9ms | Allocations: 160)
+  Rendered shared/_footer.erb (Duration: 2.3ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 34.8ms | Allocations: 3577)
+Completed 200 OK in 64ms (Views: 37.9ms | ActiveRecord: 0.0ms | Allocations: 8363)
+
+
+Started GET "/users/new" for 192.168.65.1 at 2024-07-08 22:52:38 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_message.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered users/_form.html.erb (Duration: 5.0ms | Allocations: 1072)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1152)
+  Rendered shared/_header.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered shared/_footer.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 1738)
+Completed 200 OK in 19ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 2474)
+
+
+Started POST "/login" for 192.168.65.1 at 2024-07-08 22:52:56 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"tete@tete", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'tete@tete' ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/user_sessions_controller.rb:9:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 241ms (ActiveRecord: 2.4ms | Allocations: 1899)
+
+
+Started GET "/" for 192.168.65.1 at 2024-07-08 22:52:56 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StracticPagesController#top as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering stractic_pages/top.html.erb within layouts/application
+  Rendered stractic_pages/top.html.erb within layouts/application (Duration: 2.8ms | Allocations: 234)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 9.6ms | Allocations: 1354)
+  Rendered shared/_flash_message.html.erb (Duration: 0.3ms | Allocations: 21)
+  Rendered shared/_footer.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 2661)
+Completed 200 OK in 26ms (Views: 19.4ms | ActiveRecord: 0.8ms | Allocations: 3649)
+
+
+Started GET "/" for 192.168.65.1 at 2024-07-08 22:53:00 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StracticPagesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stractic_pages/top.html.erb within layouts/application
+  Rendered stractic_pages/top.html.erb within layouts/application (Duration: 1.6ms | Allocations: 84)
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 10.1ms | Allocations: 495)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered shared/_footer.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 85.5ms | Allocations: 1591)
+Completed 200 OK in 98ms (Views: 84.6ms | ActiveRecord: 3.3ms | Allocations: 2301)
+
+
+Started GET "/recipes/new" for 192.168.65.1 at 2024-07-08 22:53:02 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 546)
+  Rendered shared/_header.erb (Duration: 0.3ms | Allocations: 44)
+  Rendered shared/_flash_message.html.erb (Duration: 0.2ms | Allocations: 18)
+  Rendered shared/_footer.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 1133)
+Completed 200 OK in 104ms (Views: 14.0ms | ActiveRecord: 10.1ms | Allocations: 15014)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-07-08 22:53:33 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user_sessions/new.erb within layouts/application
+  Rendered user_sessions/new.erb within layouts/application (Duration: 14.6ms | Allocations: 2549)
+  [1m[36mUser Load (13.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.erb:11
+  Rendered shared/_header.erb (Duration: 24.4ms | Allocations: 496)
+  Rendered shared/_flash_message.html.erb (Duration: 0.2ms | Allocations: 18)
+  Rendered shared/_footer.erb (Duration: 0.4ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 45.0ms | Allocations: 3586)
+Completed 200 OK in 63ms (Views: 34.6ms | ActiveRecord: 13.5ms | Allocations: 4325)
+
+
+Started DELETE "/logout?_method=delete" for 192.168.65.1 at 2024-07-08 22:53:36 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#destroy as TURBO_STREAM
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 0.4ms | Allocations: 2101)
+
+
+Started GET "/" for 192.168.65.1 at 2024-07-08 22:53:36 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StracticPagesController#top as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering stractic_pages/top.html.erb within layouts/application
+  Rendered stractic_pages/top.html.erb within layouts/application (Duration: 0.3ms | Allocations: 84)
+  Rendered shared/_header.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered shared/_footer.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 1182)
+Completed 200 OK in 10ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 1897)
+
+
+Started GET "/users/new" for 192.168.65.1 at 2024-07-08 22:53:36 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_message.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered users/_form.html.erb (Duration: 5.2ms | Allocations: 1090)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1170)
+  Rendered shared/_header.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered shared/_flash_message.html.erb (Duration: 0.0ms | Allocations: 17)
+  Rendered shared/_footer.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 1756)
+Completed 200 OK in 15ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 2492)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-07-08 22:53:37 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user_sessions/new.erb within layouts/application
+  Rendered user_sessions/new.erb within layouts/application (Duration: 3.5ms | Allocations: 2583)
+  Rendered shared/_header.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered shared/_flash_message.html.erb (Duration: 0.0ms | Allocations: 17)
+  Rendered shared/_footer.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3171)
+Completed 200 OK in 12ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 3903)
+
+
+Started GET "/users/new" for 192.168.65.1 at 2024-07-08 22:53:38 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_message.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered users/_form.html.erb (Duration: 3.1ms | Allocations: 1084)
+  Rendered users/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1164)
+  Rendered shared/_header.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered shared/_flash_message.html.erb (Duration: 0.0ms | Allocations: 17)
+  Rendered shared/_footer.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 1750)
+Completed 200 OK in 12ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 2486)
+
+
+Started GET "/password_resets/new" for 192.168.65.1 at 2024-07-08 22:53:40 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PasswordResetsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1914)
+  Rendered shared/_header.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered shared/_flash_message.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered shared/_footer.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 2508)
+Completed 200 OK in 15ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 3499)
+
+
+Started POST "/password_resets" for 192.168.65.1 at 2024-07-08 22:53:50 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PasswordResetsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"tete@tete", "commit"=>"再送"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tete@tete"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:7:in `create'
+  [1m[36mUser Update All (4.9ms)[0m  [1m[33mUPDATE "users" SET "reset_password_token" = $1, "reset_password_email_sent_at" = $2 WHERE "users"."id" = $3[0m  [["reset_password_token", "L_bt_5FZxEh9QbVwsso4"], ["reset_password_email_sent_at", "2024-07-08 13:53:50.890397"], ["id", 2]]
+  ↳ app/controllers/password_resets_controller.rb:8:in `create'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/mailers/user_mailer.rb:3:in `reset_password_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering user_mailer/reset_password_email.html.erb within layouts/mailer
+  Rendered user_mailer/reset_password_email.html.erb within layouts/mailer (Duration: 2.1ms | Allocations: 147)
+  Rendered layout layouts/mailer.html.erb (Duration: 6.4ms | Allocations: 362)
+  Rendering layout layouts/mailer.text.erb
+  Rendering user_mailer/reset_password_email.text.erb within layouts/mailer
+  Rendered user_mailer/reset_password_email.text.erb within layouts/mailer (Duration: 1.2ms | Allocations: 115)
+  Rendered layout layouts/mailer.text.erb (Duration: 2.8ms | Allocations: 306)
+UserMailer#reset_password_email: processed outbound mail in 43.3ms
+Delivered mail 668bef6eeba40_f5000493f5@6ac3e799e41b.mail (32.8ms)
+Date: Mon, 08 Jul 2024 22:53:50 +0900
+From: from@example.com
+To: tete@tete
+Message-ID: <668bef6eeba40_f5000493f5@6ac3e799e41b.mail>
+Subject: Translation missing: ja.defaults.password_reset
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_668bef6ee9374_f5000492eb";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_668bef6ee9374_f5000492eb
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+dGVzdOanmA0KDQrjg5Hjgrnjg6/jg7zjg4nlho3nmbrooYzjga7jgZTkvp3p
+oLzjgpLlj5fjgZHku5jjgZHjgb7jgZfjgZ/jgIINCg0K44GT44Gh44KJ44Gu
+44Oq44Oz44Kv44GL44KJ44OR44K544Ov44O844OJ44Gu5YaN55m66KGM44KS
+6KGM44Gj44Gm44GP44Gg44GV44GE44CCDQoNCmh0dHA6Ly9sb2NhbGhvc3Q6
+MzAwMC9wYXNzd29yZF9yZXNldHMvTF9idF81Rlp4RWg5UWJWd3NzbzQvZWRp
+dA0K
+
+----==_mimepart_668bef6ee9374_f5000492eb
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPG1ldGEg
+aHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7
+IGNoYXJzZXQ9dXRmLTgiPg0KICAgIDxzdHlsZT4NCiAgICAgIC8qIEVtYWls
+IHN0eWxlcyBuZWVkIHRvIGJlIGlubGluZSAqLw0KICAgIDwvc3R5bGU+DQog
+IDwvaGVhZD4NCg0KICA8Ym9keT4NCiAgICA8cD50ZXN05qeYPC9wPg0KDQo8
+cD7jg5Hjgrnjg6/jg7zjg4nlho3nmbrooYzjga7jgZTkvp3poLzjgpLlj5fj
+gZHku5jjgZHjgb7jgZfjgZ/jgII8L3A+DQoNCjxwPuOBk+OBoeOCieOBruOD
+quODs+OCr+OBi+OCieODkeOCueODr+ODvOODieOBruWGjeeZuuihjOOCkuih
+jOOBo+OBpuOBj+OBoOOBleOBhOOAgjwvcD4NCg0KPHA+PGEgaHJlZj0iaHR0
+cDovL2xvY2FsaG9zdDozMDAwL3Bhc3N3b3JkX3Jlc2V0cy9MX2J0XzVGWnhF
+aDlRYlZ3c3NvNC9lZGl0Ij5odHRwOi8vbG9jYWxob3N0OjMwMDAvcGFzc3dv
+cmRfcmVzZXRzL0xfYnRfNUZaeEVoOVFiVndzc280L2VkaXQ8L2E+PC9wPg0K
+ICA8L2JvZHk+DQo8L2h0bWw+DQo=
+
+----==_mimepart_668bef6ee9374_f5000492eb--
+
+Redirected to http://localhost:3000/login
+Completed 302 Found in 164ms (ActiveRecord: 8.5ms | Allocations: 38268)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-07-08 22:53:51 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as TURBO_STREAM
+  Rendering user_sessions/new.erb
+  Rendered user_sessions/new.erb (Duration: 3.2ms | Allocations: 2530)
+Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 3316)
+
+
+Started GET "/terms_of_service" for 192.168.65.1 at 2024-07-08 22:54:15 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StracticPagesController#terms_of_service as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stractic_pages/terms_of_service.erb within layouts/application
+  Rendered stractic_pages/terms_of_service.erb within layouts/application (Duration: 9.0ms | Allocations: 177)
+  Rendered shared/_header.erb (Duration: 1.3ms | Allocations: 62)
+  Rendered shared/_flash_message.html.erb (Duration: 1.1ms | Allocations: 20)
+  Rendered shared/_footer.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 38.1ms | Allocations: 1264)
+Completed 200 OK in 53ms (Views: 40.4ms | ActiveRecord: 0.0ms | Allocations: 2036)
+
+
