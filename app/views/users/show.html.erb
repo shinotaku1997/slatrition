@@ -1,6 +1,11 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @user %>
+name:<%= @user.name %>
+sex:<%= @user.body.sex%>
+age:<%= @user.body.age%>
+weight:<%= @user.body.weight%>
+height:<%= @user.body.height%>
+
 
 <div>
   <%= link_to "Edit this user", edit_user_path(@user) %> |

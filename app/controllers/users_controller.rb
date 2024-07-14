@@ -16,10 +16,6 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  # GET /users/1/edit
-  def edit
-  end
-
   # POST /users or /users.json
   def create
     @user = User.new(user_params)
@@ -32,6 +28,14 @@ class UsersController < ApplicationController
       Rails.logger.info @user.errors.full_messages
       render :new, status: :unprocessable_entity
     end
+  end
+
+  def show
+    @user =User.find(params[:id])
+  end
+
+  def edit
+    @user= User.find(params[:id])
   end
 
   def update
