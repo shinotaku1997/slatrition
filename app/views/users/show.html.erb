@@ -1,11 +1,35 @@
 <p style="color: green"><%= notice %></p>
+<table class="table">
+<tbody>
+  <tr>
+    <th scope="row">name</th>
+    <th><%= @user.name %></th>
+  </th>
+  <tr>
+  <th scope="row">sex</th>
+  <th><%= @user.body.sex%></th>
+</th>
+<tr>
+<th scope="row">age</th>
+<th><%= @user.body.age%></th>
+</th>
+<tr>
+<th scope="row">weight</th>
+<th><%= @user.body.weight%></th>
+</th>
+<tr>
+<th scope="row">height</th>
+<th><%= @user.body.height%></th>
+</th>
+</tbody>
+</table>
 
-name:<%= @user.name %>
-sex:<%= @user.body.sex%>
-age:<%= @user.body.age%>
-weight:<%= @user.body.weight%>
-height:<%= @user.body.height%>
+<%= "基礎代謝量"%>
+<%= "総代謝量"%>
 
+goal_weight:<%= @user.goal.goal_weight %>
+goal_weight:<%= @user.goal.volume_of_activity %>
+<%= "BMIの数値"%>
 
 <div>
   <%= link_to "Edit this user", edit_user_path(@user) %> |
