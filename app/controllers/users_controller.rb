@@ -30,6 +30,13 @@ class UsersController < ApplicationController
     end
   end
 
+  def brm
+    #男性の場合
+    #13.397*weight+4.999*height-5.677*age*+8.367
+    #女性の場合
+    #9.247×weight＋3.098×height−4.33×age+447.593
+  end
+
   def show
     @user =User.find(params[:id])
   end
@@ -61,12 +68,10 @@ class UsersController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_user
       @user = User.find(params[:id])
     end
 
-    # Only allow a list of trusted parameters through.
     def user_params
       params.require(:user).permit(:name, :email, :password, :password_confirmation)
     end
